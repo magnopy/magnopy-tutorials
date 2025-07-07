@@ -6,8 +6,9 @@ import os
 if __name__ == "__main__":
     parser = ArgumentParser()
 
-    parser.add_argument("-msdi", nargs=3, type=int)
+    parser.add_argument("-supercell", nargs=3, type=int)
     parser.add_argument("-sd", type=str)
+    parser.add_argument("-sp", type=str)
     parser.add_argument("-i", type=str)
     parser.add_argument("-o", type=str)
 
@@ -15,16 +16,18 @@ if __name__ == "__main__":
 
     spinham = magnopy.io.load_grogu(filename=args.i)
 
-    positions = np.array(spinham.magnetic_atoms.positions) @ spinham.cell
     filename = os.path.join(args.o, "SPIN_DIRECTIONS_LIGHT")
 
-    spin_directions = np.loadtxt(args.sd)[np.newaxis, :]
+    positions = np.loadtxt(args.sp)
+    spin_directions = np.loadtxt(args.sd)
 
     magnopy.io.plot_spin_directions(
         output_name=filename,
         positions=positions,
         spin_directions=spin_directions,
-        unit_cell=spinham.cell,
-        repeat=args.msdi,
+        cell=spinham.cell,
+        highlight=[i for i in range(spinham.M)],
+        name_highlighted="Original unit cell",
+        name_other="Other unit cells",
         _full_plotly=False,
     )
