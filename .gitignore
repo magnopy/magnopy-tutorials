@@ -14,3 +14,7 @@ __pycache__
 # On-the-fly-tests
 tmp*
 
+# Build
+
+docs/_build
+

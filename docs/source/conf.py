@@ -219,6 +219,8 @@ custom_links = {
     ),
     "jupyter": ("jupyter lab or notebook", "https://jupyter.org/"),
     "matplotlib": ("matplotlib", "https://matplotlib.org/"),
+    "TRILMAX-summer-school" : ("TRILMAX summer school", "FIXME"),
+    "TRILMAX-consortium" : ("TRILMAX consortium", "FIXME")
 }
 rst_epilog += "\n".join(
     map(
