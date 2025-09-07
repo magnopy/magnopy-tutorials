@@ -219,8 +219,15 @@ custom_links = {
     ),
     "jupyter": ("jupyter lab or notebook", "https://jupyter.org/"),
     "matplotlib": ("matplotlib", "https://matplotlib.org/"),
-    "TRILMAX-summer-school" : ("TRILMAX summer school", "FIXME"),
-    "TRILMAX-consortium" : ("TRILMAX consortium", "FIXME")
+    "TRILMAX-summer-school" : ("TRILMAX summer school", "https://trilmax.elte.hu/trilmax-theory-summer-school/"),
+    "TRILMAX-consortium" : ("TRILMAX consortium", "https://trilmax.elte.hu/"),
+    "magnopy-installation" :("magnopy's guide on installation","https://docs.magnopy.org/en/latest/user-guide/installation.html"),
+    "magnopy-API":("magnopy's API page","https://docs.magnopy.org/en/latest/api/index.html"),
+    "magnopy-cell":("magnopy's dedicated documentation page","https://docs.magnopy.org/en/latest/user-guide/usage/cell.html"),
+    "magnopy-atoms":("magnopy's dedicated documentation page","https://docs.magnopy.org/en/latest/user-guide/usage/atoms.html"),
+    "magnopy-convention-problem": ("convention problem","https://docs.magnopy.org/en/latest/user-guide/theory-behind/convention-problem.html"),
+    "magnopy-theory-spin-hamiltonian" :("Spin Hamiltonian", "https://docs.magnopy.org/en/latest/user-guide/theory-behind/spin-hamiltonian.html"),
+    
 }
 rst_epilog += "\n".join(
     map(
