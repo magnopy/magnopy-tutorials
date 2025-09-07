@@ -8,7 +8,7 @@ Linear Spin Wave theory
     * Compute magnon dispersion of a simple ferromagnet.
     * Compute magnon dispersion of a simple antiferromagnetic.
 
-All methods of linear spin-wave theory are grouped under the 
+All methods of linear spin-wave theory are grouped under the
 :external:py:class:`magnopy.LSWT` class.
 
 To create it one need two things
@@ -50,11 +50,11 @@ Magnon energies
 Parallelization
 ===============
 
-Typically one wants to compute magnon energies for a set of k-points. Sometimes for a 
-rather large set of k-points. MAgnopy offers simple interface to parallelize the 
-calculations over the k-points using multiprocessing. See 
-:external:py:func:`magnopy.multiprocess_over_k` for details. 
-For example, to compute magnon energies for the set of k-points (that are given as 
+Typically one wants to compute magnon energies for a set of k-points. Sometimes for a
+rather large set of k-points. MAgnopy offers simple interface to parallelize the
+calculations over the k-points using multiprocessing. See
+:external:py:func:`magnopy.multiprocess_over_k` for details.
+For example, to compute magnon energies for the set of k-points (that are given as
 absolute coordinates in reciprocal space), using two processors use
 
 .. code-block:: python

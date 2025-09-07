@@ -10,4 +10,3 @@ new releases of |magnopy|_, but can not promise timely updates.
     :maxdepth: 1
 
     trilmax-2025/index
-

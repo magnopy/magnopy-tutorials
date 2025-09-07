@@ -7,7 +7,7 @@ Introducing magnopy
     *   Install magnopy
 
 First of all, |magnopy|_ shall be installed. For the full guide on installation you can
-read |magnopy-installation|_. For using magnopy in the school you need to install magnopy right within the 
+read |magnopy-installation|_. For using magnopy in the school you need to install magnopy right within the
 jupyter notebook. Type the following command in the free notebook cell, run it and restart
 the kernel if necessary.
 
@@ -15,7 +15,7 @@ the kernel if necessary.
 
     %pip install "magnopy[visual]"
 
-Note that you are installing the extended version of magnopy that supports production of 
+Note that you are installing the extended version of magnopy that supports production of
 ``.png`` and ``.html`` files, that will be mentioned in this tutorial.
 
 .. note::
@@ -30,7 +30,7 @@ Import
 ======
 
 Magnopy have a well defined set of public functions, that shall be available in code
-completion. Full list of available methods and objects one can always find on 
+completion. Full list of available methods and objects one can always find on
 |magnopy-API|_.
 
 to include magnopy in your script import it in the usual way
@@ -41,8 +41,8 @@ to include magnopy in your script import it in the usual way
 
 Now all magnopy's public objects are available under ``magnopy.``.
 
-.. hint:: 
-    
+.. hint::
+
     It is enough to import magnopy once at the top of the notebook.
 
 To check that installation worked properly try to execute in the notebook cell the following
@@ -51,4 +51,3 @@ code
 .. code-block:: python
 
     print(magnopy.logo())
-

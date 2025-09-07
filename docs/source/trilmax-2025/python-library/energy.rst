@@ -9,10 +9,10 @@ Classical Energy
     *   Change the convention of the spin Hamiltonian and compute the energy again.
         Does it change?
     *   Use the set of Hamiltonians from :ref:`trilmax-2025_spinham_arithmetics`.
-        Optimize the spin direction for the full Hamiltonian. Use them to compute 
+        Optimize the spin direction for the full Hamiltonian. Use them to compute
         energy contributions of every term.
     *   (extra) Create a Hamiltonian of the ferromagnet with an easy magnetic axis.
-        Find out numerically the value of the magnetic field that need to be applied 
+        Find out numerically the value of the magnetic field that need to be applied
         perpendicular to it in order to fully orient the spins along the magnetic field.
 
 Classical energy of the spin Hamiltonian is implemented in a separate class.

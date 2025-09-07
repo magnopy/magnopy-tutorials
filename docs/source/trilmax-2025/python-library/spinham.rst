@@ -6,20 +6,20 @@ Spin Hamiltonian
 
 .. admonition:: Tutorial tasks
 
-    *   Create a spin Hamiltonian of the orthorhombic ferromagnet with tree magnetic axis 
-        (easy, medium and hard). 
+    *   Create a spin Hamiltonian of the orthorhombic ferromagnet with tree magnetic axis
+        (easy, medium and hard).
     *   Change the convention of the spin Hamiltonian. Inspect how the parameters are
         changing when you do so.
     *   Add some magnetic field to it. check the values of the parameters of the
         Hamiltonian that stores the magnetic field.
     *   Add magnetic dipole-dipole interaction. Test both energy and distance cut-offs.
         Which parameters of the spin Hamiltonian change?
-        
+
 
 At the heart of magnopy is the :external:py:class:`magnopy.SpinHamiltonian`.
 
 It is created on some crystal, that has been discussed in the previous section and adds
-*interaction parameters* to it. 
+*interaction parameters* to it.
 
 .. _trilmax-2025_spinham_creating:
 
@@ -50,10 +50,10 @@ Spin Hamiltonian (an empty one) is created from three objects
 
     # Convention
     convention = magnopy.Convention(
-        multiple_counting=True, 
-        spin_normalized=False, 
-        c1=1, 
-        c21=1, 
+        multiple_counting=True,
+        spin_normalized=False,
+        c1=1,
+        c21=1,
         c22=1/2
     )
 
@@ -87,7 +87,7 @@ between two different cites with the bond along the first lattice vector use
 
 Note several things:
 
-*   ``alpha`` and ``beta`` are indices of the lists in ``atoms``. In that example they 
+*   ``alpha`` and ``beta`` are indices of the lists in ``atoms``. In that example they
     both point to the first atom.
 *   Due to the translation symmetry of the Hamiltonian it is enough to specify all
     parameters for some chosen unit cell. This unit cell is commonly labeled as ``(0, 0, 0)``.
@@ -115,15 +115,15 @@ term
 Changing the convention
 =======================
 
-The parameter that are added to the Hamiltonian are expected to be compliant with the 
+The parameter that are added to the Hamiltonian are expected to be compliant with the
 Hamiltonian's convention. The latter can always be checked with
 
 .. code-block:: python
 
     print(spinham.convention.summary())
 
-Once the parameter are added to the Hamiltonian there is an option of changing the 
-convention. Magnopy will recompute all the parameter in the way, that the Hamiltonian 
+Once the parameter are added to the Hamiltonian there is an option of changing the
+convention. Magnopy will recompute all the parameter in the way, that the Hamiltonian
 will still describe the same physical system.
 
 .. code-block:: python
@@ -139,8 +139,8 @@ Adding magnetic field
 
 Due to the design choices that were made in magnopy, external magnetic field take the form
 of the parameter with one-spin/one-site (``c1``, ``add_1``, ``remove_1``). To save the
-effort of converting the vector of magnetic field to the parameter every time magnopy has 
-a method that is convenient to use. For example, to add an external magnetic field 
+effort of converting the vector of magnetic field to the parameter every time magnopy has
+a method that is convenient to use. For example, to add an external magnetic field
 directed along the y axis with the value of 1.42 Tesla use
 
 .. code-block:: python
@@ -156,8 +156,8 @@ Magnetic dipole-dipole interaction can be written ad a two-spin/two-sites parame
 To save the burden of manual conversion in every use magnopy has a pre-defined method
 that adds magnetic dipole-dipole interaction to the spin Hamiltonian.
 
-This interaction is of the long range. Currently magnopy only implements its inclusion 
-by the cut-off value. 
+This interaction is of the long range. Currently magnopy only implements its inclusion
+by the cut-off value.
 
 *   Cut-off by distance: all interaction that are shorter than cut-off are added
 
@@ -165,7 +165,7 @@ by the cut-off value.
 
         spinham.add_add_dipole_dipole(R_cut=20)
 
-*   Cut-off by parameter value (in meV): all interactions that are larger than the 
+*   Cut-off by parameter value (in meV): all interactions that are larger than the
     cut-off are added.
 
     .. code-block:: python
@@ -186,18 +186,18 @@ Good news is that magnopy implements addition and subtraction of two Hamiltonian
 Moreover, it implements multiplication of the Hamiltonian by any number.
 
 .. important::
-    For summation and subtraction the two Hamiltonians shall be defined on the same cell 
+    For summation and subtraction the two Hamiltonians shall be defined on the same cell
     and atoms.
 
 .. hint::
 
     To get an independent instance of spin Hamiltonian with the same cell, atoms but with
-    all parameters removed from it you can use 
+    all parameters removed from it you can use
     :external:py:meth:`magnopy.SpinHamiltonian.get_empty`
 
 
 For example, imagine that you created the Hamiltonian with some set of parameters and you
-would like to optimize spin direction on it and then get energy contributions of 
+would like to optimize spin direction on it and then get energy contributions of
 different terms. This can be done as
 
 .. code-block:: python
@@ -226,8 +226,6 @@ different terms. This can be done as
 
     spinham_full = spinham_exchange + spinham_zeeman + spinham_dd
 
-Now ``spinham_full`` can be used to optimize energy and get ``spin_direction`` of the 
+Now ``spinham_full`` can be used to optimize energy and get ``spin_direction`` of the
 local minima (covered in the next sections), then obtained ``spin_directions`` can be used
 with each individual term to get its contribution.
-
-

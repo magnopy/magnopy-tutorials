@@ -89,15 +89,14 @@ html_title = "Magnopy's tutorials"
 # html_favicon = "img/favicon.png"
 
 # Theme-specific options
-html_theme_options = {
-}
+html_theme_options = {}
 
 html_context = {
     "default_mode": "light",
     "display_github": True,  # Integrate GitHub
     "github_user": "magnopy",  # Username
     "github_repo": "magnopy-tutorials",  # Repo name
-    "github_version" : "main",
+    "github_version": "main",
     "doc_path": "docs/source",  # Path in the checkout to the docs root
 }
 
@@ -107,10 +106,7 @@ html_context = {
 ##########################################################################################
 
 # Custom variables with access from .rst files and docstrings
-variables_to_export = [
-    "project",
-    "copyright"
-]
+variables_to_export = ["project", "copyright"]
 
 frozen_locals = dict(locals())
 rst_epilog = "\n".join(
@@ -219,20 +215,59 @@ custom_links = {
     ),
     "jupyter": ("jupyter lab or notebook", "https://jupyter.org/"),
     "matplotlib": ("matplotlib", "https://matplotlib.org/"),
-    "TRILMAX-summer-school" : ("TRILMAX summer school", "https://trilmax.elte.hu/trilmax-theory-summer-school/"),
-    "TRILMAX-consortium" : ("TRILMAX consortium", "https://trilmax.elte.hu/"),
-    "magnopy-installation" :("magnopy's guide on installation","https://docs.magnopy.org/en/latest/user-guide/installation.html"),
-    "magnopy-API":("magnopy's API page","https://docs.magnopy.org/en/latest/api/index.html"),
-    "magnopy-cell":("magnopy's dedicated documentation page","https://docs.magnopy.org/en/latest/user-guide/usage/cell.html"),
-    "magnopy-atoms":("magnopy's dedicated documentation page","https://docs.magnopy.org/en/latest/user-guide/usage/atoms.html"),
-    "magnopy-convention-problem": ("convention problem","https://docs.magnopy.org/en/latest/user-guide/theory-behind/convention-problem.html"),
-    "magnopy-theory-spin-hamiltonian" :("Spin Hamiltonian", "https://docs.magnopy.org/en/latest/user-guide/theory-behind/spin-hamiltonian.html"),
-    "magnopy-how-to-execute-script" :("How to execute the script?","https://docs.magnopy.org/en/latest/user-guide/cli/how-to-execute.html"),
-    "magnopy-optimize-sd" :("magnopy-optimize-sd","https://docs.magnopy.org/en/latest/user-guide/cli/magnopy-optimize-sd.html"),
-    "magnopy-lswt" :("magnopy-lswt","https://docs.magnopy.org/en/latest/user-guide/cli/magnopy-lswt.html"),
-    "magnopy-scenarios":("magnopy.scenarios","https://docs.magnopy.org/en/latest/api/scenarios.html"),
-    "wulfric-conventions" :("conventions in wulfric", "https://docs.wulfric.org/en/latest/user-guide/conventions/bravais-lattices/index.html"),
-    "wulfric-FCC" :("FCC","https://docs.wulfric.org/en/latest/user-guide/conventions/bravais-lattices/2_sc/plot_02_FCC.html"),
+    "TRILMAX-summer-school": (
+        "TRILMAX summer school",
+        "https://trilmax.elte.hu/trilmax-theory-summer-school/",
+    ),
+    "TRILMAX-consortium": ("TRILMAX consortium", "https://trilmax.elte.hu/"),
+    "magnopy-installation": (
+        "magnopy's guide on installation",
+        "https://docs.magnopy.org/en/latest/user-guide/installation.html",
+    ),
+    "magnopy-API": (
+        "magnopy's API page",
+        "https://docs.magnopy.org/en/latest/api/index.html",
+    ),
+    "magnopy-cell": (
+        "magnopy's dedicated documentation page",
+        "https://docs.magnopy.org/en/latest/user-guide/usage/cell.html",
+    ),
+    "magnopy-atoms": (
+        "magnopy's dedicated documentation page",
+        "https://docs.magnopy.org/en/latest/user-guide/usage/atoms.html",
+    ),
+    "magnopy-convention-problem": (
+        "convention problem",
+        "https://docs.magnopy.org/en/latest/user-guide/theory-behind/convention-problem.html",
+    ),
+    "magnopy-theory-spin-hamiltonian": (
+        "Spin Hamiltonian",
+        "https://docs.magnopy.org/en/latest/user-guide/theory-behind/spin-hamiltonian.html",
+    ),
+    "magnopy-how-to-execute-script": (
+        "How to execute the script?",
+        "https://docs.magnopy.org/en/latest/user-guide/cli/how-to-execute.html",
+    ),
+    "magnopy-optimize-sd": (
+        "magnopy-optimize-sd",
+        "https://docs.magnopy.org/en/latest/user-guide/cli/magnopy-optimize-sd.html",
+    ),
+    "magnopy-lswt": (
+        "magnopy-lswt",
+        "https://docs.magnopy.org/en/latest/user-guide/cli/magnopy-lswt.html",
+    ),
+    "magnopy-scenarios": (
+        "magnopy.scenarios",
+        "https://docs.magnopy.org/en/latest/api/scenarios.html",
+    ),
+    "wulfric-conventions": (
+        "conventions in wulfric",
+        "https://docs.wulfric.org/en/latest/user-guide/conventions/bravais-lattices/index.html",
+    ),
+    "wulfric-FCC": (
+        "FCC",
+        "https://docs.wulfric.org/en/latest/user-guide/conventions/bravais-lattices/2_sc/plot_02_FCC.html",
+    ),
 }
 rst_epilog += "\n".join(
     map(

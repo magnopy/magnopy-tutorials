@@ -6,22 +6,22 @@
 .. admonition:: Tutorial tasks
 
     * Get kpoints for future dispersion calculations with |wulfric|_.
-    * (extra) Visualize Brillouin zone, k-points and k-path with 
+    * (extra) Visualize Brillouin zone, k-points and k-path with
       :external:py:class:`wulfric.PlotlyEngine`.
-    * (extra) Create a crystal on |wulfric-FCC|_ lattice with |wulfric|_. Visualize and 
+    * (extra) Create a crystal on |wulfric-FCC|_ lattice with |wulfric|_. Visualize and
       compare primitive and conventional cells. Compute k-points, k-path, reciprocal cell
-      of conventional cell, reciprocal cell of primitive cell and 
+      of conventional cell, reciprocal cell of primitive cell and
       ``wulfric.Kpoints.rcell``.
 
 
-One way to get a set of k-points and a k-path in reciprocal space is to use |wulfric|_ 
+One way to get a set of k-points and a k-path in reciprocal space is to use |wulfric|_
 package.
 
 We recommend to use its :external:py:class:`wulfric.Kpoints` interface. Here we provide
 not the most straightforward way to interact with it, but one that give access
 for more information. Note that symmetry search in wulfric is powered by |spglib|_.
 
-Wulfric operates on the crystal structure. First we will get the information 
+Wulfric operates on the crystal structure. First we will get the information
 from |spglib|_ via wulfric's interface to it.
 
 .. code-block:: python
@@ -65,7 +65,7 @@ points and k-path.
         spglib_data=spglib_data,
     )
 
-Now those objects provide a simple interface 
+Now those objects provide a simple interface
 
 *   For calculations (:external:py:meth:`wulfric.Kpoints.points`)
 
@@ -89,8 +89,3 @@ Now those objects provide a simple interface
 
         plt.show()
         plt.close()
-
-    
-
-
-

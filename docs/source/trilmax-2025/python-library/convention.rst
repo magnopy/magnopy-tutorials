@@ -7,11 +7,11 @@ Convention of spin Hamiltonian
     *   Create an instance of :external:py:class:`magnopy.Convention` for every example
         mathematical formula that is written in this page.
     *   (extra) Write down the spin Hamiltonian in the convention that you are usually use
-        or seen recently in some paper. Create an instance of the 
+        or seen recently in some paper. Create an instance of the
         :external:py:class:`magnopy.Convention` that describe it.
 
 Before we move on to the Hamiltonian itself it is very important to understand that
-there is a dozen of different conventions of it present in the literature. Here are a 
+there is a dozen of different conventions of it present in the literature. Here are a
 few examples with different conventions for the isotropic exchange term
 
 .. math::
@@ -44,7 +44,7 @@ Please read |magnopy-convention-problem|_ for the illustration of the challenges
 problem introduces.
 
 In |magnopy|_ we did not want to introduce a new one or to use one convention in particular.
-As a solution we decided to support **any** convention that the user what to use. Naturally, 
+As a solution we decided to support **any** convention that the user what to use. Naturally,
 that implied a responsibility on the user: to provide one! If spin Hamiltonian is
 read from the knows source (i. e. |TB2J|_ or |GROGU|_), then magnopy knows the convention
 and user can just read the Hamiltonian from the file like so
@@ -57,8 +57,8 @@ and user can just read the Hamiltonian from the file like so
     # Reading from GROGU
     spinham = magnopy.io.load_grogu("spinham-from-GROGU.txt")
 
-However, when the spin Hamiltonian is created by user explicitly, the 
-:external:py:class:`magnopy.Convention`. object has to be created. For example to 
+However, when the spin Hamiltonian is created by user explicitly, the
+:external:py:class:`magnopy.Convention`. object has to be created. For example to
 introduce the convention for the Hamiltonian that is written as
 
 .. math::
@@ -80,9 +80,8 @@ one shall create the convention object as
 .. code-block:: python
 
     convention = magnopy.Convention(
-        c21 = 1, 
-        c22= 0.5, 
-        multiple_counting=False, 
+        c21 = 1,
+        c22= 0.5,
+        multiple_counting=False,
         spin_normalized=False
     )
-

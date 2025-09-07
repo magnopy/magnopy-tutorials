@@ -8,7 +8,7 @@ TRILMAX summer school (8-12 September of 2025)
 
 **Last updated**: 10 September 2025
 
-This tutorial was first give in the |TRILMAX-summer-school|_ organized by the 
+This tutorial was first give in the |TRILMAX-summer-school|_ organized by the
 |TRILMAX-consortium|_.
 
 Magnopy as a python library
@@ -33,7 +33,7 @@ Magnopy as a black box
 ======================
 
 Alternative way to use magnopy, that does not require knowledge of Python is through
-its command line interface. 
+its command line interface.
 
 First, one need to install magnopy. Open a terminal and run the following in it
 
@@ -50,8 +50,8 @@ Check that everything is ok by executing the command
 There are currently two command line scripts in magnopy. Use the |GROGU|_ file that you have
 obtained to follow the tutorial for each of them.
 
-.. hint:: 
-    Those scripts can be run from within python as well, see: 
+.. hint::
+    Those scripts can be run from within python as well, see:
     |magnopy-scenarios|_. One can study the source code of
     :external:py:func:`magnopy.scenarios.optimize_sd` and
     :external:py:func:`magnopy.scenarios.solve_lswt` for more advance example of how

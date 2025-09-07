@@ -7,3 +7,7 @@ sphinx-design
 # For doc's images
 matplotlib
 plotly
+
+# code quality
+ruff
+pre-commit
