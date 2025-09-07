@@ -227,7 +227,12 @@ custom_links = {
     "magnopy-atoms":("magnopy's dedicated documentation page","https://docs.magnopy.org/en/latest/user-guide/usage/atoms.html"),
     "magnopy-convention-problem": ("convention problem","https://docs.magnopy.org/en/latest/user-guide/theory-behind/convention-problem.html"),
     "magnopy-theory-spin-hamiltonian" :("Spin Hamiltonian", "https://docs.magnopy.org/en/latest/user-guide/theory-behind/spin-hamiltonian.html"),
-    
+    "magnopy-how-to-execute-script" :("How to execute the script?","https://docs.magnopy.org/en/latest/user-guide/cli/how-to-execute.html"),
+    "magnopy-optimize-sd" :("magnopy-optimize-sd","https://docs.magnopy.org/en/latest/user-guide/cli/magnopy-optimize-sd.html"),
+    "magnopy-lswt" :("magnopy-lswt","https://docs.magnopy.org/en/latest/user-guide/cli/magnopy-lswt.html"),
+    "magnopy-scenarios":("magnopy.scenarios","https://docs.magnopy.org/en/latest/api/scenarios.html"),
+    "wulfric-conventions" :("conventions in wulfric", "https://docs.wulfric.org/en/latest/user-guide/conventions/bravais-lattices/index.html"),
+    "wulfric-FCC" :("FCC","https://docs.wulfric.org/en/latest/user-guide/conventions/bravais-lattices/2_sc/plot_02_FCC.html"),
 }
 rst_epilog += "\n".join(
     map(
