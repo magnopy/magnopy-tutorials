@@ -17,4 +17,4 @@ sphinx-gallery
 ipython
 nbformat
 
-# magnopy==0.2.*
+magnopy
