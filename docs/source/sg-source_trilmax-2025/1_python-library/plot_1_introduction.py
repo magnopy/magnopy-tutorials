@@ -34,23 +34,21 @@ completion. Full list of available methods and objects one can always find on
 |magnopy-API|_.
 
 to include magnopy in your script import it in the usual way
-
-.. code-block:: python
-
-    import magnopy
-
-Now all magnopy's public objects are available under ``magnopy.``.
-
-.. hint::
-
-    It is enough to import magnopy once at the top of the notebook.
-
-To check that installation worked properly try to execute in the notebook cell the following
-code
-
-.. code-block:: python
-
-    print(magnopy.logo())
 """
+
+import magnopy
+
+# %%
+# Now all magnopy's public objects are available under ``magnopy.``.
+#
+# .. hint::
+#
+#     It is enough to import magnopy once at the top of the notebook.
+#
+# To check that installation worked properly try to execute in the notebook cell the following
+# code
+
+print(magnopy.logo())
+
 
 # sphinx_gallery_thumbnail_path = 'img/gallery-thumbnails/trilmax-2025/python-library/introduction.png'

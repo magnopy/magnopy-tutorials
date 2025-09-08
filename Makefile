@@ -28,11 +28,9 @@ clean:
 	-@rm -r docs/source/*/generated
 	-@rm -r docs/source/*/*/generated
 	-@rm -r docs/source/*/*/*/generated
-	-@rm -r magnopy/magnopy.egg-info
 	-@rm -r build
 	-@rm -r dist
-	-@rm -r .venv/lib/python*/site-packages/magnopy*
-	-@rm -r .venv/bin/magnopy*
+
 
 
 html:
