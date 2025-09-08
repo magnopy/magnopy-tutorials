@@ -26,6 +26,10 @@ from os.path import abspath, join
 
 sys.path.insert(0, abspath(join("..", "..")))
 
+import plotly.io as pio
+
+pio.renderers.default = "sphinx_gallery"
+
 
 ##########################################################################################
 ##                                   Project metadata                                   ##

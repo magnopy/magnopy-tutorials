@@ -49,7 +49,7 @@ that implied a responsibility on the user: to provide one! If spin Hamiltonian i
 read from the knows source (i. e. |TB2J|_ or |GROGU|_), then magnopy knows the convention
 and user can just read the Hamiltonian from the file like so
 
-.. code-block::
+.. code-block:: python
 
     # Reading from TB2J
     spinham = magnopy.io.load_tb2j("exchange.out")
@@ -76,15 +76,44 @@ introduce the convention for the Hamiltonian that is written as
     \boldsymbol{S}_j
 
 one shall create the convention object as
-
-.. code-block:: python
-
-    convention = magnopy.Convention(
-        c21 = 1,
-        c22= 0.5,
-        multiple_counting=False,
-        spin_normalized=False
-    )
 """
+
+import magnopy
+
+convention = magnopy.Convention(
+    c21=1, c22=0.5, multiple_counting=False, spin_normalized=False
+)
+
+# %%
+#
+# To consult the convention properties you can either access individual options or print
+# a summary
+
+print(convention.multiple_counting)
+
+convention.summary()
+
+# %%
+# Pre-defined conventions
+# =======================
+#
+# Magnopy has some pre-defined named conventions. To get one use
+
+convention = magnopy.Convention.get_predefined("GROGU")
+convention.summary()
+convention = magnopy.Convention.get_predefined("Vampire")
+convention.summary()
+convention = magnopy.Convention.get_predefined("TB2J")
+convention.summary()
+
+# %%
+# Modifying convention
+#
+# To get the convention where just some of the properties are changed one can create one
+# from scratch by re-defining every property of it. Or use a shortcut
+
+modified = convention.get_modified(c31=1)
+modified.summary()
+
 
 # sphinx_gallery_thumbnail_path = 'img/gallery-thumbnails/trilmax-2025/python-library/convention.png'

@@ -76,21 +76,21 @@ atoms = {
 # They both operate in the same way, the only difference is that magnopy's one have extra
 # methods for plotting spin Hamiltonian and spin directions.
 #
-# The recommended scenario for using this kind of visualization is
-#
-# *   Create an instance of visualization backend
+# The recommended scenario for using this kind of visualization is first to create an
+# instance of visualization backend
 
 pe = magnopy.PlotlyEngine(_sphinx_gallery_fix=True)
 
 # %%
-# *   Plot what you want. See API reference for the list of available plotting methods:
-#     :external:py:class:`magnopy.PlotlyEngine`. For example to display the cell and atoms
+# And then plot what you want. See API reference for the list of available plotting
+# methods :external:py:class:`magnopy.PlotlyEngine`. For example, to display the cell and
+# atoms
 
 pe.plot_cell(cell, legend_label="Unit cell", color="Black")
 pe.plot_atoms(cell, atoms, legend_label="Atoms of the unit cell")
 
 # %%
-# *   Display the figure
+# Finally display or save the figure
 
 pe.show(axes_visible=False)
 
