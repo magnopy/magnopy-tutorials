@@ -13,7 +13,7 @@ the kernel if necessary.
 
 .. code-block:: bash
 
-    %pip install "magnopy[visual]"
+    %pip install "magnopy[visual]" --upgrade
 
 Note that you are installing the extended version of magnopy that supports production of
 ``.png`` and ``.html`` files, that will be mentioned in this tutorial.
@@ -49,6 +49,10 @@ import magnopy
 # code
 
 print(magnopy.logo())
+
+# %%
+# .. important::
+#     Check that you have magnopy version ``v0.2.0``.
 
 
 # sphinx_gallery_thumbnail_path = 'img/gallery-thumbnails/trilmax-2025/python-library/introduction.png'
