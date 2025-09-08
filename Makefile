@@ -40,6 +40,7 @@ html:
 
 clean-html: clean html
 	@echo "Done"
+	-@rm -r docs/source/trilmax-2025
 
 
 # Tests

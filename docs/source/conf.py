@@ -50,7 +50,19 @@ extensions = [
     "numpydoc",  # For the numpy-style docstrings
     "sphinx_design",  # For the design elements on the from page
     "sphinx.ext.intersphinx",  # Link to other projects
+    "sphinx_gallery.gen_gallery",  # For graphical code examples
 ]
+
+##########################################################################################
+##                               Extension's configuration                              ##
+##########################################################################################
+sphinx_gallery_conf = {
+    "examples_dirs": ["sg-source_trilmax-2025"],  # path to your example scripts
+    "gallery_dirs": ["trilmax-2025"],  # path to where to save gallery generated output
+    "capture_repr": ("_repr_html_", "__repr__"),  # To capture plotly's figures
+    "remove_config_comments": True,  # To remove configuration comments
+    "within_subsection_order": "FileNameSortKey",  # To sort by the name of the file
+}
 
 ##########################################################################################
 ##                                  Intersphinx mapping                                 ##

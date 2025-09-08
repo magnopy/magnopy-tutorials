@@ -1,4 +1,4 @@
-*******************************
+r"""
 Optimization of spin directions
 *******************************
 
@@ -16,5 +16,6 @@ For the guide on the script read |magnopy-optimize-sd|_.
 
 Output files
 ============
+"""
 
-FIXME
+# sphinx_gallery_thumbnail_path = 'img/gallery-thumbnails/trilmax-2025/black-box/optimize-sd.png'

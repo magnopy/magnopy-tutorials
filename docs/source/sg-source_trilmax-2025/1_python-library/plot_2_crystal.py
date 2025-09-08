@@ -1,4 +1,4 @@
-*****************
+r"""
 Crystal structure
 *****************
 
@@ -92,3 +92,6 @@ The recommended scenario for using this kind of visualization is
     .. code-block:: python
 
         pe.show(width=1000, height=1000)
+"""
+
+# sphinx_gallery_thumbnail_path = 'img/gallery-thumbnails/trilmax-2025/python-library/crystal.png'

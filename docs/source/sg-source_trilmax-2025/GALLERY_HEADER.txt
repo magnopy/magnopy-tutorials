@@ -1,0 +1,17 @@
+.. _trilmax-2025:
+
+**********************************************
+TRILMAX summer school (8-12 September of 2025)
+**********************************************
+
+**Target magnopy's version**: v0.2.0
+
+**First published**: 10 September 2025
+
+**Last updated**: 10 September 2025
+
+This tutorial was first give in the |TRILMAX-summer-school|_ organized by the
+|TRILMAX-consortium|_.
+
+
+

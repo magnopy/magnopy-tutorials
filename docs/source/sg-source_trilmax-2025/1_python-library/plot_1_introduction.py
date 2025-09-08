@@ -1,4 +1,4 @@
-*******************
+r"""
 Introducing magnopy
 *******************
 
@@ -51,3 +51,6 @@ code
 .. code-block:: python
 
     print(magnopy.logo())
+"""
+
+# sphinx_gallery_thumbnail_path = 'img/gallery-thumbnails/trilmax-2025/python-library/introduction.png'

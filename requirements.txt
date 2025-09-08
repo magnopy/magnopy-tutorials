@@ -11,3 +11,9 @@ plotly
 # code quality
 ruff
 pre-commit
+
+# sphinx-gallery
+sphinx-gallery
+ipython
+
+# magnopy==0.2.*

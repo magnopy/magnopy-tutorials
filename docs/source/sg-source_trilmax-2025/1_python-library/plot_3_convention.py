@@ -1,4 +1,4 @@
-******************************
+r"""
 Convention of spin Hamiltonian
 ******************************
 
@@ -85,3 +85,6 @@ one shall create the convention object as
         multiple_counting=False,
         spin_normalized=False
     )
+"""
+
+# sphinx_gallery_thumbnail_path = 'img/gallery-thumbnails/trilmax-2025/python-library/convention.png'

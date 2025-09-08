@@ -1,4 +1,4 @@
-****************
+r"""
 Classical Energy
 ****************
 
@@ -36,3 +36,6 @@ or to optimize spin directions within unit cell to get the configuration of some
     optimized_sd = energy.optimize()
 
 see :external:py:class:`magnopy.Energy` for more details.
+"""
+
+# sphinx_gallery_thumbnail_path = 'img/gallery-thumbnails/trilmax-2025/python-library/energy.png'

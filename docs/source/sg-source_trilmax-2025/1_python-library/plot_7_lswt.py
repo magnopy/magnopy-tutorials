@@ -1,4 +1,4 @@
-***********************
+r"""
 Linear Spin Wave theory
 ***********************
 
@@ -69,3 +69,7 @@ absolute coordinates in reciprocal space), using two processors use
     )
 
 Now, the ``results[i]`` is equivalent to ``lswt.omega(k=kpoints[i], relative=False)``.
+
+"""
+
+# sphinx_gallery_thumbnail_path = 'img/gallery-thumbnails/trilmax-2025/python-library/lswt.png'

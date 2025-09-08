@@ -1,4 +1,4 @@
-*****************************
+r"""
 (extra) K-points with wulfric
 *****************************
 
@@ -89,3 +89,6 @@ Now those objects provide a simple interface
 
         plt.show()
         plt.close()
+"""
+
+# sphinx_gallery_thumbnail_path = 'img/gallery-thumbnails/trilmax-2025/python-library/wulfric.png'

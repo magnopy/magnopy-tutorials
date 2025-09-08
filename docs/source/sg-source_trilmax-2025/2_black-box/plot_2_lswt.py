@@ -1,4 +1,4 @@
-***********************
+r"""
 Linear Spin Wave theory
 ***********************
 
@@ -18,3 +18,5 @@ Output files
 ============
 
 FIXME
+"""
+# sphinx_gallery_thumbnail_path = 'img/gallery-thumbnails/trilmax-2025/black-box/lswt.png'

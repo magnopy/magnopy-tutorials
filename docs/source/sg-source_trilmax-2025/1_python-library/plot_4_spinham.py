@@ -1,6 +1,4 @@
-.. _trilmax-2025_spinham:
-
-****************
+r"""
 Spin Hamiltonian
 ****************
 
@@ -229,3 +227,6 @@ different terms. This can be done as
 Now ``spinham_full`` can be used to optimize energy and get ``spin_direction`` of the
 local minima (covered in the next sections), then obtained ``spin_directions`` can be used
 with each individual term to get its contribution.
+"""
+
+# sphinx_gallery_thumbnail_path = 'img/gallery-thumbnails/trilmax-2025/python-library/spinham.png'
