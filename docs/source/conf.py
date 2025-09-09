@@ -284,6 +284,10 @@ custom_links = {
         "FCC",
         "https://docs.wulfric.org/en/latest/user-guide/conventions/bravais-lattices/2_sc/plot_02_FCC.html",
     ),
+    "wulfric-kpath-string": (
+        "wulfric: k-path",
+        "https://docs.wulfric.org/en/latest/user-guide/usage/key-concepts.html#k-path",
+    ),
 }
 rst_epilog += "\n".join(
     map(

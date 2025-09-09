@@ -30,13 +30,13 @@ To do so run the commands
 
 .. code-block:: bash
 
-    magnopy-optimize-sd -ss GROGU -sf reference-CrI3.txt -of optimize-sd-output -hpd > console-output.txt
+    magnopy-optimize-sd -ss GROGU -sf CrI3/reference-GROGU.txt -of CrI3/optimize-sd-output -hpd > console-output.txt
 
 and
 
 .. code-block:: bash
 
-    magnopy-optimize-sd -ss GROGU -sf reference-CrI3_U.txt -of optimize-sd-output -hpd > console-output.txt
+    magnopy-optimize-sd -ss GROGU -sf CrI3_U/reference-GROGU.txt -of CrI3_U/optimize-sd-output -hpd > console-output.txt
 
 in the terminal.
 
@@ -49,15 +49,15 @@ Let us go thought the parameters
 
     Tells magnopy that the Hamiltonian is coming from |GROGU|_.
 
-*   ``-sf reference-CrI3.txt`` or ``-sf reference-CrI3_U.txt``
+*   ``-sf CrI3/reference-GROGU.txt``
 
     Tells magnopy where the file with the Hamiltonian is located. The path, that is given
     for the ``-sf`` argument have to be either absolute or relative to the folder from
     which you execute the script.
 
-*   ``-of optimize-sd-output``
+*   ``-of CrI3/optimize-sd-output``
 
-    Tell magnopy to save all output files inside the "optimize-sd-output" folder.
+    Tells magnopy to save all output files inside the "CrI3/optimize-sd-output" folder.
 
 *   ``-of -hpd``
 
@@ -82,7 +82,7 @@ examples of those files.
 
     This is the main output file of magnopy that list the steps of the calculations,
     give comments, warnings and details on which files with data were produced and where
-    they have been saved. Here is the content of that file for CrI3.txt
+    they have been saved.
 
     .. literalinclude:: ../../resources/trilmax-2025/CrI3/optimize-sd/console-output.txt
         :caption: Content of "console-output.txt" for CrI3
@@ -121,8 +121,8 @@ examples of those files.
     cell, supercell (if any), initial guess and optimize spin directions are plotted.
 
 
-Download the files for "reference-CrI3.txt"
--------------------------------------------
+Download the files for "CrI3/reference-GROGU.txt"
+-------------------------------------------------
 
 * :download:`console-output.txt (for CrI3.txt) <../../resources/trilmax-2025/CrI3/optimize-sd/console-output.txt>`
 * :download:`INITIAL_GUESS.txt (for CrI3.txt) <../../resources/trilmax-2025/CrI3/optimize-sd/INITIAL_GUESS.txt>`
@@ -131,8 +131,8 @@ Download the files for "reference-CrI3.txt"
 * :download:`SPIN_DIRECTIONS.html (for CrI3.txt) <../../resources/trilmax-2025/CrI3/optimize-sd/SPIN_DIRECTIONS.html>`
 
 
-Download the files for "reference-CrI3_U.txt"
----------------------------------------------
+Download the files for "CrI3_U/reference-GROGU.txt"
+---------------------------------------------------
 
 * :download:`console-output.txt (for CrI3_U.txt) <../../resources/trilmax-2025/CrI3_U/optimize-sd/console-output.txt>`
 * :download:`INITIAL_GUESS.txt (for CrI3_U.txt) <../../resources/trilmax-2025/CrI3_U/optimize-sd/INITIAL_GUESS.txt>`
@@ -153,13 +153,13 @@ To do so run the commands
 
 .. code-block:: bash
 
-    magnopy-optimize-sd -s 5 5 1 -ss GROGU -sf reference-CrI3.txt -of optimize-sd-output-5-5-1 -hpd > console-output.txt
+    magnopy-optimize-sd -s 5 5 1 -ss GROGU -sf CrI3/reference-GROGU.txt -of CrI3/optimize-sd-output-5-5-1 -hpd > console-output.txt
 
 and
 
 .. code-block:: bash
 
-    magnopy-optimize-sd -s 5 5 1 -ss GROGU -sf reference-CrI3_U.txt -of optimize-sd-output-5-5-1 -hpd > console-output.txt
+    magnopy-optimize-sd -s 5 5 1 -ss GROGU -sf CrI3_U/reference-GROGU.txt -of CrI3_U/optimize-sd-output-5-5-1 -hpd > console-output.txt
 
 in the terminal.
 
@@ -201,8 +201,8 @@ The set of output files is the same
 
 *   "SPIN_DIRECTIONS.html"
 
-Download the files for "reference-CrI3.txt"
--------------------------------------------
+Download the files for "CrI3/reference-GROGU.txt"
+-------------------------------------------------
 
 * :download:`console-output.txt (for CrI3.txt) <../../resources/trilmax-2025/CrI3/optimize-sd-5-5-1/console-output.txt>`
 * :download:`INITIAL_GUESS.txt (for CrI3.txt) <../../resources/trilmax-2025/CrI3/optimize-sd-5-5-1/INITIAL_GUESS.txt>`
@@ -210,9 +210,8 @@ Download the files for "reference-CrI3.txt"
 * :download:`SPIN_DIRECTIONS.txt (for CrI3.txt) <../../resources/trilmax-2025/CrI3/optimize-sd-5-5-1/SPIN_DIRECTIONS.txt>`
 * :download:`SPIN_DIRECTIONS.html (for CrI3.txt) <../../resources/trilmax-2025/CrI3/optimize-sd-5-5-1/SPIN_DIRECTIONS.html>`
 
-
-Download the files for "reference-CrI3_U.txt"
----------------------------------------------
+Download the files for "CrI3_U/reference-GROGU.txt"
+---------------------------------------------------
 
 * :download:`console-output.txt (for CrI3_U.txt) <../../resources/trilmax-2025/CrI3_U/optimize-sd-5-5-1/console-output.txt>`
 * :download:`INITIAL_GUESS.txt (for CrI3_U.txt) <../../resources/trilmax-2025/CrI3_U/optimize-sd-5-5-1/INITIAL_GUESS.txt>`
