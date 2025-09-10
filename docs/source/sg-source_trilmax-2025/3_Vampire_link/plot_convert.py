@@ -14,13 +14,13 @@ Reference file can be downloaded here
 
 * For for "CrI3/reference-GROGU.txt"
 
-  * :download:`Vampire_CrI3.mat (for CrI3.txt) <../../resources/trilmax-2025/CrI3/Vampire_CrI3.mat >`
-  * :download:`Vampire_CrI3.UCF (for CrI3.txt) <../../resources/trilmax-2025/CrI3/Vampire_CrI3.UCF >`
+  * :download:`Vampire_CrI3.mat (for CrI3.txt) <../../resources/trilmax-2025/CrI3/Vampire_CrI3.mat>`
+  * :download:`Vampire_CrI3.UCF (for CrI3.txt) <../../resources/trilmax-2025/CrI3/Vampire_CrI3.UCF>`
 
 * For for "CrI3_U/reference-GROGU.txt"
 
-  * :download:`Vampire_CrI3_U.mat (for CrI3_U.txt) <../../resources/trilmax-2025/CrI3_U/Vampire_CrI3_U.mat >`
-  * :download:`Vampire_CrI3_U.UCF (for CrI3_U.txt) <../../resources/trilmax-2025/CrI3_U/Vampire_CrI3_U.UCF >`
+  * :download:`Vampire_CrI3_U.mat (for CrI3_U.txt) <../../resources/trilmax-2025/CrI3_U/Vampire_CrI3_U.mat>`
+  * :download:`Vampire_CrI3_U.UCF (for CrI3_U.txt) <../../resources/trilmax-2025/CrI3_U/Vampire_CrI3_U.UCF>`
 
 
 
