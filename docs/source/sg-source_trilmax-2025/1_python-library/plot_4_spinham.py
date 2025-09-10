@@ -216,7 +216,7 @@ pe1.show(axes_visible=False)
 # by the cut-off value.
 #
 # *   Cut-off by distance: all interaction with the distance that is shorter than cut-off
-# are added
+#     are added
 
 
 spinham.add_dipole_dipole(R_cut=2)

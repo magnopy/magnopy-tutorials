@@ -6,7 +6,7 @@ Crystal structure
 
     *   Create a crystal structure for the material of your choosing.
         Create a cell and a set of atoms. Specify all mentioned properties for each atom.
-    *   (extra) Visualize your structure using :external:py:class:`magnopy.PlotlyBackend`
+    *   (extra) Visualize your structure using :external:py:class:`magnopy.PlotlyEngine`
     *   (extra) Get conventional and primitive cell of your structure (see
         :external:py:func:`wulfric.crystal.get_primitive` and
         :external:py:func:`wulfric.crystal.get_conventional`). Visualize them. Are they
