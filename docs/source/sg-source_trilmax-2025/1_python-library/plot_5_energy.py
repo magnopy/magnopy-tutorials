@@ -12,8 +12,9 @@ Classical Energy
         Optimize the spin direction for the full Hamiltonian. Use them to compute
         energy contributions of every term.
     *   (extra) Create a Hamiltonian of the ferromagnet with an easy magnetic axis.
-        Find out numerically the value of the magnetic field that need to be applied
-        perpendicular to it in order to fully orient the spins along the magnetic field.
+        Find out numerically the value of the magnetic field that is applied
+        perpendicular to the easy axis, which fully orients the spins along the magnetic
+        field.
 
 Classical energy of the spin Hamiltonian is implemented in a separate class.
 """
