@@ -180,16 +180,16 @@ Download the files for "CrI3/reference-GROGU.txt"
 Download the files for "CrI3_U/reference-GROGU.txt"
 ---------------------------------------------------
 
-* :download:`console-output.txt (for CrI3.txt) <../../resources/trilmax-2025/CrI3/lswt/console-output.txt>`
-* :download:`SPIN_VECTORS.txt (for CrI3.txt) <../../resources/trilmax-2025/CrI3/lswt/SPIN_VECTORS.txt>`
-* :download:`SPIN_DIRECTIONS.html (for CrI3.txt) <../../resources/trilmax-2025/CrI3/lswt/SPIN_DIRECTIONS.html>`
-* :download:`HIGH-SYMMETRY_POINTS.txt (for CrI3.txt) <../../resources/trilmax-2025/CrI3/lswt/HIGH-SYMMETRY_POINTS.txt>`
-* :download:`K-POINTS.txt (for CrI3.txt) <../../resources/trilmax-2025/CrI3/lswt/K-POINTS.txt>`
-* :download:`K-POINTS.html (for CrI3.txt) <../../resources/trilmax-2025/CrI3/lswt/K-POINTS.html>`
-* :download:`OMEGAS.txt (for CrI3.txt) <../../resources/trilmax-2025/CrI3/lswt/OMEGAS.txt>`
-* :download:`OMEGAS.png (for CrI3.txt) <../../resources/trilmax-2025/CrI3/lswt/OMEGAS.png>`
-* :download:`DELTAS.txt (for CrI3.txt) <../../resources/trilmax-2025/CrI3/lswt/DELTAS.txt>`
-* :download:`DELTAS.png (for CrI3.txt) <../../resources/trilmax-2025/CrI3/lswt/DELTAS.png>`
+* :download:`console-output.txt (for CrI3.txt) <../../resources/trilmax-2025/CrI3_U/lswt/console-output.txt>`
+* :download:`SPIN_VECTORS.txt (for CrI3.txt) <../../resources/trilmax-2025/CrI3_U/lswt/SPIN_VECTORS.txt>`
+* :download:`SPIN_DIRECTIONS.html (for CrI3.txt) <../../resources/trilmax-2025/CrI3_U/lswt/SPIN_DIRECTIONS.html>`
+* :download:`HIGH-SYMMETRY_POINTS.txt (for CrI3.txt) <../../resources/trilmax-2025/CrI3_U/lswt/HIGH-SYMMETRY_POINTS.txt>`
+* :download:`K-POINTS.txt (for CrI3.txt) <../../resources/trilmax-2025/CrI3_U/lswt/K-POINTS.txt>`
+* :download:`K-POINTS.html (for CrI3.txt) <../../resources/trilmax-2025/CrI3_U/lswt/K-POINTS.html>`
+* :download:`OMEGAS.txt (for CrI3.txt) <../../resources/trilmax-2025/CrI3_U/lswt/OMEGAS.txt>`
+* :download:`OMEGAS.png (for CrI3.txt) <../../resources/trilmax-2025/CrI3_U/lswt/OMEGAS.png>`
+* :download:`DELTAS.txt (for CrI3.txt) <../../resources/trilmax-2025/CrI3_U/lswt/DELTAS.txt>`
+* :download:`DELTAS.png (for CrI3.txt) <../../resources/trilmax-2025/CrI3_U/lswt/DELTAS.png>`
 
 
 Customizing LSWT calculations
@@ -308,16 +308,16 @@ Download the files for "CrI3/reference-GROGU.txt"
 Download the files for "CrI3_U/reference-GROGU.txt"
 ---------------------------------------------------
 
-* :download:`console-output.txt (for CrI3.txt) <../../resources/trilmax-2025/CrI3/lswt-customized/console-output.txt>`
-* :download:`SPIN_VECTORS.txt (for CrI3.txt) <../../resources/trilmax-2025/CrI3/lswt-customized/SPIN_VECTORS.txt>`
-* :download:`SPIN_DIRECTIONS.html (for CrI3.txt) <../../resources/trilmax-2025/CrI3/lswt-customized/SPIN_DIRECTIONS.html>`
-* :download:`HIGH-SYMMETRY_POINTS.txt (for CrI3.txt) <../../resources/trilmax-2025/CrI3/lswt-customized/HIGH-SYMMETRY_POINTS.txt>`
-* :download:`K-POINTS.txt (for CrI3.txt) <../../resources/trilmax-2025/CrI3/lswt-customized/K-POINTS.txt>`
-* :download:`K-POINTS.html (for CrI3.txt) <../../resources/trilmax-2025/CrI3/lswt-customized/K-POINTS.html>`
-* :download:`OMEGAS.txt (for CrI3.txt) <../../resources/trilmax-2025/CrI3/lswt-customized/OMEGAS.txt>`
-* :download:`OMEGAS.png (for CrI3.txt) <../../resources/trilmax-2025/CrI3/lswt-customized/OMEGAS.png>`
-* :download:`DELTAS.txt (for CrI3.txt) <../../resources/trilmax-2025/CrI3/lswt-customized/DELTAS.txt>`
-* :download:`DELTAS.png (for CrI3.txt) <../../resources/trilmax-2025/CrI3/lswt-customized/DELTAS.png>`
+* :download:`console-output.txt (for CrI3.txt) <../../resources/trilmax-2025/CrI3_U/lswt-customized/console-output.txt>`
+* :download:`SPIN_VECTORS.txt (for CrI3.txt) <../../resources/trilmax-2025/CrI3_U/lswt-customized/SPIN_VECTORS.txt>`
+* :download:`SPIN_DIRECTIONS.html (for CrI3.txt) <../../resources/trilmax-2025/CrI3_U/lswt-customized/SPIN_DIRECTIONS.html>`
+* :download:`HIGH-SYMMETRY_POINTS.txt (for CrI3.txt) <../../resources/trilmax-2025/CrI3_U/lswt-customized/HIGH-SYMMETRY_POINTS.txt>`
+* :download:`K-POINTS.txt (for CrI3.txt) <../../resources/trilmax-2025/CrI3_U/lswt-customized/K-POINTS.txt>`
+* :download:`K-POINTS.html (for CrI3.txt) <../../resources/trilmax-2025/CrI3_U/lswt-customized/K-POINTS.html>`
+* :download:`OMEGAS.txt (for CrI3.txt) <../../resources/trilmax-2025/CrI3_U/lswt-customized/OMEGAS.txt>`
+* :download:`OMEGAS.png (for CrI3.txt) <../../resources/trilmax-2025/CrI3_U/lswt-customized/OMEGAS.png>`
+* :download:`DELTAS.txt (for CrI3.txt) <../../resources/trilmax-2025/CrI3_U/lswt-customized/DELTAS.txt>`
+* :download:`DELTAS.png (for CrI3.txt) <../../resources/trilmax-2025/CrI3_U/lswt-customized/DELTAS.png>`
 """
 
 # sphinx_gallery_thumbnail_path = 'img/gallery-thumbnails/trilmax-2025/black-box/lswt.png'
