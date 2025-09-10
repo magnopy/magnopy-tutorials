@@ -4,19 +4,19 @@ Spin Hamiltonian
 
 .. admonition:: Tutorial tasks
 
-    *   Create a spin Hamiltonian of the orthorhombic ferromagnet with tree magnetic axis
+    *   Create a spin Hamiltonian of the orthorhombic ferromagnet with tree magnetic axes
         (easy, medium and hard).
     *   Change the convention of the spin Hamiltonian. Inspect how the parameters are
         changing when you do so.
-    *   Add some magnetic field to it. check the values of the parameters of the
-        Hamiltonian that stores the magnetic field.
+    *   Add some magnetic field to it. CCheck the values of the parameters of the
+        Hamiltonian that store the magnetic field.
     *   Add magnetic dipole-dipole interaction. Test both energy and distance cut-offs.
         Which parameters of the spin Hamiltonian change?
 
 
 At the heart of magnopy is the :external:py:class:`magnopy.SpinHamiltonian`.
 
-It is created on some crystal, that has been discussed in the previous section and adds
+It is created on some crystal, which was discussed in the previous section and adds
 *interaction parameters* to it.
 
 .. _trilmax-2025_spinham_creating:
@@ -60,8 +60,9 @@ spinham = magnopy.SpinHamiltonian(cell=cell, atoms=atoms, convention=convention)
 # ===================================
 #
 # Now everything is ready to add some parameters to the spin Hamiltonian. Magnopy stores
-# the parameters in the form that is closely resemble mathematical form of the spin
-# Hamiltonian, that can be found in |magnopy-theory-spin-hamiltonian|_ page.
+# the parameters in the form that closely resembles mathematical form of the spin
+# Hamiltonian, which can be found in |magnopy-theory-spin-hamiltonian|_ page (see
+# "Expanded form").
 #
 # Magnopy supports up to four-spin terms with full tensors of the interaction parameters.
 # For the purpose of this tutorial we will focus on the first three terms of the expanded
@@ -80,11 +81,11 @@ spinham.add_22(alpha=0, beta=0, nu=(1, 0, 0), parameter=np.eye(3))
 # *   ``alpha`` and ``beta`` are indices of the lists in ``atoms``. In that example they
 #     both point to the first atom.
 # *   Due to the translation symmetry of the Hamiltonian it is enough to specify all
-#     parameters for some chosen unit cell. This unit cell is commonly labeled as ``(0, 0, 0)``.
-#     index ``alpha`` specifies the first atom, that is in ``(0, 0, 0)`` unit cell.
-#     Index ``beta`` specify the second atom, that is understood to be located in the
-#     unit cell specified by ``nu``. In the example above second atom is from ``(1, 0, 0)``
-#     unit cell.
+#     parameters for some chosen unit cell. This unit cell is commonly labeled as
+#     ``(0, 0, 0)``. Index ``alpha`` specifies the first atom, that is in ``(0, 0, 0)``
+#     unit cell. Index ``beta`` specify the second atom, that is understood to be located
+#     in the unit cell specified by ``nu``. In the example above second atom is from
+#     ``(1, 0, 0)`` unit cell.
 # *   Any parameter for the term that involves two spins is a 3x3 matrix. An isotropic
 #     parameter in the matrix form is a diagonal matrix with all diagonal elements being the
 #     same.
@@ -120,7 +121,7 @@ pe1, pe2 = magnopy.experimental.plot_spinham(
 
 # %%
 # This function returns two instances of :external:py:class:`magnopy.PlotlyEngine`. First
-# With the on-site parameters
+# - with the on-site parameters
 #
 # .. hint::
 #     Hover over the magnetic cites to see the values of parameters.
@@ -161,7 +162,7 @@ pe2.show(axes_visible=False)
 # Changing convention
 # ===================
 #
-# The parameter that are added to the Hamiltonian are expected to be compliant with the
+# All parameters that are added to the Hamiltonian are expected to be compliant with the
 # Hamiltonian's convention. The latter can always be checked with
 
 spinham.convention.summary()
@@ -181,20 +182,20 @@ spinham.convention = new_convention
 # Adding magnetic field
 # =====================
 #
-# Due to the design choices that were made in magnopy, external magnetic field take the form
-# of the parameter with one-spin/one-site (``c1``, ``add_1``, ``remove_1``). To save the
-# effort of converting the vector of magnetic field to the parameter every time magnopy has
-# a method that is convenient to use. For example, to add an external magnetic field
+# Due to the design choices that were made in magnopy, external magnetic field takes the
+# form of the one-spin/one-site parameter (``c1``, ``add_1``, ``remove_1``). To save the
+# effort of converting the vector of magnetic field to the parameter every time, magnopy
+# has a method that is convenient to use. For example, to add an external magnetic field
 # directed along the y axis with the value of 1.42 Tesla use
 
 spinham.add_magnetic_field(h=(0.0, 1.42, 0.0))
 
 # %%
 #
-# Magnetic field is store in the form of the one-spin/one-site parameter
+# Magnetic field is stored in the form of the one-spin/one-site parameter
 
 
-pe1, _ = magnopy.experimental.plot_spinham(
+pe1, pe2 = magnopy.experimental.plot_spinham(
     spinham, distance_digits=3, _sphinx_gallery_fix=True
 )
 
@@ -207,14 +208,15 @@ pe1.show(axes_visible=False)
 # Adding magnetic dipole-dipole interaction
 # =========================================
 #
-# Magnetic dipole-dipole interaction can be written ad a two-spin/two-sites parameter.
-# To save the burden of manual conversion in every use magnopy has a pre-defined method
+# Magnetic dipole-dipole interaction can be written as a two-spin/two-sites parameter.
+# To save the burden of manual conversion in every use, magnopy has a pre-defined method
 # that adds magnetic dipole-dipole interaction to the spin Hamiltonian.
 #
 # This interaction is of the long range. Currently magnopy only implements its inclusion
 # by the cut-off value.
 #
-# *   Cut-off by distance: all interaction that are shorter than cut-off are added
+# *   Cut-off by distance: all interaction with the distance that is shorter than cut-off
+# are added
 
 
 spinham.add_dipole_dipole(R_cut=2)
@@ -236,7 +238,7 @@ pe2.show(axes_visible=False, legend_position="left")
 #     cut-off are added.
 
 # Technically this line will add the dipole dipole term for the second time
-# as we did not create the new Hamiltonian again, but used the one from above.
+# as we did not create the new Hamiltonian, but used the one from above.
 # Do not do that, do not be like us.
 spinham.add_dipole_dipole(E_cut=0.5)
 
@@ -248,26 +250,27 @@ spinham.add_dipole_dipole(E_cut=0.5)
 # Arithmetic operations
 # =====================
 #
-# The mathematical form of the spin Hamiltonian involves a lot of summation. One would like
-# to easily sum two Hamiltonians to get a Hamiltonian for combined effects.
+# Mathematical form of the spin Hamiltonian involves a lot of summation. One would like
+# to easily sum two Hamiltonians to get a Hamiltonian with combined effects.
 #
 # Good news is that magnopy implements addition and subtraction of two Hamiltonians.
 # Moreover, it implements multiplication of the Hamiltonian by any number.
 #
 # .. important::
-#     For summation and subtraction the two Hamiltonians shall be defined on the same cell
+#     For summation and subtraction the Hamiltonians shall be defined on the same cell
 #     and atoms.
 #
 # .. hint::
 #
-#     To get an independent instance of spin Hamiltonian with the same cell, atoms but with
-#     all parameters removed from it you can use
-#     :external:py:meth:`magnopy.SpinHamiltonian.get_empty`
+#     To get an independent instance of spin Hamiltonian with the same cell, atoms and
+#     convention, but with no parameters you can use
+#     :external:py:meth:`magnopy.SpinHamiltonian.get_empty`.
 #
-# For example, imagine that you created the Hamiltonian with some set of parameters and you
-# would like to optimize spin direction on it and then get energy contributions of
+# For example, imagine that you created a Hamiltonian with some set of parameters and you
+# would like to optimize spin directions on it and then get energy contributions of
 # different terms. This can be done as
 
+# Get exchange term
 spinham_exchange = magnopy.SpinHamiltonian(
     cell=cell, atoms=atoms, convention=convention
 )
@@ -282,14 +285,13 @@ spinham_zeeman.add_magnetic_field(h=(1.42, 0, 0))
 spinham_dd = spinham_exchange.get_empty()
 spinham_dd.add_dipole_dipole(R_cut=20)
 
-# Next get full Hamiltonian
-
+# Finally get full Hamiltonian
 spinham_full = spinham_exchange + spinham_zeeman + spinham_dd
 
 # %%
 # Now ``spinham_full`` can be used to optimize energy and get ``spin_direction`` of the
-# local minima (covered in the next sections), then obtained ``spin_directions`` can be used
-# with each individual term to get its contribution.
+# local minima (covered in the next sections), then obtained ``spin_directions`` can be
+# used with each individual term to compute its contribution.
 
 
 # sphinx_gallery_thumbnail_path = 'img/gallery-thumbnails/trilmax-2025/python-library/spinham.png'
