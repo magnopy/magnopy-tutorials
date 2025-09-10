@@ -4,7 +4,8 @@ Linear Spin Wave theory
 
 .. admonition:: Tutorial tasks
 
-    * Use some spin Hamiltonian, compute all terms of the magnon Hamiltonian.
+    * Use one of the spin Hamiltonians from the previous tutorial and compute all terms \
+      of the magnon Hamiltonian.
     * Compute magnon dispersion of a simple ferromagnet.
     * Compute magnon dispersion of a simple antiferromagnetic.
 
@@ -48,12 +49,12 @@ print(lswt.omega(k=[0, 0, 0]))
 # Parallelization
 # ===============
 #
-# Typically one wants to compute magnon energies for a set of k-points. Sometimes for a
+# Typically one wants to compute magnon energies for a set of k-points. Often for a
 # rather large set of k-points. Magnopy offers simple interface to parallelize the
 # calculations over the k-points using multiprocessing. See
 # :external:py:func:`magnopy.multiprocess_over_k` for details.
 # For example, to compute magnon energies for the set of k-points (that are given as
-# absolute coordinates in reciprocal space), using two processors use
+# absolute coordinates in reciprocal space) using two processes use
 
 
 kpoints = np.linspace([0, 0, 0], [1, 0, 0], 1000)
