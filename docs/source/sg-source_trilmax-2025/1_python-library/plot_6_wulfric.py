@@ -21,7 +21,7 @@ We recommend to use its :external:py:class:`wulfric.Kpoints` interface. Here we 
 not the most straightforward way to interact with it, but one that give access
 for more information. Note that symmetry search in wulfric is powered by |spglib|_.
 
-Wulfric operates on the crystal structure. First we will get the information
+Wulfric operates on the crystal structure. First, get the information
 from |spglib|_ via wulfric's interface to it.
 """
 
@@ -36,13 +36,13 @@ spglib_data = wulfric.get_spglib_data(
 )
 
 # %%
-# Now one can get the information about the space group or Bravais lattice type
+# Next, get the information about the space group or Bravais lattice type
 
 print(spglib_data.space_group_number)
 print(spglib_data.crystal_family + spglib_data.centring_type)
 
 # %%
-# Now we can create an instance of :external:py:class:`wulfric.Kpoints` class with one of
+# Now you can create an instance of :external:py:class:`wulfric.Kpoints` class with one of
 # the implemented |wulfric-conventions|_ for the automatic choice of the high-symmetry
 # points and k-path.
 
@@ -93,7 +93,7 @@ kp = wulfric.Kpoints.from_crystal(
 
 
 # %%
-# Now those objects provide a simple interface
+# The objects above provide a simple interface
 #
 # *   For calculations (:external:py:meth:`wulfric.Kpoints.points`)
 
