@@ -5,6 +5,7 @@ Introducing magnopy
 .. admonition:: Tutorial tasks
 
     *   Install magnopy
+    *   Check that you have version 0.2.0 available
 
 First of all, |magnopy|_ shall be installed. For the full guide on installation you can
 read |magnopy-installation|_. For using magnopy in the school you need to install magnopy right within the
