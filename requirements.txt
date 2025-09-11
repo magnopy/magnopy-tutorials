@@ -18,3 +18,6 @@ ipython
 nbformat
 
 magnopy==0.2.0
+
+
+tqdm
