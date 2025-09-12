@@ -13,5 +13,10 @@ TRILMAX summer school (8-12 September of 2025)
 This tutorial was first given in the |TRILMAX-summer-school|_ organized by the
 |TRILMAX-consortium|_.
 
+:download:`Slides from the school <../resources/trilmax-2025/Magnopy.pptx>`
+
+
+
+
 
 
