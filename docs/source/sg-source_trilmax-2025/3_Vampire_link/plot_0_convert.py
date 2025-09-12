@@ -10,15 +10,17 @@ So in order to run a simulation in |vampire|_, using parameters of a material, t
 computed by |GROGU|_ or |TB2J|_ one have to convert the data from those codes to the
 material file (.mat) and unit cell file (.UCF) of |vampire|_.
 
-Reference file can be downloaded here
+Reference files can be downloaded here
 
 * For for "CrI3/reference-GROGU.txt"
 
+  * :download:`CrI3/reference-GROGU.txt <../../resources/trilmax-2025/CrI3/reference-GROGU.txt>`
   * :download:`Vampire_CrI3.mat (for CrI3.txt) <../../resources/trilmax-2025/CrI3/Vampire_CrI3.mat>`
   * :download:`Vampire_CrI3.UCF (for CrI3.txt) <../../resources/trilmax-2025/CrI3/Vampire_CrI3.UCF>`
 
 * For for "CrI3_U/reference-GROGU.txt"
 
+  * :download:`CrI3_U/reference-GROGU.txt <../../resources/trilmax-2025/CrI3_U/reference-GROGU.txt>`
   * :download:`Vampire_CrI3_U.mat (for CrI3_U.txt) <../../resources/trilmax-2025/CrI3_U/Vampire_CrI3_U.mat>`
   * :download:`Vampire_CrI3_U.UCF (for CrI3_U.txt) <../../resources/trilmax-2025/CrI3_U/Vampire_CrI3_U.UCF>`
 
@@ -34,7 +36,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Change those variables to convert other files
-INPUT_FILE = "../../resources/trilmax-2025/CrI3/reference-CrI3.txt"
+INPUT_FILE = "../../resources/trilmax-2025/CrI3/reference-GROGU.txt"
 VAMPIRE_SEEDNAME = "Vampire_CrI3"
 
 # INPUT_FILE = "../../resources/trilmax-2025/CrI3_U/reference-CrI3.txt"

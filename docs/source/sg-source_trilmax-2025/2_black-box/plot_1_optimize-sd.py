@@ -18,8 +18,12 @@ Below we give two examples that were run on the reference files from |GROGU|_.
 Two reference files can be found in the ``Tutorial_2/magnopy-as-a-black-box`` folder.
 
 Each example is run for each file. We use files that were produced by the run on the
-"reference-CrI3.txt" |GROGU|_ file. Links for downloading equivalent files for
-"reference-CrI3_U.txt" can be found at the end of each section
+"reference-CrI3.txt" |GROGU|_ file. Here are the reference input files:
+
+* :download:`CrI3/reference-GROGU.txt <../../resources/trilmax-2025/CrI3/reference-GROGU.txt>`
+* :download:`CrI3_U/reference-GROGU.txt <../../resources/trilmax-2025/CrI3_U/reference-GROGU.txt>`
+
+Links for downloading reference output files for can be found at the end of each section.
 
 Optimization on the unit cell
 =============================

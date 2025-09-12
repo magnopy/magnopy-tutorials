@@ -36,6 +36,10 @@ clean:
 
 html:
 	@$(SPHINXBUILD) -M html "docs/$(SOURCEDIR)" "docs/$(BUILDDIR)" $(SPHINXOPTS)
+	-@rm docs/source/sg-source_trilmax-2025/3_Vampire_link/Vampire_CrI3.mat
+	-@rm docs/source/sg-source_trilmax-2025/3_Vampire_link/Vampire_CrI3.UCF
+	-@rm docs/source/sg-source_trilmax-2025/3_Vampire_link/Vampire_CrI3_U.mat
+	-@rm docs/source/sg-source_trilmax-2025/3_Vampire_link/Vampire_CrI3_U.UCF
 
 clean-html: clean html
 	@echo "Done"

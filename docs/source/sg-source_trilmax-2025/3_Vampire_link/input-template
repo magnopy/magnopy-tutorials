@@ -10,7 +10,7 @@
 #                     License: GNU GPLv3                      ███   ▄▄  
 #           Copyright (C) 2023-2025  Magnopy Team             ████ █  █ 
 #                                                             ████    █ 
-#         Generated on 11 September 2025 at 18:3:27           ▀▀▀▀▀▀▀▀  
+#        Generated on 12 September 2025 at 12:32:51           ▀▀▀▀▀▀▀▀  
 #------------------------------------------
 material:file=Vampire_CrI3.mat
 material:unit-cell-file = Vampire_CrI3.UCF
