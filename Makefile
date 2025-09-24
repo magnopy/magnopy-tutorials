@@ -31,6 +31,7 @@ clean:
 	-@rm -r build
 	-@rm -r dist
 	-@rm -r docs/source/trilmax-2025
+	-@rm -r docs/source/master-tutorial
 
 
 

@@ -4,19 +4,11 @@
 TRILMAX summer school (8-12 September of 2025)
 **********************************************
 
-**Target magnopy's version**: v0.2.0
+**Target magnopy's version**: v0.2.1
 
-**First published**: 10 September 2025
-
-**Last updated**: 10 September 2025
-
-This tutorial was first given in the |TRILMAX-summer-school|_ organized by the
+This tutorial was given in the |TRILMAX-summer-school|_ organized by the
 |TRILMAX-consortium|_.
 
 :download:`Slides from the school <../resources/trilmax-2025/Magnopy.pptx>`
-
-
-
-
 
 
