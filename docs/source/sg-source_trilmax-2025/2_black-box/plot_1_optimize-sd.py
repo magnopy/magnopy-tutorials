@@ -230,4 +230,4 @@ Download the files for "CrI3_U/reference-GROGU.txt"
 
 """
 
-# sphinx_gallery_thumbnail_path = 'img/gallery-thumbnails/trilmax-2025/black-box/optimize-sd.png'
+# sphinx_gallery_thumbnail_path = 'img/cat-numbers/1.png'

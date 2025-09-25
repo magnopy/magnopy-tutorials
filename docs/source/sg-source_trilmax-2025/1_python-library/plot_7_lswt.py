@@ -75,4 +75,4 @@ print(results[42])
 print(lswt.omega(k=kpoints[42], relative=False))
 
 
-# sphinx_gallery_thumbnail_path = 'img/gallery-thumbnails/trilmax-2025/python-library/lswt.png'
+# sphinx_gallery_thumbnail_path = 'img/cat-numbers/7.png'

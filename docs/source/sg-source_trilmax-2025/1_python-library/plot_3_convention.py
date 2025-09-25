@@ -118,4 +118,4 @@ modified = convention.get_modified(c31=1)
 modified.summary()
 
 
-# sphinx_gallery_thumbnail_path = 'img/gallery-thumbnails/trilmax-2025/python-library/convention.png'
+# sphinx_gallery_thumbnail_path = 'img/cat-numbers/3.png'

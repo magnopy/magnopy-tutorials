@@ -106,4 +106,4 @@ pe.plot_atoms(cell, atoms, legend_label="Atoms of the unit cell")
 
 pe.show(axes_visible=False)
 
-# sphinx_gallery_thumbnail_path = 'img/gallery-thumbnails/trilmax-2025/python-library/crystal.png'
+# sphinx_gallery_thumbnail_path = 'img/cat-numbers/2.png'

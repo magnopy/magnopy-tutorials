@@ -115,4 +115,4 @@ ax.set_xlim(kp.ticks()[0], kp.ticks()[-1])
 
 plt.show()
 
-# sphinx_gallery_thumbnail_path = 'img/gallery-thumbnails/trilmax-2025/python-library/wulfric.png'
+# sphinx_gallery_thumbnail_path = 'img/cat-numbers/6.png'

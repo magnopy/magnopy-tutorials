@@ -325,4 +325,4 @@ Download the files for "CrI3_U/reference-GROGU.txt"
 * :download:`DELTAS.png (for CrI3.txt) <../../resources/trilmax-2025/CrI3_U/lswt-customized/DELTAS.png>`
 """
 
-# sphinx_gallery_thumbnail_path = 'img/gallery-thumbnails/trilmax-2025/black-box/lswt.png'
+# sphinx_gallery_thumbnail_path = 'img/cat-numbers/2.png'

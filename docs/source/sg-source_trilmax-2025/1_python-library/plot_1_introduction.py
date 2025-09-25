@@ -56,4 +56,4 @@ print(magnopy.logo())
 #     Check that you have magnopy version ``v0.2.0``.
 
 
-# sphinx_gallery_thumbnail_path = 'img/gallery-thumbnails/trilmax-2025/python-library/introduction.png'
+# sphinx_gallery_thumbnail_path = 'img/cat-numbers/1.png'

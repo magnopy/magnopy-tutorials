@@ -44,4 +44,4 @@ print(optimized_sd)
 print(energy(optimized_sd))
 
 
-# sphinx_gallery_thumbnail_path = 'img/gallery-thumbnails/trilmax-2025/python-library/energy.png'
+# sphinx_gallery_thumbnail_path = 'img/cat-numbers/5.png'

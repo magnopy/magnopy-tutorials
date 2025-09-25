@@ -166,4 +166,4 @@ plot_spins(
 )
 
 
-# sphinx_gallery_thumbnail_path = 'img/gallery-thumbnails/trilmax-2025/vampire-link/1.png'
+# sphinx_gallery_thumbnail_path = 'img/cat-numbers/1.png'

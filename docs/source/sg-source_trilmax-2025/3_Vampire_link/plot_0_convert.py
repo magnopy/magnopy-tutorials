@@ -216,4 +216,4 @@ pe2.show(axes_visible=False, legend_position="left")
 
 pe2_new.show(axes_visible=False, legend_position="left")
 
-# sphinx_gallery_thumbnail_path = 'img/gallery-thumbnails/trilmax-2025/vampire-link/0.png'
+# sphinx_gallery_thumbnail_path = 'img/cat-numbers/0.png'

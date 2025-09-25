@@ -294,4 +294,4 @@ spinham_full = spinham_exchange + spinham_zeeman + spinham_dd
 # used with each individual term to compute its contribution.
 
 
-# sphinx_gallery_thumbnail_path = 'img/gallery-thumbnails/trilmax-2025/python-library/spinham.png'
+# sphinx_gallery_thumbnail_path = 'img/cat-numbers/4.png'

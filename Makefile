@@ -49,3 +49,7 @@ clean-html: clean html
 # Tests
 doctest:
 	@$(SPHINXBUILD) -b doctest "docs/$(SOURCEDIR)" "docs/$(BUILDDIR)" $(SPHINXOPTS)
+
+cats:
+	-@rm docs/source/img/cat-numbers/*
+	@python dev-tools/generate-cat-numbers.py
