@@ -23,6 +23,7 @@
 import sys
 from datetime import datetime
 from os.path import abspath, join
+from magnopy import __version__ as version
 
 sys.path.insert(0, abspath(join("..", "..")))
 
@@ -126,7 +127,7 @@ html_context = {
 ##########################################################################################
 
 # Custom variables with access from .rst files and docstrings
-variables_to_export = ["project", "copyright"]
+variables_to_export = ["project", "copyright", "version"]
 
 frozen_locals = dict(locals())
 rst_epilog = "\n".join(
