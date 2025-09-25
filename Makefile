@@ -30,17 +30,12 @@ clean:
 	-@rm -r docs/source/*/*/*/generated
 	-@rm -r build
 	-@rm -r dist
-	-@rm -r docs/source/trilmax-2025
 	-@rm -r docs/source/master-tutorial
 
 
 
 html:
 	@$(SPHINXBUILD) -M html "docs/$(SOURCEDIR)" "docs/$(BUILDDIR)" $(SPHINXOPTS)
-	-@rm docs/source/sg-source_trilmax-2025/3_Vampire_link/Vampire_CrI3.mat
-	-@rm docs/source/sg-source_trilmax-2025/3_Vampire_link/Vampire_CrI3.UCF
-	-@rm docs/source/sg-source_trilmax-2025/3_Vampire_link/Vampire_CrI3_U.mat
-	-@rm docs/source/sg-source_trilmax-2025/3_Vampire_link/Vampire_CrI3_U.UCF
 
 clean-html: clean html
 	@echo "Done"

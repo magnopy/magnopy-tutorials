@@ -19,7 +19,6 @@ docs/_build
 
 # Sphinx gallery
 docs/source/sg_execution_times.rst
-docs/source/trilmax-2025
 docs/source/master-tutorial
 
 # Vampire files

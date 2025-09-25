@@ -1,0 +1,18 @@
+{
+ "magnopy.logo": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "function"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "logo"
+  }
+ ]
+}

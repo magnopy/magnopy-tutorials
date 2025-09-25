@@ -1,0 +1,207 @@
+{
+ "convention": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham._convention",
+   "module_short": "magnopy",
+   "name": "Convention"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "Convention"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "Convention"
+  }
+ ],
+ "convention.get_modified": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham._convention",
+   "module_short": "magnopy",
+   "name": "Convention.get_modified"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "Convention.get_modified"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "Convention.get_modified"
+  }
+ ],
+ "convention.multiple_counting": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham._convention",
+   "module_short": "magnopy",
+   "name": "Convention.multiple_counting"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "Convention.multiple_counting"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "Convention.multiple_counting"
+  }
+ ],
+ "convention.summary": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham._convention",
+   "module_short": "magnopy",
+   "name": "Convention.summary"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "Convention.summary"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "Convention.summary"
+  }
+ ],
+ "magnopy.Convention": [
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "magnopy._spinham._convention",
+   "module_short": "magnopy",
+   "name": "Convention"
+  },
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "Convention"
+  },
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "Convention"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "Convention"
+  },
+  {
+   "is_class": false,
+   "is_explicit": true,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "Convention"
+  },
+  {
+   "is_class": false,
+   "is_explicit": true,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "Convention"
+  },
+  {
+   "is_class": false,
+   "is_explicit": true,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "Convention"
+  }
+ ],
+ "magnopy.Convention.get_predefined": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "function"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy.Convention",
+   "module_short": "magnopy.Convention",
+   "name": "get_predefined"
+  }
+ ],
+ "modified": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham._convention",
+   "module_short": "magnopy",
+   "name": "Convention"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "Convention"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "Convention"
+  }
+ ],
+ "modified.summary": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham._convention",
+   "module_short": "magnopy",
+   "name": "Convention.summary"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "Convention.summary"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "Convention.summary"
+  }
+ ]
+}

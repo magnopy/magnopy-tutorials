@@ -1,0 +1,850 @@
+{
+ "_": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.figure",
+   "module_short": "matplotlib.figure",
+   "name": "Figure"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "Figure"
+  }
+ ],
+ "ax": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes._axes",
+   "module_short": "matplotlib.axes",
+   "name": "Axes"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes",
+   "module_short": "matplotlib.axes",
+   "name": "Axes"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "Axes"
+  }
+ ],
+ "ax.get_xaxis_transform": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes._axes",
+   "module_short": "matplotlib.axes",
+   "name": "Axes.get_xaxis_transform"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes",
+   "module_short": "matplotlib.axes",
+   "name": "Axes.get_xaxis_transform"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "Axes.get_xaxis_transform"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes._base",
+   "module_short": "matplotlib.axes._base",
+   "name": "_AxesBase.get_xaxis_transform"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes",
+   "module_short": "matplotlib.axes",
+   "name": "_AxesBase.get_xaxis_transform"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "_AxesBase.get_xaxis_transform"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.artist",
+   "module_short": "matplotlib.artist",
+   "name": "Artist.get_xaxis_transform"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "Artist.get_xaxis_transform"
+  }
+ ],
+ "ax.plot": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes._axes",
+   "module_short": "matplotlib.axes",
+   "name": "Axes.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes",
+   "module_short": "matplotlib.axes",
+   "name": "Axes.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "Axes.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes._base",
+   "module_short": "matplotlib.axes._base",
+   "name": "_AxesBase.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes",
+   "module_short": "matplotlib.axes",
+   "name": "_AxesBase.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "_AxesBase.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.artist",
+   "module_short": "matplotlib.artist",
+   "name": "Artist.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "Artist.plot"
+  }
+ ],
+ "ax.set_xlim": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes._axes",
+   "module_short": "matplotlib.axes",
+   "name": "Axes.set_xlim"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes",
+   "module_short": "matplotlib.axes",
+   "name": "Axes.set_xlim"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "Axes.set_xlim"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes._base",
+   "module_short": "matplotlib.axes._base",
+   "name": "_AxesBase.set_xlim"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes",
+   "module_short": "matplotlib.axes",
+   "name": "_AxesBase.set_xlim"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "_AxesBase.set_xlim"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.artist",
+   "module_short": "matplotlib.artist",
+   "name": "Artist.set_xlim"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "Artist.set_xlim"
+  }
+ ],
+ "ax.set_xticks": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes._axes",
+   "module_short": "matplotlib.axes",
+   "name": "Axes.set_xticks"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes",
+   "module_short": "matplotlib.axes",
+   "name": "Axes.set_xticks"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "Axes.set_xticks"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes._base",
+   "module_short": "matplotlib.axes._base",
+   "name": "_AxesBase.set_xticks"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes",
+   "module_short": "matplotlib.axes",
+   "name": "_AxesBase.set_xticks"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "_AxesBase.set_xticks"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.artist",
+   "module_short": "matplotlib.artist",
+   "name": "Artist.set_xticks"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "Artist.set_xticks"
+  }
+ ],
+ "ax.vlines": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes._axes",
+   "module_short": "matplotlib.axes",
+   "name": "Axes.vlines"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes",
+   "module_short": "matplotlib.axes",
+   "name": "Axes.vlines"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "Axes.vlines"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes._base",
+   "module_short": "matplotlib.axes._base",
+   "name": "_AxesBase.vlines"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes",
+   "module_short": "matplotlib.axes",
+   "name": "_AxesBase.vlines"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "_AxesBase.vlines"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.artist",
+   "module_short": "matplotlib.artist",
+   "name": "Artist.vlines"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "Artist.vlines"
+  }
+ ],
+ "kp": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric._kpoints_class",
+   "module_short": "wulfric",
+   "name": "Kpoints"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric",
+   "module_short": "wulfric",
+   "name": "Kpoints"
+  }
+ ],
+ "kp.flat_points": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric._kpoints_class",
+   "module_short": "wulfric",
+   "name": "Kpoints.flat_points"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric",
+   "module_short": "wulfric",
+   "name": "Kpoints.flat_points"
+  }
+ ],
+ "kp.labels": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric._kpoints_class",
+   "module_short": "wulfric",
+   "name": "Kpoints.labels"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric",
+   "module_short": "wulfric",
+   "name": "Kpoints.labels"
+  }
+ ],
+ "kp.points": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric._kpoints_class",
+   "module_short": "wulfric",
+   "name": "Kpoints.points"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric",
+   "module_short": "wulfric",
+   "name": "Kpoints.points"
+  }
+ ],
+ "kp.ticks": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric._kpoints_class",
+   "module_short": "wulfric",
+   "name": "Kpoints.ticks"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric",
+   "module_short": "wulfric",
+   "name": "Kpoints.ticks"
+  }
+ ],
+ "kp_hpkot": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric._kpoints_class",
+   "module_short": "wulfric",
+   "name": "Kpoints"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric",
+   "module_short": "wulfric",
+   "name": "Kpoints"
+  }
+ ],
+ "kp_sc": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric._kpoints_class",
+   "module_short": "wulfric",
+   "name": "Kpoints"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric",
+   "module_short": "wulfric",
+   "name": "Kpoints"
+  }
+ ],
+ "lswt": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._lswt",
+   "module_short": "magnopy",
+   "name": "LSWT"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "LSWT"
+  }
+ ],
+ "lswt.omega": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._lswt",
+   "module_short": "magnopy",
+   "name": "LSWT.omega"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "LSWT.omega"
+  }
+ ],
+ "magnopy.LSWT": [
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "magnopy._lswt",
+   "module_short": "magnopy",
+   "name": "LSWT"
+  },
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "LSWT"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "LSWT"
+  }
+ ],
+ "magnopy.examples.cubic_ferro_nn": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "function"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy.examples",
+   "module_short": "magnopy.examples",
+   "name": "cubic_ferro_nn"
+  }
+ ],
+ "omegas": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "list"
+  }
+ ],
+ "pe": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric._plotly_engine",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine"
+  }
+ ],
+ "pe.plot_cell": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric._plotly_engine",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine.plot_cell"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine.plot_cell"
+  }
+ ],
+ "pe.plot_kpath": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric._plotly_engine",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine.plot_kpath"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine.plot_kpath"
+  }
+ ],
+ "pe.plot_kpoints": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric._plotly_engine",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine.plot_kpoints"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine.plot_kpoints"
+  }
+ ],
+ "pe.show": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric._plotly_engine",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine.show"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine.show"
+  }
+ ],
+ "plt.show": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "function"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.pyplot",
+   "module_short": "matplotlib.pyplot",
+   "name": "show"
+  }
+ ],
+ "plt.subplots": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "function"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.pyplot",
+   "module_short": "matplotlib.pyplot",
+   "name": "subplots"
+  }
+ ],
+ "spglib_data": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric._syntactic_sugar",
+   "module_short": "wulfric",
+   "name": "SyntacticSugar"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric",
+   "module_short": "wulfric",
+   "name": "SyntacticSugar"
+  }
+ ],
+ "spglib_data.centring_type": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "str"
+  }
+ ],
+ "spglib_data.crystal_family": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "str"
+  }
+ ],
+ "spglib_data.space_group_number": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "int"
+  }
+ ],
+ "spinham": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham._hamiltonian",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian"
+  }
+ ],
+ "spinham.atoms": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham._hamiltonian",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.atoms"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.atoms"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.atoms"
+  }
+ ],
+ "spinham.cell": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham._hamiltonian",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.cell"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.cell"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.cell"
+  }
+ ],
+ "wulfric.Kpoints": [
+  {
+   "is_class": false,
+   "is_explicit": true,
+   "module": "wulfric",
+   "module_short": "wulfric",
+   "name": "Kpoints"
+  },
+  {
+   "is_class": false,
+   "is_explicit": true,
+   "module": "wulfric",
+   "module_short": "wulfric",
+   "name": "Kpoints"
+  }
+ ],
+ "wulfric.Kpoints.from_crystal": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "function"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric.Kpoints",
+   "module_short": "wulfric.Kpoints",
+   "name": "from_crystal"
+  }
+ ],
+ "wulfric.Kpoints.points": [
+  {
+   "is_class": false,
+   "is_explicit": true,
+   "module": "wulfric.Kpoints",
+   "module_short": "wulfric.Kpoints",
+   "name": "points"
+  }
+ ],
+ "wulfric.PlotlyEngine": [
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "wulfric._plotly_engine",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine"
+  },
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "wulfric",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine"
+  },
+  {
+   "is_class": false,
+   "is_explicit": true,
+   "module": "wulfric",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine"
+  }
+ ],
+ "wulfric.cell.get_reciprocal": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "function"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric.cell",
+   "module_short": "wulfric.cell",
+   "name": "get_reciprocal"
+  }
+ ],
+ "wulfric.get_spglib_data": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "function"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric",
+   "module_short": "wulfric",
+   "name": "get_spglib_data"
+  }
+ ]
+}

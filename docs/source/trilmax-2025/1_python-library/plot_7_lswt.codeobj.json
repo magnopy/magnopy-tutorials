@@ -1,0 +1,192 @@
+{
+ "kpoints": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "numpy",
+   "module_short": "numpy",
+   "name": "ndarray"
+  }
+ ],
+ "lswt": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._lswt",
+   "module_short": "magnopy",
+   "name": "LSWT"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "LSWT"
+  }
+ ],
+ "lswt.E_2": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._lswt",
+   "module_short": "magnopy",
+   "name": "LSWT.E_2"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "LSWT.E_2"
+  }
+ ],
+ "lswt.O": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._lswt",
+   "module_short": "magnopy",
+   "name": "LSWT.O"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "LSWT.O"
+  }
+ ],
+ "lswt.omega": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._lswt",
+   "module_short": "magnopy",
+   "name": "LSWT.omega"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "LSWT.omega"
+  }
+ ],
+ "magnopy.LSWT": [
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "magnopy._lswt",
+   "module_short": "magnopy",
+   "name": "LSWT"
+  },
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "LSWT"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "LSWT"
+  },
+  {
+   "is_class": false,
+   "is_explicit": true,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "LSWT"
+  }
+ ],
+ "magnopy.examples.cubic_ferro_nn": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "function"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy.examples",
+   "module_short": "magnopy.examples",
+   "name": "cubic_ferro_nn"
+  }
+ ],
+ "magnopy.multiprocess_over_k": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "function"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "multiprocess_over_k"
+  },
+  {
+   "is_class": false,
+   "is_explicit": true,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "multiprocess_over_k"
+  }
+ ],
+ "np.linspace": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "numpy",
+   "module_short": "numpy",
+   "name": "_ArrayFunctionDispatcher"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "numpy",
+   "module_short": "numpy",
+   "name": "linspace"
+  }
+ ],
+ "results": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "list"
+  }
+ ],
+ "spinham": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham._hamiltonian",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian"
+  }
+ ]
+}

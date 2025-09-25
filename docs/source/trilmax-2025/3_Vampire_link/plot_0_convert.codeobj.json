@@ -1,0 +1,1025 @@
+{
+ "INPUT_FILE": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "str"
+  }
+ ],
+ "VAMPIRE_SEEDNAME": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "str"
+  }
+ ],
+ "a1": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "numpy",
+   "module_short": "numpy",
+   "name": "ndarray"
+  }
+ ],
+ "a2": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "numpy",
+   "module_short": "numpy",
+   "name": "ndarray"
+  }
+ ],
+ "a3": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "numpy",
+   "module_short": "numpy",
+   "name": "ndarray"
+  }
+ ],
+ "abs_positions": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "numpy",
+   "module_short": "numpy",
+   "name": "ndarray"
+  }
+ ],
+ "ax": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes._axes",
+   "module_short": "matplotlib.axes",
+   "name": "Axes"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes",
+   "module_short": "matplotlib.axes",
+   "name": "Axes"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "Axes"
+  }
+ ],
+ "ax.plot": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes._axes",
+   "module_short": "matplotlib.axes",
+   "name": "Axes.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes",
+   "module_short": "matplotlib.axes",
+   "name": "Axes.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "Axes.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes._base",
+   "module_short": "matplotlib.axes._base",
+   "name": "_AxesBase.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes",
+   "module_short": "matplotlib.axes",
+   "name": "_AxesBase.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "_AxesBase.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.artist",
+   "module_short": "matplotlib.artist",
+   "name": "Artist.plot"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "Artist.plot"
+  }
+ ],
+ "ax.set_aspect": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes._axes",
+   "module_short": "matplotlib.axes",
+   "name": "Axes.set_aspect"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes",
+   "module_short": "matplotlib.axes",
+   "name": "Axes.set_aspect"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "Axes.set_aspect"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes._base",
+   "module_short": "matplotlib.axes._base",
+   "name": "_AxesBase.set_aspect"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes",
+   "module_short": "matplotlib.axes",
+   "name": "_AxesBase.set_aspect"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "_AxesBase.set_aspect"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.artist",
+   "module_short": "matplotlib.artist",
+   "name": "Artist.set_aspect"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "Artist.set_aspect"
+  }
+ ],
+ "ax.set_xlabel": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes._axes",
+   "module_short": "matplotlib.axes",
+   "name": "Axes.set_xlabel"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes",
+   "module_short": "matplotlib.axes",
+   "name": "Axes.set_xlabel"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "Axes.set_xlabel"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes._base",
+   "module_short": "matplotlib.axes._base",
+   "name": "_AxesBase.set_xlabel"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes",
+   "module_short": "matplotlib.axes",
+   "name": "_AxesBase.set_xlabel"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "_AxesBase.set_xlabel"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.artist",
+   "module_short": "matplotlib.artist",
+   "name": "Artist.set_xlabel"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "Artist.set_xlabel"
+  }
+ ],
+ "ax.set_ylabel": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes._axes",
+   "module_short": "matplotlib.axes",
+   "name": "Axes.set_ylabel"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes",
+   "module_short": "matplotlib.axes",
+   "name": "Axes.set_ylabel"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "Axes.set_ylabel"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes._base",
+   "module_short": "matplotlib.axes._base",
+   "name": "_AxesBase.set_ylabel"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.axes",
+   "module_short": "matplotlib.axes",
+   "name": "_AxesBase.set_ylabel"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "_AxesBase.set_ylabel"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.artist",
+   "module_short": "matplotlib.artist",
+   "name": "Artist.set_ylabel"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "Artist.set_ylabel"
+  }
+ ],
+ "fig": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.figure",
+   "module_short": "matplotlib.figure",
+   "name": "Figure"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "Figure"
+  }
+ ],
+ "fig.show": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.figure",
+   "module_short": "matplotlib.figure",
+   "name": "Figure.show"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "Figure.show"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.figure",
+   "module_short": "matplotlib.figure",
+   "name": "FigureBase.show"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "FigureBase.show"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.artist",
+   "module_short": "matplotlib.artist",
+   "name": "Artist.show"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib",
+   "module_short": "matplotlib",
+   "name": "Artist.show"
+  }
+ ],
+ "i": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "int"
+  }
+ ],
+ "j": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "int"
+  }
+ ],
+ "magnopy.PlotlyEngine": [
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "magnopy._plotly_engine",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine"
+  },
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine"
+  },
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "wulfric._plotly_engine",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine"
+  },
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "wulfric",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine"
+  }
+ ],
+ "magnopy.experimental.change_cell": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "function"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy.experimental",
+   "module_short": "magnopy.experimental",
+   "name": "change_cell"
+  }
+ ],
+ "magnopy.experimental.plot_spinham": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "function"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy.experimental",
+   "module_short": "magnopy.experimental",
+   "name": "plot_spinham"
+  }
+ ],
+ "magnopy.io.dump_vampire": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "function"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy.io",
+   "module_short": "magnopy.io",
+   "name": "dump_vampire"
+  }
+ ],
+ "magnopy.io.load_grogu": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "function"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy.io",
+   "module_short": "magnopy.io",
+   "name": "load_grogu"
+  }
+ ],
+ "new_a1": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "numpy",
+   "module_short": "numpy",
+   "name": "ndarray"
+  }
+ ],
+ "new_a2": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "numpy",
+   "module_short": "numpy",
+   "name": "ndarray"
+  }
+ ],
+ "new_spinham": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham._hamiltonian",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian"
+  }
+ ],
+ "new_spinham.p22": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham._hamiltonian",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.p22"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.p22"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.p22"
+  }
+ ],
+ "np.array": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "builtin_function_or_method"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "numpy",
+   "module_short": "numpy",
+   "name": "array"
+  }
+ ],
+ "np.newaxis": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "NoneType"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "numpy",
+   "module_short": "numpy",
+   "name": "newaxis"
+  }
+ ],
+ "pe": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._plotly_engine",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine"
+  }
+ ],
+ "pe.plot_atoms": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._plotly_engine",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine.plot_atoms"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine.plot_atoms"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric._plotly_engine",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine.plot_atoms"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine.plot_atoms"
+  }
+ ],
+ "pe.plot_cell": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._plotly_engine",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine.plot_cell"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine.plot_cell"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric._plotly_engine",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine.plot_cell"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine.plot_cell"
+  }
+ ],
+ "pe.show": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._plotly_engine",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine.show"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine.show"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric._plotly_engine",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine.show"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine.show"
+  }
+ ],
+ "pe1": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._plotly_engine",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine"
+  }
+ ],
+ "pe1.show": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._plotly_engine",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine.show"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine.show"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric._plotly_engine",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine.show"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine.show"
+  }
+ ],
+ "pe1_new": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._plotly_engine",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine"
+  }
+ ],
+ "pe1_new.show": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._plotly_engine",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine.show"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine.show"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric._plotly_engine",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine.show"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine.show"
+  }
+ ],
+ "pe2": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._plotly_engine",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine"
+  }
+ ],
+ "pe2.show": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._plotly_engine",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine.show"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine.show"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric._plotly_engine",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine.show"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine.show"
+  }
+ ],
+ "pe2_new": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._plotly_engine",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine"
+  }
+ ],
+ "pe2_new.show": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._plotly_engine",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine.show"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine.show"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric._plotly_engine",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine.show"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine.show"
+  }
+ ],
+ "plot_cell": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "function"
+  }
+ ],
+ "plt.subplots": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "function"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "matplotlib.pyplot",
+   "module_short": "matplotlib.pyplot",
+   "name": "subplots"
+  }
+ ],
+ "shift": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "numpy",
+   "module_short": "numpy",
+   "name": "ndarray"
+  }
+ ],
+ "spinham": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham._hamiltonian",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian"
+  }
+ ],
+ "spinham.atoms": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham._hamiltonian",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.atoms"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.atoms"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.atoms"
+  }
+ ],
+ "spinham.atoms.positions": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham._hamiltonian",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.atoms"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.atoms"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.atoms"
+  }
+ ],
+ "spinham.cell": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham._hamiltonian",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.cell"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.cell"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.cell"
+  }
+ ],
+ "spinham.p22": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham._hamiltonian",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.p22"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.p22"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.p22"
+  }
+ ]
+}

@@ -1,0 +1,775 @@
+{
+ "_": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._plotly_engine",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine"
+  }
+ ],
+ "alpha": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "int"
+  }
+ ],
+ "atoms": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "dict"
+  }
+ ],
+ "beta": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "int"
+  }
+ ],
+ "cell": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "numpy",
+   "module_short": "numpy",
+   "name": "ndarray"
+  }
+ ],
+ "convention": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham._convention",
+   "module_short": "magnopy",
+   "name": "Convention"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "Convention"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "Convention"
+  }
+ ],
+ "magnopy.Convention": [
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "magnopy._spinham._convention",
+   "module_short": "magnopy",
+   "name": "Convention"
+  },
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "Convention"
+  },
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "Convention"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "Convention"
+  }
+ ],
+ "magnopy.Convention.get_predefined": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "function"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy.Convention",
+   "module_short": "magnopy.Convention",
+   "name": "get_predefined"
+  }
+ ],
+ "magnopy.PlotlyEngine": [
+  {
+   "is_class": false,
+   "is_explicit": true,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine"
+  }
+ ],
+ "magnopy.SpinHamiltonian": [
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "magnopy._spinham._hamiltonian",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian"
+  },
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian"
+  },
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian"
+  },
+  {
+   "is_class": false,
+   "is_explicit": true,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian"
+  }
+ ],
+ "magnopy.SpinHamiltonian.add_dipole_dipole": [
+  {
+   "is_class": false,
+   "is_explicit": true,
+   "module": "magnopy.SpinHamiltonian",
+   "module_short": "magnopy.SpinHamiltonian",
+   "name": "add_dipole_dipole"
+  }
+ ],
+ "magnopy.SpinHamiltonian.get_empty": [
+  {
+   "is_class": false,
+   "is_explicit": true,
+   "module": "magnopy.SpinHamiltonian",
+   "module_short": "magnopy.SpinHamiltonian",
+   "name": "get_empty"
+  }
+ ],
+ "magnopy.converter22.from_dmi": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "function"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy.converter22",
+   "module_short": "magnopy.converter22",
+   "name": "from_dmi"
+  }
+ ],
+ "magnopy.converter22.from_iso": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "function"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy.converter22",
+   "module_short": "magnopy.converter22",
+   "name": "from_iso"
+  }
+ ],
+ "magnopy.experimental.plot_spinham": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "function"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy.experimental",
+   "module_short": "magnopy.experimental",
+   "name": "plot_spinham"
+  },
+  {
+   "is_class": false,
+   "is_explicit": true,
+   "module": "magnopy.experimental",
+   "module_short": "magnopy.experimental",
+   "name": "plot_spinham"
+  }
+ ],
+ "new_convention": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham._convention",
+   "module_short": "magnopy",
+   "name": "Convention"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "Convention"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "Convention"
+  }
+ ],
+ "np.diag": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "numpy",
+   "module_short": "numpy",
+   "name": "_ArrayFunctionDispatcher"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "numpy",
+   "module_short": "numpy",
+   "name": "diag"
+  }
+ ],
+ "np.eye": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "function"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "numpy",
+   "module_short": "numpy",
+   "name": "eye"
+  }
+ ],
+ "nu": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "tuple"
+  }
+ ],
+ "parameter": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "numpy",
+   "module_short": "numpy",
+   "name": "ndarray"
+  }
+ ],
+ "pe1": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._plotly_engine",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine"
+  }
+ ],
+ "pe1.show": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._plotly_engine",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine.show"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine.show"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric._plotly_engine",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine.show"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine.show"
+  }
+ ],
+ "pe2": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._plotly_engine",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine"
+  }
+ ],
+ "pe2.show": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._plotly_engine",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine.show"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine.show"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric._plotly_engine",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine.show"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine.show"
+  }
+ ],
+ "spinham": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham._hamiltonian",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian"
+  }
+ ],
+ "spinham.add_21": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham._hamiltonian",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.add_21"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.add_21"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.add_21"
+  }
+ ],
+ "spinham.add_22": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham._hamiltonian",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.add_22"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.add_22"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.add_22"
+  }
+ ],
+ "spinham.add_dipole_dipole": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham._hamiltonian",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.add_dipole_dipole"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.add_dipole_dipole"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.add_dipole_dipole"
+  }
+ ],
+ "spinham.add_magnetic_field": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham._hamiltonian",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.add_magnetic_field"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.add_magnetic_field"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.add_magnetic_field"
+  }
+ ],
+ "spinham.convention": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham._hamiltonian",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.convention"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.convention"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.convention"
+  }
+ ],
+ "spinham.convention.summary": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham._hamiltonian",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.convention"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.convention"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.convention"
+  }
+ ],
+ "spinham.p22": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham._hamiltonian",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.p22"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.p22"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.p22"
+  }
+ ],
+ "spinham_dd": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham._hamiltonian",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian"
+  }
+ ],
+ "spinham_dd.add_dipole_dipole": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham._hamiltonian",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.add_dipole_dipole"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.add_dipole_dipole"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.add_dipole_dipole"
+  }
+ ],
+ "spinham_exchange": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham._hamiltonian",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian"
+  }
+ ],
+ "spinham_exchange.add_22": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham._hamiltonian",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.add_22"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.add_22"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.add_22"
+  }
+ ],
+ "spinham_exchange.get_empty": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham._hamiltonian",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.get_empty"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.get_empty"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.get_empty"
+  }
+ ],
+ "spinham_full": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham._hamiltonian",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian"
+  }
+ ],
+ "spinham_zeeman": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham._hamiltonian",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian"
+  }
+ ],
+ "spinham_zeeman.add_magnetic_field": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham._hamiltonian",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.add_magnetic_field"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.add_magnetic_field"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian.add_magnetic_field"
+  }
+ ]
+}

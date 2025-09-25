@@ -1,0 +1,112 @@
+{
+ "energy": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._energy",
+   "module_short": "magnopy",
+   "name": "Energy"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "Energy"
+  }
+ ],
+ "energy.optimize": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._energy",
+   "module_short": "magnopy",
+   "name": "Energy.optimize"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "Energy.optimize"
+  }
+ ],
+ "magnopy.Energy": [
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "magnopy._energy",
+   "module_short": "magnopy",
+   "name": "Energy"
+  },
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "Energy"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "Energy"
+  },
+  {
+   "is_class": false,
+   "is_explicit": true,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "Energy"
+  }
+ ],
+ "magnopy.examples.cubic_ferro_nn": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "function"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy.examples",
+   "module_short": "magnopy.examples",
+   "name": "cubic_ferro_nn"
+  }
+ ],
+ "optimized_sd": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "numpy",
+   "module_short": "numpy",
+   "name": "ndarray"
+  }
+ ],
+ "spinham": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham._hamiltonian",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._spinham",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "SpinHamiltonian"
+  }
+ ]
+}

@@ -1,0 +1,211 @@
+{
+ "atoms": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "dict"
+  }
+ ],
+ "cell": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "builtins",
+   "module_short": "builtins",
+   "name": "list"
+  }
+ ],
+ "magnopy.PlotlyEngine": [
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "magnopy._plotly_engine",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine"
+  },
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine"
+  },
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "wulfric._plotly_engine",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine"
+  },
+  {
+   "is_class": true,
+   "is_explicit": false,
+   "module": "wulfric",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine"
+  },
+  {
+   "is_class": false,
+   "is_explicit": true,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine"
+  },
+  {
+   "is_class": false,
+   "is_explicit": true,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine"
+  },
+  {
+   "is_class": false,
+   "is_explicit": true,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine"
+  }
+ ],
+ "pe": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._plotly_engine",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine"
+  }
+ ],
+ "pe.plot_atoms": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._plotly_engine",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine.plot_atoms"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine.plot_atoms"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric._plotly_engine",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine.plot_atoms"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine.plot_atoms"
+  }
+ ],
+ "pe.plot_cell": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._plotly_engine",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine.plot_cell"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine.plot_cell"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric._plotly_engine",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine.plot_cell"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine.plot_cell"
+  }
+ ],
+ "pe.show": [
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy._plotly_engine",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine.show"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "magnopy",
+   "module_short": "magnopy",
+   "name": "PlotlyEngine.show"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric._plotly_engine",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine.show"
+  },
+  {
+   "is_class": false,
+   "is_explicit": false,
+   "module": "wulfric",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine.show"
+  }
+ ],
+ "wulfric.PlotlyEngine": [
+  {
+   "is_class": false,
+   "is_explicit": true,
+   "module": "wulfric",
+   "module_short": "wulfric",
+   "name": "PlotlyEngine"
+  }
+ ],
+ "wulfric.crystal.get_conventional": [
+  {
+   "is_class": false,
+   "is_explicit": true,
+   "module": "wulfric.crystal",
+   "module_short": "wulfric.crystal",
+   "name": "get_conventional"
+  }
+ ],
+ "wulfric.crystal.get_primitive": [
+  {
+   "is_class": false,
+   "is_explicit": true,
+   "module": "wulfric.crystal",
+   "module_short": "wulfric.crystal",
+   "name": "get_primitive"
+  }
+ ]
+}
