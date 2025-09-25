@@ -1,0 +1,15 @@
+Magnopy as a black box
+======================
+
+Alternative way to use magnopy, that does not require knowledge of Python is through
+its command line interface.
+
+.. hint::
+    The command line scripts can be run from within python as well, see:
+    |magnopy-scenarios|_. One can study the source code of
+    :external:py:func:`magnopy.scenarios.optimize_sd` and
+    :external:py:func:`magnopy.scenarios.solve_lswt` for more advance example of how
+    magnopy can be used as a python library.
+
+
+
