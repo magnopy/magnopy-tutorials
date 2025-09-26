@@ -3,6 +3,7 @@ from __future__ import annotations
 
 from docutils import nodes
 
+from requests import options
 from sphinx.application import Sphinx
 from sphinx.util.docutils import SphinxDirective
 from sphinx.util.typing import ExtensionMetadata
@@ -16,28 +17,57 @@ from sphinx.util import logging
 import subprocess
 import os
 
+from pathlib import Path
+
 
 logger = logging.getLogger(__name__)
 
 
-def run_script(command, options):
-    if "extra-command" in options:
-        command_to_run = f"{command} {options['extra-command']}"
-    else:
-        command_to_run = command
+def run_script(command, op, ip, extra_command=None):
+    def process_command(command_text):
+        i = 0
+        for_run = ""
+        for_show = ""
+        while i < len(command_text) - 6:
+            if command_text[i : i + 5] in ["{{IP:", "{{OP:"]:
+                if command_text[i + 2 : i + 4] == "IP":
+                    extra_path = ip
+                else:
+                    extra_path = op
+                _ = ""
+                i += 5
+                while i < len(command_text) - 2:
+                    if command_text[i : i + 2] == "}}":
+                        break
+                    else:
+                        _ += command_text[i]
+                    i += 1
+                i += 2
 
-    command_to_run = command_to_run.replace("{{IP}}", options["input-prefix"])
-    command_to_run = command_to_run.replace("{{OP}}", options["output-prefix"])
+                for_show += _
+                for_run += f"{(extra_path / Path(_)).resolve()}"
+            else:
+                for_run += command_text[i]
+                for_show += command_text[i]
+                i += 1
 
-    command_to_show = command.replace("{{IP}}", "")
-    command_to_show = command_to_show.replace("{{OP}}", "")
+        return for_run, for_show
+
+    command_to_run, command_to_show = process_command(command_text=command)
+
+    if extra_command is not None:
+        command_to_run += f" {process_command(command_text=extra_command)[0]}"
 
     output = subprocess.run(command_to_run.split(" "), capture_output=True, text=True)
 
     if output.returncode != 0:
-        raise ValueError("Script executed with errors.")
+        raise ValueError(
+            f"Executed:\n\n{command_to_run}\nWith list of arguments\n{command_to_run.split(' ')}\nGot error:\n{output.stderr}"
+        )
 
-    with open(os.path.join(options["output-prefix"], "console-output.txt"), "w") as f:
+    os.makedirs(op, exist_ok=True)
+
+    with open(op / "console-output.txt", "w") as f:
         f.write(output.stdout)
 
     return command_to_show
@@ -70,18 +100,27 @@ class PromptRun(SphinxDirective):
                 )
             ]
 
-        location = self.state_machine.get_source_and_line(self.lineno)
-        head, _ = os.path.split(location[0])
-        if "input-prefix" in self.options:
-            self.options["input-prefix"] = os.path.join(
-                head, self.options["input-prefix"]
-            )
-        if "output-prefix" in self.options:
-            self.options["output-prefix"] = os.path.join(
-                head, self.options["output-prefix"]
-            )
+        location = Path(self.state_machine.get_source_and_line(self.lineno)[0])
 
-        command = run_script(command=self.content[0], options=self.options)
+        if "input-prefix" in self.options:
+            IP_path = location.parent / Path(self.options["input-prefix"])
+        else:
+            IP_path = Path(".")
+        if "output-prefix" in self.options:
+            OP_path = (
+                location.parent
+                / f"prompt-run_{location.stem}"
+                / Path(self.options["output-prefix"])
+            )
+        else:
+            OP_path = Path(".")
+
+        command = run_script(
+            command=self.content[0],
+            op=OP_path,
+            ip=IP_path,
+            extra_command=self.options["extra-command"],
+        )
 
         literal: Element = nodes.literal_block(command, command)
 
