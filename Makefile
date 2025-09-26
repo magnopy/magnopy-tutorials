@@ -48,3 +48,9 @@ doctest:
 cats:
 	-@rm docs/source/img/cat-numbers/*
 	@python dev-tools/generate-cat-numbers.py
+
+
+logo:
+	-@ rm docs/source/_static/logo-black.png
+	-@ rm docs/source/_static/logo-white.png
+	@python dev-tools/generate-logo.py

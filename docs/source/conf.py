@@ -110,10 +110,13 @@ html_static_path = ["_static"]
 html_css_files = ["magnopy-tutorials.css"]
 
 html_title = "Magnopy's tutorials"
-# html_favicon = "img/favicon.png"
+html_favicon = "_static/favicon.ico"
 
 # Theme-specific options
-html_theme_options = {}
+html_theme_options = {
+    "light_logo": "logo-black.png",
+    "dark_logo": "logo-white.png",
+}
 
 html_context = {
     "default_mode": "light",
