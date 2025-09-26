@@ -24,8 +24,10 @@ import sys
 from datetime import datetime
 from os.path import abspath, join
 from magnopy import __version__ as version
+from pathlib import Path
 
 sys.path.insert(0, abspath(join("..", "..")))
+sys.path.append(str(Path("_ext").resolve()))
 
 import plotly.io as pio
 
@@ -56,6 +58,7 @@ extensions = [
     "sphinx_design",  # For the design elements on the from page
     "sphinx.ext.intersphinx",  # Link to other projects
     "sphinx_gallery.gen_gallery",  # For graphical code examples
+    "prompt-run",  # For cli examples
 ]
 
 ##########################################################################################
