@@ -1,3 +1,7 @@
 Magnopy as a python library
 ===========================
 
+Every page of the tutorial explains some concepts about the |magnopy|_. There is a list
+of exercises on top of each tutorial page. Exercises are connected to the content that you
+find in each page. 
+
