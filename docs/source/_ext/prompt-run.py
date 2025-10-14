@@ -17,7 +17,7 @@ import subprocess
 from pathlib import Path
 
 
-def run_script(command, op, ip, extra_command=None):
+def run_script(command, op: Path, ip: Path, extra_command=None):
     def process_command(command_text):
         i = 0
         for_run = ""
@@ -59,7 +59,6 @@ def run_script(command, op, ip, extra_command=None):
             f"Executed:\n\n{command_to_run}\nWith list of arguments\n{command_to_run.split(' ')}\nGot error:\n{output.stderr}"
         )
 
-    op = Path(op)
     op.mkdir(parents=True, exist_ok=True)
 
     with open(op / "console-output.txt", "w") as f:
