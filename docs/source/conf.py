@@ -277,11 +277,11 @@ custom_links = {
     ),
     "magnopy-optimize-sd": (
         "magnopy-optimize-sd",
-        "https://docs.magnopy.org/en/latest/user-guide/cli/magnopy-optimize-sd.html",
+        "https://docs.magnopy.org/en/latest/user-guide/cli/magnopy-optimize-sd/index.html",
     ),
     "magnopy-lswt": (
         "magnopy-lswt",
-        "https://docs.magnopy.org/en/latest/user-guide/cli/magnopy-lswt.html",
+        "https://docs.magnopy.org/en/latest/user-guide/cli/magnopy-lswt/index.html",
     ),
     "magnopy-scenarios": (
         "magnopy.scenarios",
