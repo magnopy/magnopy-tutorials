@@ -1,4 +1,4 @@
-.. admonition:: Tutorial tasks
+.. admonition:: Exercises
 
     1.  Create a crystal structure for the material of your choosing.
         Create a cell and a set of atoms. Specify all mentioned properties for each atom.
