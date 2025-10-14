@@ -45,7 +45,7 @@ Please read |magnopy-convention-problem|_ for the illustration of the challenges
 problem introduces.
 
 In |magnopy|_ we did not want to introduce a new one or to use one convention in particular.
-As a solution we decided to support **any** convention that the user what to use. Naturally,
+As a solution we decided to support **any** convention that the user wants to use. Naturally,
 that implied a responsibility on the user: to provide one! If spin Hamiltonian is
 read from the knows source (i. e. |TB2J|_ or |GROGU|_), then magnopy knows the convention
 and user can just read the Hamiltonian from the file like so
