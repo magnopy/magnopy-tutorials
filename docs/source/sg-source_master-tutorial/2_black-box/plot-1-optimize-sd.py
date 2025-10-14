@@ -25,20 +25,29 @@ Two parameters are required for this script
 * Source of the spin Hamiltonian (``-ss`` or ``--spinham-source``);
 * Path to the file with the spin Hamiltonian (``-sf`` or ``--spinham-filename``)
 
-For example, if the file with the spin Hamiltonian is located in the
-"data/hamiltonians/trial1/TB2J/exchange.out" and the source of the file is |TB2J|_,
-then pass to the script two parameters
+For example, if "ferro-easy-axis.txt" is a file with the spin Hamiltonian and the source
+of the file is |GROGU|_, then you can run the script as
 
 .. prompt-run::
     :input-prefix: ../../resources/master-tutorial/
     :output-prefix: ./
     :extra-command: -of {{OP:magnopy-results}}
 
-    magnopy-optimize-sd --spinham-source GROGU --spinham-filename {{IP:ferro-easy-axis.txt}} -hpd
+    magnopy-optimize-sd --spinham-source GROGU --spinham-filename {{IP:ferro-easy-axis.txt}}
 
-This script will output to the console information about the calculation progress
+Files produced by the script:
 
-.. literalinclude:: prompt-run_plot-1-optimize-sd/console-output.txt
+* :download:`INITIAL_GUESS.TXT <prompt-run_plot-1-optimize-sd/magnopy-results/INITIAL_GUESS.TXT>`
+* :download:`SPIN_DIRECTIONS.txt <prompt-run_plot-1-optimize-sd/magnopy-results/SPIN_DIRECTIONS.txt>`
+* :download:`SPIN_DIRECTIONS.html <prompt-run_plot-1-optimize-sd/magnopy-results/SPIN_DIRECTIONS.html>`
+* :download:`SPIN_POSITIONS.txt <prompt-run_plot-1-optimize-sd/magnopy-results/SPIN_POSITIONS.txt>`
+
+.. dropdown:: Output to the console
+
+    .. literalinclude:: prompt-run_plot-1-optimize-sd/console-output.txt
+
+
+
 
 
 
