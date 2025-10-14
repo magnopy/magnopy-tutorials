@@ -29,6 +29,11 @@ Two parameters are required
 For example, if "ferro-easy-axis.txt" is a file with the spin Hamiltonian and the source
 of the file is |GROGU|_, then you can run the script as
 
+.. dropdown:: :octicon:`file;1em;custom-octicon-input` Input files
+
+    * :download:`ferro-easy-axis.txt <../../resources/master-tutorial/ferro-easy-axis.txt>`
+
+
 .. prompt-run::
     :input-prefix: ../../resources/master-tutorial/
     :output-prefix: 1
@@ -36,13 +41,13 @@ of the file is |GROGU|_, then you can run the script as
 
     magnopy-optimize-sd --spinham-source GROGU --spinham-filename {{IP:ferro-easy-axis.txt}}
 
-.. dropdown:: :octicon:`command-palette;1em` Output to the console
+.. dropdown:: :octicon:`command-palette;1em;custom-octicon-output` Output to the console
 
     .. literalinclude:: prompt-run_plot-1-optimize-sd/1/console-output.txt
 
-.. dropdown:: :octicon:`file;1em` Created files
+.. dropdown:: :octicon:`file;1em;custom-octicon-output` Created files
 
-    * :download:`INITIAL_GUESS.TXT <prompt-run_plot-1-optimize-sd/1/magnopy-results/INITIAL_GUESS.TXT>`
+    * :download:`INITIAL_GUESS.txt <prompt-run_plot-1-optimize-sd/1/magnopy-results/INITIAL_GUESS.txt>`
     * :download:`SPIN_DIRECTIONS.txt <prompt-run_plot-1-optimize-sd/1/magnopy-results/SPIN_DIRECTIONS.txt>`
     * :download:`SPIN_DIRECTIONS.html <prompt-run_plot-1-optimize-sd/1/magnopy-results/SPIN_DIRECTIONS.html>`
     * :download:`SPIN_POSITIONS.txt <prompt-run_plot-1-optimize-sd/1/magnopy-results/SPIN_POSITIONS.txt>`
@@ -59,6 +64,10 @@ Supercell is defined by a number of the original unit cell's repetitions along e
 three lattice vectors (``--superell``). For example, if you want to minimize on the
 :math:`3\times7\times2` supercell use the command
 
+.. dropdown:: :octicon:`file;1em;custom-octicon-input` Input files
+
+    * :download:`ferro-easy-axis.txt <../../resources/master-tutorial/ferro-easy-axis.txt>`
+
 .. prompt-run::
     :input-prefix: ../../resources/master-tutorial/
     :output-prefix: 2
@@ -66,13 +75,13 @@ three lattice vectors (``--superell``). For example, if you want to minimize on 
 
     magnopy-optimize-sd --supercell 3 7 2 --spinham-source GROGU --spinham-filename {{IP:ferro-easy-axis.txt}}
 
-.. dropdown:: :octicon:`command-palette;1em` Output to the console
+.. dropdown:: :octicon:`command-palette;1em;custom-octicon-output` Output to the console
 
     .. literalinclude:: prompt-run_plot-1-optimize-sd/2/console-output.txt
 
-.. dropdown:: :octicon:`file;1em` Created files
+.. dropdown:: :octicon:`file;1em;custom-octicon-output` Created files
 
-    * :download:`INITIAL_GUESS.TXT <prompt-run_plot-1-optimize-sd/2/magnopy-results/INITIAL_GUESS.TXT>`
+    * :download:`INITIAL_GUESS.txt <prompt-run_plot-1-optimize-sd/2/magnopy-results/INITIAL_GUESS.txt>`
     * :download:`SPIN_DIRECTIONS.txt <prompt-run_plot-1-optimize-sd/2/magnopy-results/SPIN_DIRECTIONS.txt>`
     * :download:`SPIN_DIRECTIONS.html <prompt-run_plot-1-optimize-sd/2/magnopy-results/SPIN_DIRECTIONS.html>`
     * :download:`SPIN_POSITIONS.txt <prompt-run_plot-1-optimize-sd/2/magnopy-results/SPIN_POSITIONS.txt>`
@@ -104,6 +113,10 @@ lead to the reasonable results in most of the cases.
 
 However, if you want to increase accuracy of one or both parameters, then use the command
 
+.. dropdown:: :octicon:`file;1em;custom-octicon-input` Input files
+
+    * :download:`ferro-easy-axis.txt <../../resources/master-tutorial/ferro-easy-axis.txt>`
+
 .. prompt-run::
     :input-prefix: ../../resources/master-tutorial/
     :output-prefix: 3
@@ -111,13 +124,13 @@ However, if you want to increase accuracy of one or both parameters, then use th
 
     magnopy-optimize-sd --energy-tolerance 0.000001 --torque-tolerance 0.001 --spinham-source GROGU --spinham-filename {{IP:ferro-easy-axis.txt}}
 
-.. dropdown:: :octicon:`command-palette;1em` Output to the console
+.. dropdown:: :octicon:`command-palette;1em;custom-octicon-output` Output to the console
 
     .. literalinclude:: prompt-run_plot-1-optimize-sd/3/console-output.txt
 
-.. dropdown:: :octicon:`file;1em` Created files
+.. dropdown:: :octicon:`file;1em;custom-octicon-output` Created files
 
-    * :download:`INITIAL_GUESS.TXT <prompt-run_plot-1-optimize-sd/3/magnopy-results/INITIAL_GUESS.TXT>`
+    * :download:`INITIAL_GUESS.txt <prompt-run_plot-1-optimize-sd/3/magnopy-results/INITIAL_GUESS.txt>`
     * :download:`SPIN_DIRECTIONS.txt <prompt-run_plot-1-optimize-sd/3/magnopy-results/SPIN_DIRECTIONS.txt>`
     * :download:`SPIN_DIRECTIONS.html <prompt-run_plot-1-optimize-sd/3/magnopy-results/SPIN_DIRECTIONS.html>`
     * :download:`SPIN_POSITIONS.txt <prompt-run_plot-1-optimize-sd/3/magnopy-results/SPIN_POSITIONS.txt>`
@@ -136,6 +149,10 @@ external magnetic field (magnetic flux density, B). Values are interpreted in Te
 
 For example, use the command
 
+.. dropdown:: :octicon:`file;1em;custom-octicon-input` Input files
+
+    * :download:`ferro-easy-axis.txt <../../resources/master-tutorial/ferro-easy-axis.txt>`
+
 .. prompt-run::
     :input-prefix: ../../resources/master-tutorial/
     :output-prefix: 4
@@ -143,13 +160,13 @@ For example, use the command
 
     magnopy-optimize-sd --magnetic-field 1.7112 1.7112 0 --spinham-source GROGU --spinham-filename {{IP:ferro-easy-axis.txt}}
 
-.. dropdown:: :octicon:`command-palette;1em` Output to the console
+.. dropdown:: :octicon:`command-palette;1em;custom-octicon-output` Output to the console
 
     .. literalinclude:: prompt-run_plot-1-optimize-sd/4/console-output.txt
 
-.. dropdown:: :octicon:`file;1em` Created files
+.. dropdown:: :octicon:`file;1em;custom-octicon-output` Created files
 
-    * :download:`INITIAL_GUESS.TXT <prompt-run_plot-1-optimize-sd/4/magnopy-results/INITIAL_GUESS.TXT>`
+    * :download:`INITIAL_GUESS.txt <prompt-run_plot-1-optimize-sd/4/magnopy-results/INITIAL_GUESS.txt>`
     * :download:`SPIN_DIRECTIONS.txt <prompt-run_plot-1-optimize-sd/4/magnopy-results/SPIN_DIRECTIONS.txt>`
     * :download:`SPIN_DIRECTIONS.html <prompt-run_plot-1-optimize-sd/4/magnopy-results/SPIN_DIRECTIONS.html>`
     * :download:`SPIN_POSITIONS.txt <prompt-run_plot-1-optimize-sd/4/magnopy-results/SPIN_POSITIONS.txt>`

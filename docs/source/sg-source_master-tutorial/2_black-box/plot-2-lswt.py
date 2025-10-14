@@ -1,8 +1,10 @@
 r"""
-Linear spin wave theory
-***********************
+magnopy-lswt
+************
 
-This page explains how to use |magnopy-lswt|_ and give examples of the output files.
+This page explains how to use optimize spin direction via numerical minimization. See
+docs for |magnopy-lswt|_ for full list of supported arguments. On this page we give
+examples of how to use the script and text and files that it can produce.
 
 Spin Hamiltonian and its source
 ===============================
@@ -11,7 +13,7 @@ This script works with the spin Hamiltonian that is coming from some third-party
 At the moment magnopy supports |TB2J|_ and |GROGU|_.
 
 .. hint::
-    There is number of ways to use this script with the hand-made Hamiltonian:
+    There is a number of ways to use this script with the hand-made Hamiltonian:
 
     * Prepare the file that mimics the format of |TB2J|_.
     * Prepare the file that mimics the |GROGU-FF|_.
@@ -19,77 +21,86 @@ At the moment magnopy supports |TB2J|_ and |GROGU|_.
       command-line script from within your python script:
       :py:func:`magnopy.scenarios.optimize_sd`.
 
+Two parameters are required
 
+* Source of the spin Hamiltonian (``--spinham-source``);
+* Path to the file with the spin Hamiltonian (``--spinham-filename``)
 
+For example, if "ferro-easy-axis.txt" is a file with the spin Hamiltonian and the source
+of the file is |GROGU|_, then you can run the script as
 
+.. dropdown:: :octicon:`file;1em;custom-octicon-input` Input files
 
+    * :download:`ferro-easy-axis.txt <../../resources/master-tutorial/ferro-easy-axis.txt>`
 
+.. prompt-run::
+    :input-prefix: ../../resources/master-tutorial/
+    :output-prefix: 1
+    :extra-command: -of {{OP:magnopy-results}}
 
+    magnopy-lswt --spinham-source GROGU --spinham-filename {{IP:ferro-easy-axis.txt}}
 
-.. _user-guide_cli_lswt_spinham:
+.. dropdown:: :octicon:`command-palette;1em;custom-octicon-output` Output to the console
 
-Spin Hamiltonian and its source
-===============================
+    .. literalinclude:: prompt-run_plot-2-lswt/1/console-output.txt
 
-This script works with the spin Hamiltonian that is coming from some third-party software.
-At the moment magnopy supports |TB2J|_ and |GROGU|_.
+.. dropdown:: :octicon:`file;1em;custom-octicon-output` Created files
 
-.. hint::
-    There is number of ways to use this script with the hand-made Hamiltonian:
-
-    * Prepare the file that mimics the format of |TB2J|_.
-    * Prepare the file that mimics the |GROGU-FF|_.
-    * Prepare the spin Hamiltonian programmatically and use the scenario of this
-      command-line script from within your python scripts: :py:func:`.scenarios.lswt`.
-
-To tell the script what spin Hamiltonian to use provide
-
-* Source of the spin Hamiltonian (``-ss`` or ``--spinham-source``);
-* Path to the file with the spin Hamiltonian (``-sf`` or ``--spinham-filename``)
-
-For example, if the file with the spin Hamiltonian is located in the
-"data/hamiltonians/trial1/TB2J/exchange.out" and the source of the file is |TB2J|_,
-then pass to the script two parameters
-
-.. code-block:: bash
-
-    magnopy-lswt  -spinham-source TB2J -spinham-filename data/hamiltonians/trial1/TB2J/exchange.out ...
-
-.. note::
-    The dots ``...`` are not a part of the syntax. They are used only to highlight the
-    parameters that are described in the particular chapter of the documentation and
-    hide all other parameters that might or might not be passed to the script.
-
-.. _user-guide_cli_lswt_ground-state:
+    * :download:`DELTAS.txt <prompt-run_plot-2-lswt/1/magnopy-results/DELTAS.txt>`
+    * :download:`DELTAS.png <prompt-run_plot-2-lswt/1/magnopy-results/DELTAS.png>`
+    * :download:`HIGH-SYMMETRY_POINTS.txt <prompt-run_plot-2-lswt/1/magnopy-results/HIGH-SYMMETRY_POINTS.txt>`
+    * :download:`K-POINTS.txt <prompt-run_plot-2-lswt/1/magnopy-results/K-POINTS.txt>`
+    * :download:`K-POINTS.html <prompt-run_plot-2-lswt/1/magnopy-results/K-POINTS.html>`
+    * :download:`OMEGAS.txt <prompt-run_plot-2-lswt/1/magnopy-results/OMEGAS.txt>`
+    * :download:`OMEGAS.png <prompt-run_plot-2-lswt/1/magnopy-results/OMEGAS.png>`
+    * :download:`SPIN_VECTORS.txt <prompt-run_plot-2-lswt/1/magnopy-results/SPIN_VECTORS.txt>`
+    * :download:`SPIN_DIRECTIONS.html <prompt-run_plot-2-lswt/1/magnopy-results/SPIN_DIRECTIONS.html>`
 
 Ground state
 ============
 
-For the calculation of exited states (what magnons are) one need to knows the
-ground state - spin directions for every spin in the Hamiltonian. There are two ways for
-magnopy to know the spin directions
+One need to know the ground state (i. e. spin directions for every spin of the
+Hamiltonian) for the calculation of the exited states. There are two ways for magnopy to
+know the spin directions
 
 *   Input from the user
 
-    User can provide a file with spin directions
+    User can provide a file with spin directions using the command
 
-    .. code-block:: bash
+    .. dropdown:: :octicon:`file;1em;custom-octicon-input` Input files
 
-        magnopy-lswt ... --spin-directions SPIN-DIRECTIONS.txt
+        * :download:`ferro-easy-axis.txt <../../resources/master-tutorial/ferro-easy-axis.txt>`
+        * :download:`sd-ferro-easy-axis.txt <../../resources/master-tutorial/sd-ferro-easy-axis.txt>`
+
+    .. prompt-run::
+        :input-prefix: ../../resources/master-tutorial/
+        :output-prefix: 2
+        :extra-command: -of {{OP:magnopy-results}}
+
+        magnopy-lswt --spin-directions {{IP:sd-ferro-easy-axis.txt}} --spinham-source GROGU --spinham-filename {{IP:ferro-easy-axis.txt}}
+
+    .. dropdown:: :octicon:`command-palette;1em;custom-octicon-output` Output to the console
+
+        .. literalinclude:: prompt-run_plot-2-lswt/2/console-output.txt
+
+    .. dropdown:: :octicon:`file;1em;custom-octicon-output` Created files
+
+        * :download:`DELTAS.txt <prompt-run_plot-2-lswt/2/magnopy-results/DELTAS.txt>`
+        * :download:`DELTAS.png <prompt-run_plot-2-lswt/2/magnopy-results/DELTAS.png>`
+        * :download:`HIGH-SYMMETRY_POINTS.txt <prompt-run_plot-2-lswt/2/magnopy-results/HIGH-SYMMETRY_POINTS.txt>`
+        * :download:`K-POINTS.txt <prompt-run_plot-2-lswt/2/magnopy-results/K-POINTS.txt>`
+        * :download:`K-POINTS.html <prompt-run_plot-2-lswt/2/magnopy-results/K-POINTS.html>`
+        * :download:`OMEGAS.txt <prompt-run_plot-2-lswt/2/magnopy-results/OMEGAS.txt>`
+        * :download:`OMEGAS.png <prompt-run_plot-2-lswt/2/magnopy-results/OMEGAS.png>`
+        * :download:`SPIN_VECTORS.txt <prompt-run_plot-2-lswt/2/magnopy-results/SPIN_VECTORS.txt>`
+        * :download:`SPIN_DIRECTIONS.html <prompt-run_plot-2-lswt/2/magnopy-results/SPIN_DIRECTIONS.html>`
+
 
 *   Internal optimization
 
     If user do not provide any input, then magnopy tries to optimize spin directions within
-    unit cell.
+    unit cell. See also |magnopy-optimize-sd|_.
 
-.. note::
-    The dots ``...`` are not a part of the syntax. They are used only to highlight the
-    parameters that are described in the particular chapter of the documentation and
-    hide all other parameters that might or might not be passed to the script.
-
-
-
-.. _user-guide_cli_lswt_reciprocal-space:
 
 K-path and k-points
 ===================
@@ -97,103 +108,117 @@ K-path and k-points
 Magnopy solves magnon problem for a set of points in reciprocal space. Therefore, it needs
 to know a set of k-points to perform the calculations. User is left with two options
 
-*   Provide explicit list of k-points
+*   ``--kpoints``
 
-    .. code-block:: bash
+    Provide explicit list of k-points
 
-        magnopy-lswt ... --kpoints  K-POINTS.txt
+    .. dropdown:: :octicon:`file;1em;custom-octicon-input` Input files
 
-*   Let magnopy deduce the set of high-symmetry points based on the space group of the
+        * :download:`ferro-easy-axis.txt <../../resources/master-tutorial/ferro-easy-axis.txt>`
+        * :download:`k-points-ferro-easy-axis.txt <../../resources/master-tutorial/k-points-ferro-easy-axis.txt>`
+
+    .. prompt-run::
+        :input-prefix: ../../resources/master-tutorial/
+        :output-prefix: 3
+        :extra-command: -of {{OP:magnopy-results}}
+
+        magnopy-lswt --kpoints {{IP:k-points-ferro-easy-axis.txt}} --spinham-source GROGU --spinham-filename {{IP:ferro-easy-axis.txt}}
+
+    .. dropdown:: :octicon:`command-palette;1em;custom-octicon-output` Output to the console
+
+        .. literalinclude:: prompt-run_plot-2-lswt/3/console-output.txt
+
+    .. dropdown:: :octicon:`file;1em;custom-octicon-output` Created files
+
+        * :download:`DELTAS.txt <prompt-run_plot-2-lswt/3/magnopy-results/DELTAS.txt>`
+        * :download:`DELTAS.png <prompt-run_plot-2-lswt/3/magnopy-results/DELTAS.png>`
+        * :download:`K-POINTS.txt <prompt-run_plot-2-lswt/3/magnopy-results/K-POINTS.txt>`
+        * :download:`OMEGAS.txt <prompt-run_plot-2-lswt/3/magnopy-results/OMEGAS.txt>`
+        * :download:`OMEGAS.png <prompt-run_plot-2-lswt/3/magnopy-results/OMEGAS.png>`
+        * :download:`SPIN_VECTORS.txt <prompt-run_plot-2-lswt/3/magnopy-results/SPIN_VECTORS.txt>`
+        * :download:`SPIN_DIRECTIONS.html <prompt-run_plot-2-lswt/3/magnopy-results/SPIN_DIRECTIONS.html>`
+
+*   ``--k-path``
+
+    Let magnopy deduce the set of high-symmetry points based on the space group of the
     crystal and use recommended k-path (see documentation of |wulfric|_ for more details,
-    magnopy uses ``convention="HPKOT"``). In that second case the user can still control
-    the k-path, but limited to the list of the predefined high-symmetry points.
+    magnopy uses ``convention="HPKOT"``). User can control k-path, but limited to the list
+    of the predefined high-symmetry points.
 
-    .. code-block:: bash
 
-        magnopy-lswt ... --k-path  GAMMA-X-S|GAMMA-Y
+    .. dropdown:: :octicon:`file;1em;custom-octicon-input` Input files
 
-.. note::
-    The dots ``...`` are not a part of the syntax. They are used only to highlight the
-    parameters that are described in the particular chapter of the documentation and
-    hide all other parameters that might or might not be passed to the script.
+        * :download:`ferro-easy-axis.txt <../../resources/master-tutorial/ferro-easy-axis.txt>`
 
-.. _user-guide_cli_lswt_magnetic-field:
+    .. prompt-run::
+        :input-prefix: ../../resources/master-tutorial/
+        :output-prefix: 4
+        :extra-command: -of {{OP:magnopy-results}}
+
+        magnopy-lswt --k-path GAMMA-X-S|GAMMA-Y --spinham-source GROGU --spinham-filename {{IP:ferro-easy-axis.txt}}
+
+    .. dropdown:: :octicon:`command-palette;1em;custom-octicon-output` Output to the console
+
+        .. literalinclude:: prompt-run_plot-2-lswt/4/console-output.txt
+
+    .. dropdown:: :octicon:`file;1em;custom-octicon-output` Created files
+
+        * :download:`DELTAS.txt <prompt-run_plot-2-lswt/4/magnopy-results/DELTAS.txt>`
+        * :download:`DELTAS.png <prompt-run_plot-2-lswt/4/magnopy-results/DELTAS.png>`
+        * :download:`HIGH-SYMMETRY_POINTS.txt <prompt-run_plot-2-lswt/4/magnopy-results/HIGH-SYMMETRY_POINTS.txt>`
+        * :download:`K-POINTS.txt <prompt-run_plot-2-lswt/4/magnopy-results/K-POINTS.txt>`
+        * :download:`K-POINTS.html <prompt-run_plot-2-lswt/4/magnopy-results/K-POINTS.html>`
+        * :download:`OMEGAS.txt <prompt-run_plot-2-lswt/4/magnopy-results/OMEGAS.txt>`
+        * :download:`OMEGAS.png <prompt-run_plot-2-lswt/4/magnopy-results/OMEGAS.png>`
+        * :download:`SPIN_VECTORS.txt <prompt-run_plot-2-lswt/4/magnopy-results/SPIN_VECTORS.txt>`
+        * :download:`SPIN_DIRECTIONS.html <prompt-run_plot-2-lswt/4/magnopy-results/SPIN_DIRECTIONS.html>`
+
 
 External magnetic field
 =======================
 
-The file with the :ref:`spin Hamiltonian <user-guide_cli_lswt_spinham>`
-specifies the interaction parameters that are intrinsic to the material.
+File with the spin Hamiltonian specifies interaction parameters that are intrinsic to the
+material.
 
-In order to add additional effects, for instance an external magnetic field one
-can use the ``-mf`` or ``--magnetic-field`` parameter.
+In order to add external effects, for instance an external magnetic field one can use
+``--magnetic-field`` parameter.
 
 This parameter expects three numbers, that specify three Cartesian components of the
-external magnetic field. The value of the provided vector is interpreted in Tesla.
+external magnetic field (magnetic flux density, B). Values are interpreted in Tesla.
 
-For example to add magnetic field of 2.42 Tesla along the direction :math:`(1, 1, 0)`
-(i.e. in the :math:`xy` plane, right in between the :math:`x` and :math:`y` axis) pass
-to the script the parameter
+For example, use the command
 
-.. code-block:: bash
+.. dropdown:: :octicon:`file;1em;custom-octicon-input` Input files
 
-    magnopy-lswt ... --magnetic-field 1.7112 1.7112 0 ...
+    * :download:`ferro-easy-axis.txt <../../resources/master-tutorial/ferro-easy-axis.txt>`
 
+.. prompt-run::
+    :input-prefix: ../../resources/master-tutorial/
+    :output-prefix: 5
+    :extra-command: -of {{OP:magnopy-results}}
 
-.. note::
-    The dots ``...`` are not a part of the syntax. They are used only to highlight the
-    parameters that are described in the particular chapter of the documentation and
-    hide all other parameters that might or might not be passed to the script.
+    magnopy-lswt --magnetic-field 1.7112 1.7112 0 --spinham-source GROGU --spinham-filename {{IP:ferro-easy-axis.txt}}
 
-.. _user-guide_cli_lswt_output:
+.. dropdown:: :octicon:`command-palette;1em;custom-octicon-output` Output to the console
 
-Output of the script
-====================
-The script have two types of the output:
+    .. literalinclude:: prompt-run_plot-2-lswt/5/console-output.txt
 
-*   Text output to the console
+.. dropdown:: :octicon:`file;1em;custom-octicon-output` Created files
 
-    Magnopy outputs the progress of the calculation in the standard output stream, that is
-    typically printed directly to the terminal. If you would like to save this text in a
-    file, we recommend to use stream redirect ``>`` operator as
+    * :download:`DELTAS.txt <prompt-run_plot-2-lswt/5/magnopy-results/DELTAS.txt>`
+    * :download:`DELTAS.png <prompt-run_plot-2-lswt/5/magnopy-results/DELTAS.png>`
+    * :download:`HIGH-SYMMETRY_POINTS.txt <prompt-run_plot-2-lswt/5/magnopy-results/HIGH-SYMMETRY_POINTS.txt>`
+    * :download:`K-POINTS.txt <prompt-run_plot-2-lswt/5/magnopy-results/K-POINTS.txt>`
+    * :download:`K-POINTS.html <prompt-run_plot-2-lswt/5/magnopy-results/K-POINTS.html>`
+    * :download:`OMEGAS.txt <prompt-run_plot-2-lswt/5/magnopy-results/OMEGAS.txt>`
+    * :download:`OMEGAS.png <prompt-run_plot-2-lswt/5/magnopy-results/OMEGAS.png>`
+    * :download:`SPIN_VECTORS.txt <prompt-run_plot-2-lswt/5/magnopy-results/SPIN_VECTORS.txt>`
+    * :download:`SPIN_DIRECTIONS.html <prompt-run_plot-2-lswt/5/magnopy-results/SPIN_DIRECTIONS.html>`
 
-    .. code-block:: bash
-
-        magnopy-lswt ... > output.txt
-
-    In that way there will be no output to the console, but all the information will be
-    saved in the file "output.txt".
-
-*   Output that is saved in the separated files.
-
-    A number of the files will be saved in the folder that is named "magnopy-results"
-    by default. If you would like to change its name, for instance to "magnopy-LSWT-trial-1",
-    then you can use the parameter ``-of`` or ``--output-folder``
-
-    .. code-block:: bash
-
-        magnopy-lswt ... --output-folder magnopy-LSWT-trial-1 ...
-
-    .. note::
-
-        The visual capabilities of magnopy require a third-party plotting library
-        |plotly|_. It is not included as a default dependency of magnopy and therefore,
-        have to be installed manually. It can be installed with ``pip``, in the same
-        way as magnopy:
-
-        .. code-block:: bash
-
-            pip install plotly
-
-        or
-
-        .. code-block:: bash
-
-            pip3 install plotly
+to add magnetic field of :math:`2.42` Tesla along the direction :math:`(1, 1, 0)`
+(i.e. in the :math:`xy` plane, right in between the :math:`x` and :math:`y` axis).
 
 
-.. note::
-    The dots ``...`` are not a part of the syntax. They are used only to highlight the
-    parameters that are described in the particular chapter of the documentation and
-    hide all other parameters that might or might not be passed to the script.
 """
+
+# sphinx_gallery_thumbnail_path = 'img/cat-numbers/2.png'
