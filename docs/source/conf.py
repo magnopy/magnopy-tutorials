@@ -299,6 +299,10 @@ custom_links = {
         "wulfric: k-path",
         "https://docs.wulfric.org/en/latest/user-guide/usage/key-concepts.html#k-path",
     ),
+    "wulfric-BL": (
+        "wulfric: Bravais lattices",
+        "https://docs.wulfric.org/en/latest/user-guide/conventions/bravais-lattices/index.html",
+    ),
 }
 rst_epilog += "\n".join(
     map(

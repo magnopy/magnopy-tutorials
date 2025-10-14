@@ -1,6 +1,3 @@
-Solutions for the tasks
-=======================
-
-In the pages below we provide solutions for the tutorial tasks for using magnopy as a
-a python library.
+Solutions for the exercises
+===========================
 
