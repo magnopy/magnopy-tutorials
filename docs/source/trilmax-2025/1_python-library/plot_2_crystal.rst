@@ -100,7 +100,7 @@ It stores them as a dictionary, for example
         "names": ["Cr1", "I1", "I2"],
         "positions": [[0.0, 0.0, 0.0], [0.5, 0.0, 0.0], [0.0, 0.5, 0.0]],
         "spins": [1.5, None, None],
-        "g-factor": [2, None, None],
+        "g_factors": [2, None, None],
     }
 
 
