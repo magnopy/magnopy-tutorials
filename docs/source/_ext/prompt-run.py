@@ -3,7 +3,6 @@ from __future__ import annotations
 
 from docutils import nodes
 
-from requests import options
 from sphinx.application import Sphinx
 from sphinx.util.docutils import SphinxDirective
 from sphinx.util.typing import ExtensionMetadata
@@ -15,7 +14,6 @@ from docutils.nodes import Element, Node
 from sphinx.util import logging
 
 import subprocess
-import os
 
 from pathlib import Path
 
@@ -65,7 +63,8 @@ def run_script(command, op, ip, extra_command=None):
             f"Executed:\n\n{command_to_run}\nWith list of arguments\n{command_to_run.split(' ')}\nGot error:\n{output.stderr}"
         )
 
-    os.makedirs(op, exist_ok=True)
+    op = Path(op)
+    op.mkdir(parents=True, exist_ok=True)
 
     with open(op / "console-output.txt", "w") as f:
         f.write(output.stdout)
