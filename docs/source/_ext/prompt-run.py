@@ -11,14 +11,10 @@ from typing import ClassVar
 from docutils.parsers.rst import directives
 from sphinx.util.typing import OptionSpec
 from docutils.nodes import Element, Node
-from sphinx.util import logging
 
 import subprocess
 
 from pathlib import Path
-
-
-logger = logging.getLogger(__name__)
 
 
 def run_script(command, op, ip, extra_command=None):
