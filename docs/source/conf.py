@@ -264,7 +264,7 @@ custom_links = {
         "https://docs.magnopy.org/en/latest/user-guide/usage/atoms.html",
     ),
     "magnopy-convention-problem": (
-        "convention problem",
+        "Convention problem",
         "https://docs.magnopy.org/en/latest/user-guide/theory-behind/convention-problem.html",
     ),
     "magnopy-theory-spin-hamiltonian": (
