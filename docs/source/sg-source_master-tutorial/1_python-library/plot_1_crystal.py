@@ -19,6 +19,7 @@ import magnopy
 # ====
 #
 # Unit cell is simply a set of three vectors (rows are vectors, i. e. ``a_1 = cell[0]``).
+# Read |magnopy-cell|_ for more information.
 
 cell = [
     [1.0, 0.0, 0.0],
@@ -27,33 +28,14 @@ cell = [
 ]
 
 # %%
-# To read more about the cell see |magnopy-cell|_.
 #
 # Atoms
 # =====
 #
 # Magnopy calls magnetic centers "atoms" due to historical reasons, but they are not
-# necessary atoms. We will use the term "atoms" in this tutorial. In all cases "atoms"
-# simply mean an object with the following properties
-#
-# *   Name.
-#
-#     A label for the magnetic center. If magnetic center coincides with an actual atom
-#     of the crystal, then it is a good idea to include atom's type in its name (i. e.
-#     ``"Cr1"`` or ``"I_000"``).
-#
-# *   Position.
-#
-#     Three numbers that define position of the atom in the basis of the unit cell. In
-#     other words, a relative position (sometimes also called "fractional position").
-#
-# *   Spin.
-#
-#     Spin *value* of the magnetic center. Please note that this is a single number.
-#
-# *   g-factor.
-#
-#     Proportionality coefficient for the Zeeman term of the Hamiltonian.
+# necessary atoms. We will use the term "atoms" in this tutorial. In all cases "atom"
+# simply mean an object with the set of properties. Read |magnopy-atoms|_ for the full
+# account of the expected properties and their meaning.
 #
 # Magnopy operates with a *set* of atoms (even if there is only one atom in the set).
 # Atoms are stored as a python dictionary. For example, set of three atoms
@@ -73,8 +55,6 @@ atoms = {
 }
 
 # %%
-#
-# To read more about atoms see |magnopy-atoms|_.
 #
 # Visualization
 # =============
