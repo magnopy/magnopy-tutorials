@@ -2,7 +2,7 @@ r"""
 Introducing magnopy
 *******************
 
-.. include:: ../../exercises/1.inc
+.. include:: ../../exercises/0.inc
 
 .. note::
 

@@ -2,7 +2,7 @@ r"""
 Crystal structure
 *****************
 
-.. include:: ../../exercises/2.inc
+.. include:: ../../exercises/1.inc
 
 We will use the fictitious crystal with the lattice vectors
 

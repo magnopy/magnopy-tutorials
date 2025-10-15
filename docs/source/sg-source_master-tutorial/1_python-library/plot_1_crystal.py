@@ -2,7 +2,7 @@ r"""
 Crystal structure
 *****************
 
-.. include:: ../../exercises/2.inc
+.. include:: ../../exercises/1.inc
 
 Every spin Hamiltonian in |magnopy|_ is defined on a lattice and a set of magnetic centers
 in its unit cell. In other words, one needs to define a crystal structure in order to
