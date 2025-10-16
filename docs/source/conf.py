@@ -263,6 +263,10 @@ custom_links = {
         "magnopy's dedicated documentation page",
         "https://docs.magnopy.org/en/latest/user-guide/usage/atoms.html",
     ),
+    "magnopy-spinham": (
+        "magnopy's dedicated documentation page",
+        "https://docs.magnopy.org/en/latest/user-guide/usage/spin-hamiltonian.html",
+    ),
     "magnopy-convention-problem": (
         "Convention problem",
         "https://docs.magnopy.org/en/latest/user-guide/theory-behind/convention-problem.html",
@@ -302,6 +306,10 @@ custom_links = {
     "wulfric-BL": (
         "wulfric: Bravais lattices",
         "https://docs.wulfric.org/en/latest/user-guide/conventions/bravais-lattices/index.html",
+    ),
+    "magnopy-mag-vs-nomag": (
+        "Magnetic vs non-magnetic centers",
+        "https://docs.magnopy.org/en/latest/user-guide/usage/spin-hamiltonian.html#magnetic-vs-non-magnetic-atoms",
     ),
 }
 rst_epilog += "\n".join(
