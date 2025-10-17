@@ -116,6 +116,7 @@ html_favicon = "_static/favicon.ico"
 html_theme_options = {
     "light_logo": "logo-black.png",
     "dark_logo": "logo-white.png",
+    "sidebar_hide_name": True,
 }
 
 html_context = {

@@ -2,10 +2,11 @@
 
 .. _trilmax-2025:
 
-**********************************************
-TRILMAX summer school (8-12 September of 2025)
-**********************************************
+*********************
+TRILMAX summer school 
+*********************
 
+**Dates**: 8-12 September of 2025
 **Target magnopy's version**: v0.2.1
 
 This tutorial was given in the |TRILMAX-summer-school|_ organized by the
