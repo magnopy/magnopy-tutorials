@@ -1,3 +1,0 @@
-.. admonition:: Exercises
-
-    *   TODO

@@ -2,8 +2,6 @@ r"""
 Magnetic dipole-dipole interaction
 **********************************
 
-.. include:: ../../exercises/5.inc
-
 Magnetic dipole-dipole interaction can be written as a two-spin/two-sites parameter.
 To save the burden of manual conversion, magnopy has a convenience method
 that adds magnetic dipole-dipole interaction to the spin Hamiltonian.
