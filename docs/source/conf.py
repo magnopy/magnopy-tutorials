@@ -312,6 +312,14 @@ custom_links = {
         "Magnetic vs non-magnetic centers",
         "https://docs.magnopy.org/en/latest/user-guide/usage/spin-hamiltonian.html#magnetic-vs-non-magnetic-atoms",
     ),
+    "wulfric-HPKOT": (
+        "HPKOT convention",
+        "https://docs.wulfric.org/en/latest/user-guide/conventions/bravais-lattices/1_hpkot/index.html",
+    ),
+    "wulfric-which-cell": (
+        "Which cell?",
+        "https://docs.wulfric.org/en/latest/user-guide/conventions/which-cell.html",
+    ),
 }
 rst_epilog += "\n".join(
     map(
