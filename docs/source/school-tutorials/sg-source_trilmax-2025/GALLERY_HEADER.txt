@@ -1,0 +1,19 @@
+.. _trilmax-2025:
+
+*********************
+TRILMAX summer school 
+*********************
+
+**School**: |TRILMAX-summer-school|_
+
+**Dates**: 8-12 September of 2025
+
+**Location**: Oviedo, Spain
+
+**Organized by**: |TRILMAX-consortium|_
+
+**Slides** :download:`Introduction to magnopy <../resources/trilmax-2025/Magnopy.pptx>`
+
+**Target magnopy's version**: v0.2.1
+
+

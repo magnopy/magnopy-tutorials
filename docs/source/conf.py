@@ -67,9 +67,11 @@ extensions = [
 sphinx_gallery_conf = {
     "examples_dirs": [
         "sg-source_master-tutorial",
+        # "school-tutorials/sg-source_trilmax-2025",
     ],  # path to your example scripts
     "gallery_dirs": [
         "master-tutorial",
+        # "school-tutorials/trilmax-2025",
     ],  # path to where to save gallery generated output
     "capture_repr": ("_repr_html_", "__repr__"),  # To capture plotly's figures
     "remove_config_comments": True,  # To remove configuration comments

@@ -1,5 +1,0 @@
-Preparing files for Vampire
-===========================
-
-This tutorial gives instructions on how to get .UCF and .mat files from |GROGU|_ file
-using magnopy.

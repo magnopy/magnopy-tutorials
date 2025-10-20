@@ -28,4 +28,4 @@ introduced some new tutorials, then those are added to the default one as well.
 .. toctree::
     :maxdepth: 1
 
-    trilmax-2025/index
+    school-tutorials/trilmax-2025/index

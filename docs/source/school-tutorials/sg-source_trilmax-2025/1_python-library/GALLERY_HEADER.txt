@@ -1,0 +1,9 @@
+Magnopy as a python library
+===========================
+
+To get the most out of magnopy, use it as a python library. This tutorial teaches you how
+to do so.
+
+Every page of the tutorial explains a concept about |magnopy|_. There is a list of 
+"Tutorial tasks", that can be found on top of each page. The tasks are meant for you to 
+complete after reading the corresponding page and referenced materials.
