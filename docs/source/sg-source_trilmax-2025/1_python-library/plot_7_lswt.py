@@ -7,7 +7,7 @@ Linear Spin Wave theory
     * Use one of the spin Hamiltonians from the previous tutorial and compute all terms \
       of the magnon Hamiltonian.
     * Compute magnon dispersion of a simple ferromagnet.
-    * Compute magnon dispersion of a simple antiferromagnetic.
+    * Compute magnon dispersion of a simple antiferromagnet.
 
 All methods of linear spin-wave theory are grouped under the
 :external:py:class:`magnopy.LSWT` class.
