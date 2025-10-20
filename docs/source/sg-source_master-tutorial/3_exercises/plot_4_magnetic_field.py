@@ -49,7 +49,7 @@ spinham.add_magnetic_field(B=(0, 2.432, 0))
 # Exercise 2
 # ==========
 #
-# First we create bae Hamiltonian with no magnetic field present.
+# First we create base Hamiltonian with no magnetic field present.
 
 # Cubic cell with a = 1
 cell = np.eye(3)

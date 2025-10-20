@@ -13,7 +13,6 @@ import matplotlib.pyplot as plt
 #
 # Exercise 1
 # ==========
-# *   Compute classical energy of one of the Hamiltonians from the previous tasks.
 
 spinham = magnopy.examples.cubic_ferro_nn(S=1, J_iso=1)
 
@@ -23,8 +22,6 @@ print(magnopy.Energy(spinham)([[0, 0, 1]]))
 #
 # Exercise 2
 # ==========
-# *   Change the convention of the spin Hamiltonian and compute the energy again.
-#     Does it change?
 
 print(spinham.convention)
 
@@ -40,9 +37,6 @@ print(magnopy.Energy(spinham)([[0, 0, 1]]))
 #
 # Exercise 3
 # ==========
-# *   Create a Hamiltonian with the isotropic exchange, triaxial anisotropy and DM
-#     interaction terms. Optimize the spin direction for the full Hamiltonian. Use
-#     optimized spin directions to compute energy contributions of every term.
 
 # Orthorhombic cell with a = 1, b=1.5, c=2
 cell = np.diag([1, 1.5, 2])

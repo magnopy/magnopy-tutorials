@@ -48,8 +48,6 @@ pe2.show(axes_visible=False, legend_position="left")
 #
 # Exercise 2
 # ==========
-# *   Change the convention of the spin Hamiltonian. Inspect how the parameters are
-#     changing when you do so.
 
 # Create two modified conventions
 
