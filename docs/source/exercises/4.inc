@@ -1,8 +1,8 @@
 .. admonition:: Exercises
 
-    *   Create a Hamiltonian for the cubic ferromagnetic model with nearest neighbors
+    1.  Create a Hamiltonian for the cubic ferromagnetic model with nearest neighbors
         interactions and add some value of the magnetic field to it.
-    *   Create ten Hamiltonians with the following magnetic fields:
+    #.  Create ten Hamiltonians with the following magnetic fields:
         
         - (0, 0.1, 0)
         - (0, 0.2, 0)
