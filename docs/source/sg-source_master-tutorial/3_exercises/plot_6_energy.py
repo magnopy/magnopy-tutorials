@@ -150,7 +150,7 @@ print(f"({B_step * steps:.4f}, 0.0, 0.0) Tesla is enough.")
 #    We display absolute values of spin components as +z and -z are degenerate in the
 #    model and optimized directions will oscillate is raw value is plotted.
 
-B_x = np.abs([-_ * 0.1 for _ in range(steps + 1)])
+B_x = np.abs([_ * B_step for _ in range(steps + 1)])
 optimized_sds = np.array(optimized_sds)
 
 fig, ax = plt.subplots()
