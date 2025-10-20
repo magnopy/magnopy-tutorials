@@ -60,3 +60,10 @@ div.sphx-glr-download a:hover {
 .custom-octicon-output {
   color: #1fb2ff;
 }
+
+/* Disable text on :hover */
+
+.sphx-glr-thumbcontainer[tooltip]:hover::before,
+.sphx-glr-thumbcontainer[tooltip]:hover::after {
+    display: none;
+}
