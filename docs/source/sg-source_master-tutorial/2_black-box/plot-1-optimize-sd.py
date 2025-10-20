@@ -31,11 +31,11 @@ of the file is |GROGU|_, then you can run the script as
 
 .. dropdown:: :octicon:`file;1em;custom-octicon-input` Input files
 
-    * :download:`ferro-easy-axis.txt <../../resources/master-tutorial/ferro-easy-axis.txt>`
+    * :download:`ferro-easy-axis.txt <../../resources/ferro-easy-axis.txt>`
 
 
 .. prompt-run::
-    :input-prefix: ../../resources/master-tutorial/
+    :input-prefix: ../../resources/
     :output-prefix: 1
     :extra-command: -of {{OP:magnopy-results}}
 
@@ -66,10 +66,10 @@ three lattice vectors (``--superell``). For example, if you want to minimize on 
 
 .. dropdown:: :octicon:`file;1em;custom-octicon-input` Input files
 
-    * :download:`ferro-easy-axis.txt <../../resources/master-tutorial/ferro-easy-axis.txt>`
+    * :download:`ferro-easy-axis.txt <../../resources/ferro-easy-axis.txt>`
 
 .. prompt-run::
-    :input-prefix: ../../resources/master-tutorial/
+    :input-prefix: ../../resources/
     :output-prefix: 2
     :extra-command: -of {{OP:magnopy-results}}
 
@@ -115,10 +115,10 @@ However, if you want to increase accuracy of one or both parameters, then use th
 
 .. dropdown:: :octicon:`file;1em;custom-octicon-input` Input files
 
-    * :download:`ferro-easy-axis.txt <../../resources/master-tutorial/ferro-easy-axis.txt>`
+    * :download:`ferro-easy-axis.txt <../../resources/ferro-easy-axis.txt>`
 
 .. prompt-run::
-    :input-prefix: ../../resources/master-tutorial/
+    :input-prefix: ../../resources/
     :output-prefix: 3
     :extra-command: -of {{OP:magnopy-results}}
 
@@ -151,10 +151,10 @@ For example, use the command
 
 .. dropdown:: :octicon:`file;1em;custom-octicon-input` Input files
 
-    * :download:`ferro-easy-axis.txt <../../resources/master-tutorial/ferro-easy-axis.txt>`
+    * :download:`ferro-easy-axis.txt <../../resources/ferro-easy-axis.txt>`
 
 .. prompt-run::
-    :input-prefix: ../../resources/master-tutorial/
+    :input-prefix: ../../resources/
     :output-prefix: 4
     :extra-command: -of {{OP:magnopy-results}}
 

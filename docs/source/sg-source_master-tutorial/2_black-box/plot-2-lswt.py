@@ -31,10 +31,10 @@ of the file is |GROGU|_, then you can run the script as
 
 .. dropdown:: :octicon:`file;1em;custom-octicon-input` Input files
 
-    * :download:`ferro-easy-axis.txt <../../resources/master-tutorial/ferro-easy-axis.txt>`
+    * :download:`ferro-easy-axis.txt <../../resources/ferro-easy-axis.txt>`
 
 .. prompt-run::
-    :input-prefix: ../../resources/master-tutorial/
+    :input-prefix: ../../resources/
     :output-prefix: 1
     :extra-command: -of {{OP:magnopy-results}}
 
@@ -69,11 +69,11 @@ know the spin directions
 
     .. dropdown:: :octicon:`file;1em;custom-octicon-input` Input files
 
-        * :download:`ferro-easy-axis.txt <../../resources/master-tutorial/ferro-easy-axis.txt>`
-        * :download:`sd-ferro-easy-axis.txt <../../resources/master-tutorial/sd-ferro-easy-axis.txt>`
+        * :download:`ferro-easy-axis.txt <../../resources/ferro-easy-axis.txt>`
+        * :download:`sd-ferro-easy-axis.txt <../../resources/sd-ferro-easy-axis.txt>`
 
     .. prompt-run::
-        :input-prefix: ../../resources/master-tutorial/
+        :input-prefix: ../../resources/
         :output-prefix: 2
         :extra-command: -of {{OP:magnopy-results}}
 
@@ -114,11 +114,11 @@ to know a set of k-points to perform the calculations. User is left with two opt
 
     .. dropdown:: :octicon:`file;1em;custom-octicon-input` Input files
 
-        * :download:`ferro-easy-axis.txt <../../resources/master-tutorial/ferro-easy-axis.txt>`
-        * :download:`k-points-ferro-easy-axis.txt <../../resources/master-tutorial/k-points-ferro-easy-axis.txt>`
+        * :download:`ferro-easy-axis.txt <../../resources/ferro-easy-axis.txt>`
+        * :download:`k-points-ferro-easy-axis.txt <../../resources/k-points-ferro-easy-axis.txt>`
 
     .. prompt-run::
-        :input-prefix: ../../resources/master-tutorial/
+        :input-prefix: ../../resources/
         :output-prefix: 3
         :extra-command: -of {{OP:magnopy-results}}
 
@@ -148,10 +148,10 @@ to know a set of k-points to perform the calculations. User is left with two opt
 
     .. dropdown:: :octicon:`file;1em;custom-octicon-input` Input files
 
-        * :download:`ferro-easy-axis.txt <../../resources/master-tutorial/ferro-easy-axis.txt>`
+        * :download:`ferro-easy-axis.txt <../../resources/ferro-easy-axis.txt>`
 
     .. prompt-run::
-        :input-prefix: ../../resources/master-tutorial/
+        :input-prefix: ../../resources/
         :output-prefix: 4
         :extra-command: -of {{OP:magnopy-results}}
 
@@ -190,10 +190,10 @@ For example, use the command
 
 .. dropdown:: :octicon:`file;1em;custom-octicon-input` Input files
 
-    * :download:`ferro-easy-axis.txt <../../resources/master-tutorial/ferro-easy-axis.txt>`
+    * :download:`ferro-easy-axis.txt <../../resources/ferro-easy-axis.txt>`
 
 .. prompt-run::
-    :input-prefix: ../../resources/master-tutorial/
+    :input-prefix: ../../resources/
     :output-prefix: 5
     :extra-command: -of {{OP:magnopy-results}}
 
