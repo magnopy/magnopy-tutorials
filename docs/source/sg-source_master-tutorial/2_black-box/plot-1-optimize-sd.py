@@ -47,6 +47,7 @@ of the file is |GROGU|_, then you can run the script as
 
 .. dropdown:: :octicon:`file;1em;custom-octicon-output` Created files
 
+    * :download:`E_0.txt <prompt-run_plot-1-optimize-sd/1/magnopy-results/E_0.txt>`
     * :download:`INITIAL_GUESS.txt <prompt-run_plot-1-optimize-sd/1/magnopy-results/INITIAL_GUESS.txt>`
     * :download:`SPIN_DIRECTIONS.txt <prompt-run_plot-1-optimize-sd/1/magnopy-results/SPIN_DIRECTIONS.txt>`
     * :download:`SPIN_DIRECTIONS.html <prompt-run_plot-1-optimize-sd/1/magnopy-results/SPIN_DIRECTIONS.html>`
@@ -81,6 +82,7 @@ three lattice vectors (``--superell``). For example, if you want to minimize on 
 
 .. dropdown:: :octicon:`file;1em;custom-octicon-output` Created files
 
+    * :download:`E_0.txt <prompt-run_plot-1-optimize-sd/2/magnopy-results/E_0.txt>`
     * :download:`INITIAL_GUESS.txt <prompt-run_plot-1-optimize-sd/2/magnopy-results/INITIAL_GUESS.txt>`
     * :download:`SPIN_DIRECTIONS.txt <prompt-run_plot-1-optimize-sd/2/magnopy-results/SPIN_DIRECTIONS.txt>`
     * :download:`SPIN_DIRECTIONS.html <prompt-run_plot-1-optimize-sd/2/magnopy-results/SPIN_DIRECTIONS.html>`
@@ -130,6 +132,7 @@ However, if you want to increase accuracy of one or both parameters, then use th
 
 .. dropdown:: :octicon:`file;1em;custom-octicon-output` Created files
 
+    * :download:`E_0.txt <prompt-run_plot-1-optimize-sd/3/magnopy-results/E_0.txt>`
     * :download:`INITIAL_GUESS.txt <prompt-run_plot-1-optimize-sd/3/magnopy-results/INITIAL_GUESS.txt>`
     * :download:`SPIN_DIRECTIONS.txt <prompt-run_plot-1-optimize-sd/3/magnopy-results/SPIN_DIRECTIONS.txt>`
     * :download:`SPIN_DIRECTIONS.html <prompt-run_plot-1-optimize-sd/3/magnopy-results/SPIN_DIRECTIONS.html>`
@@ -166,6 +169,7 @@ For example, use the command
 
 .. dropdown:: :octicon:`file;1em;custom-octicon-output` Created files
 
+    * :download:`E_0.txt <prompt-run_plot-1-optimize-sd/4/magnopy-results/E_0.txt>`
     * :download:`INITIAL_GUESS.txt <prompt-run_plot-1-optimize-sd/4/magnopy-results/INITIAL_GUESS.txt>`
     * :download:`SPIN_DIRECTIONS.txt <prompt-run_plot-1-optimize-sd/4/magnopy-results/SPIN_DIRECTIONS.txt>`
     * :download:`SPIN_DIRECTIONS.html <prompt-run_plot-1-optimize-sd/4/magnopy-results/SPIN_DIRECTIONS.html>`
