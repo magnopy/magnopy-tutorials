@@ -46,6 +46,8 @@ of the file is |GROGU|_, then you can run the script as
 
 .. dropdown:: :octicon:`file;1em;custom-octicon-output` Created files
 
+    * :download:`E_0.txt <prompt-run_plot-2-lswt/1/magnopy-results/E_0.txt>`
+    * :download:`E_2.txt <prompt-run_plot-2-lswt/1/magnopy-results/E_2.txt>`
     * :download:`DELTAS.txt <prompt-run_plot-2-lswt/1/magnopy-results/DELTAS.txt>`
     * :download:`DELTAS.png <prompt-run_plot-2-lswt/1/magnopy-results/DELTAS.png>`
     * :download:`HIGH-SYMMETRY_POINTS.txt <prompt-run_plot-2-lswt/1/magnopy-results/HIGH-SYMMETRY_POINTS.txt>`
@@ -85,6 +87,8 @@ know the spin directions
 
     .. dropdown:: :octicon:`file;1em;custom-octicon-output` Created files
 
+        * :download:`E_0.txt <prompt-run_plot-2-lswt/2/magnopy-results/E_0.txt>`
+        * :download:`E_2.txt <prompt-run_plot-2-lswt/2/magnopy-results/E_2.txt>`
         * :download:`DELTAS.txt <prompt-run_plot-2-lswt/2/magnopy-results/DELTAS.txt>`
         * :download:`DELTAS.png <prompt-run_plot-2-lswt/2/magnopy-results/DELTAS.png>`
         * :download:`HIGH-SYMMETRY_POINTS.txt <prompt-run_plot-2-lswt/2/magnopy-results/HIGH-SYMMETRY_POINTS.txt>`
@@ -130,6 +134,8 @@ to know a set of k-points to perform the calculations. User is left with two opt
 
     .. dropdown:: :octicon:`file;1em;custom-octicon-output` Created files
 
+        * :download:`E_0.txt <prompt-run_plot-2-lswt/3/magnopy-results/E_0.txt>`
+        * :download:`E_2.txt <prompt-run_plot-2-lswt/3/magnopy-results/E_2.txt>`
         * :download:`DELTAS.txt <prompt-run_plot-2-lswt/3/magnopy-results/DELTAS.txt>`
         * :download:`DELTAS.png <prompt-run_plot-2-lswt/3/magnopy-results/DELTAS.png>`
         * :download:`K-POINTS.txt <prompt-run_plot-2-lswt/3/magnopy-results/K-POINTS.txt>`
@@ -163,6 +169,8 @@ to know a set of k-points to perform the calculations. User is left with two opt
 
     .. dropdown:: :octicon:`file;1em;custom-octicon-output` Created files
 
+        * :download:`E_0.txt <prompt-run_plot-2-lswt/4/magnopy-results/E_0.txt>`
+        * :download:`E_2.txt <prompt-run_plot-2-lswt/4/magnopy-results/E_2.txt>`
         * :download:`DELTAS.txt <prompt-run_plot-2-lswt/4/magnopy-results/DELTAS.txt>`
         * :download:`DELTAS.png <prompt-run_plot-2-lswt/4/magnopy-results/DELTAS.png>`
         * :download:`HIGH-SYMMETRY_POINTS.txt <prompt-run_plot-2-lswt/4/magnopy-results/HIGH-SYMMETRY_POINTS.txt>`
@@ -205,6 +213,8 @@ For example, use the command
 
 .. dropdown:: :octicon:`file;1em;custom-octicon-output` Created files
 
+    * :download:`E_0.txt <prompt-run_plot-2-lswt/5/magnopy-results/E_0.txt>`
+    * :download:`E_2.txt <prompt-run_plot-2-lswt/5/magnopy-results/E_2.txt>`
     * :download:`DELTAS.txt <prompt-run_plot-2-lswt/5/magnopy-results/DELTAS.txt>`
     * :download:`DELTAS.png <prompt-run_plot-2-lswt/5/magnopy-results/DELTAS.png>`
     * :download:`HIGH-SYMMETRY_POINTS.txt <prompt-run_plot-2-lswt/5/magnopy-results/HIGH-SYMMETRY_POINTS.txt>`
