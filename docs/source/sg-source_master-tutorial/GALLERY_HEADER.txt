@@ -7,4 +7,4 @@ Master tutorial
 
 **Target magnopy's version**: |version|
 
-**Last updated**: UNDEFINED
+**Last updated**: 23 October 2025
