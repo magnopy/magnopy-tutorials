@@ -18,6 +18,6 @@ sphinx-gallery
 ipython
 nbformat
 
-magnopy==0.4.0
+magnopy[visual]==0.4.0
 
 tqdm
