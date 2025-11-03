@@ -126,7 +126,7 @@ to know a set of k-points to perform the calculations. User is left with two opt
         :output-prefix: 3
         :extra-command: -of {{OP:magnopy-results}}
 
-        magnopy-lswt --kpoints {{IP:k-points-ferro-easy-axis.txt}} --spinham-source GROGU --spinham-filename {{IP:ferro-easy-axis.txt}}
+        magnopy-lswt --kpoints {{IP:k-points-ferro-easy-axis.txt}} --relative --spinham-source GROGU --spinham-filename {{IP:ferro-easy-axis.txt}}
 
     .. dropdown:: :octicon:`command-palette;1em;custom-octicon-output` Output to the console
 
