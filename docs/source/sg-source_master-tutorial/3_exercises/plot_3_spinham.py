@@ -79,7 +79,7 @@ for alpha, beta, nu, parameter in spinham.p22:
 
 # %%
 #
-# Finally, we change the sign in from of the two spins & two sites term. The parameter
+# Finally, we change the sign in front of the two spins & two sites term. The parameter
 # shall change their sign to preserve physical properties of the model.
 
 spinham.convention = mod_conv_2
