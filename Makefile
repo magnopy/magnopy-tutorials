@@ -16,7 +16,6 @@ help:
 	@echo "    clean-html - clean all files from docs and build html docs from scratch"
 	@echo "    doctest - run doctests"
 	@echo "    clean - clean all files from docs and pip routines"
-	@echo "    requirements - install all requirements"
 
 # Development environment
 m:
