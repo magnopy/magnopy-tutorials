@@ -35,10 +35,17 @@ spinham = magnopy.SpinHamiltonian(cell=cell, atoms=atoms, convention=convention)
 # Add nearest neighbor parameter
 # Choose 1D chain along the first lattice vector
 parameter = magnopy.converter22.from_iso(iso=1)
-spinham.add(nus=((1, 0, 0),), alphas=(0, 0), parameter=parameter)
+spinham.add(
+    nus=((1, 0, 0),), alphas=(0, 0), parameter=parameter, populate_equivalent=True
+)
 
 # Add next-nearest neighbor parameter of opposite sign and slightly smaller absolute value
-spinham.add(nus=((2, 0, 0),), alphas=(0, 0), parameter=-0.95 * parameter)
+spinham.add(
+    nus=((2, 0, 0),),
+    alphas=(0, 0),
+    parameter=-0.95 * parameter,
+    populate_equivalent=True,
+)
 
 _, pe2 = magnopy.experimental.plot_spinham(spinham=spinham, _sphinx_gallery_fix=True)
 

@@ -38,7 +38,12 @@ spinham = magnopy.SpinHamiltonian(cell=cell, atoms=atoms, convention=convention)
 parameter = magnopy.converter22.from_iso(iso=-1.0)  # Ferromagnetic exchange
 
 for nu in [(1, 0, 0), (0, 1, 0), (0, 0, 1)]:
-    spinham.add(nus=(nu,), alphas=(0, 0), parameter=parameter)
+    spinham.add(
+        nus=(nu,),
+        alphas=(0, 0),
+        parameter=parameter,
+        populate_equivalent=True,
+    )
 
 # Add an on-site anisotropy term
 spinham.add(nus=((0, 0, 0),), alphas=(0, 0), parameter=np.diag([0.0, 0.0, -0.5]))
@@ -130,8 +135,12 @@ spinham = magnopy.SpinHamiltonian(cell=cell, atoms=atoms, convention=convention)
 parameter = magnopy.converter22.from_iso(iso=1.0)  # Antiferromagnetic exchange
 
 # No need to add all four bonds, the rest are generated automatically
-spinham.add(nus=((0, 0, 0),), alphas=(0, 1), parameter=parameter)
-spinham.add(nus=((-1, 0, 0),), alphas=(0, 1), parameter=parameter)
+spinham.add(
+    nus=((0, 0, 0),), alphas=(0, 1), parameter=parameter, populate_equivalent=True
+)
+spinham.add(
+    nus=((-1, 0, 0),), alphas=(0, 1), parameter=parameter, populate_equivalent=True
+)
 
 # Add an on-site anisotropy term, to both atoms
 spinham.add(nus=((0, 0, 0),), alphas=(0, 0), parameter=np.diag([0.0, 0.0, -0.1]))

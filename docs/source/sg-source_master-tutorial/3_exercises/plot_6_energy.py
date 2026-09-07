@@ -62,7 +62,10 @@ dmi_term = iso_term.get_empty()
 # Add nearest neighbor isotropic exchange
 for nu in [(1, 0, 0), (0, 1, 0), (0, 0, 1)]:
     iso_term.add(
-        nus=(nu,), alphas=(0, 0), parameter=magnopy.converter22.from_iso(iso=-1)
+        nus=(nu,),
+        alphas=(0, 0),
+        parameter=magnopy.converter22.from_iso(iso=-1),
+        populate_equivalent=True,
     )
 
 # Add triaxial anisotropy
@@ -73,6 +76,7 @@ dmi_term.add(
     nus=((0, 1, 0),),
     alphas=(0, 0),
     parameter=magnopy.converter22.from_dmi(dmi=(0.5, 0, 0)),
+    populate_equivalent=True,
 )
 
 # Get an energy instance for the full Hamiltonian

@@ -152,9 +152,7 @@ spinham = magnopy.SpinHamiltonian(cell=cell, atoms=atoms, convention=convention)
 # For the purpose of this tutorial we will focus on the first three terms of
 # the expanded form (i.e. one-spin and two-spin terms).
 #
-# Two functions are defined for each group of parameter, that add or remove a
-# parameter from the Hamiltonian. For example, to add or remove a
-# parameter one can use
+# To add or remove a parameter one can use
 # :py:meth:`magnopy.SpinHamiltonian.add` or
 # :py:meth:`magnopy.SpinHamiltonian.remove`.
 #
@@ -165,9 +163,15 @@ spinham = magnopy.SpinHamiltonian(cell=cell, atoms=atoms, convention=convention)
 parameter = magnopy.converter22.from_iso(iso=-1)
 print(f"parameter is \n{parameter}")
 
-spinham.add(nus=((1, 0, 0),), alphas=(0, 0), parameter=parameter)
-spinham.add(nus=((0, 1, 0),), alphas=(0, 0), parameter=parameter)
-spinham.add(nus=((0, 0, 1),), alphas=(0, 0), parameter=parameter)
+spinham.add(
+    nus=((1, 0, 0),), alphas=(0, 0), parameter=parameter, populate_equivalent=True
+)
+spinham.add(
+    nus=((0, 1, 0),), alphas=(0, 0), parameter=parameter, populate_equivalent=True
+)
+spinham.add(
+    nus=((0, 0, 1),), alphas=(0, 0), parameter=parameter, populate_equivalent=True
+)
 
 # %%
 # .. note::
@@ -187,7 +191,7 @@ spinham.add(nus=((0, 0, 1),), alphas=(0, 0), parameter=parameter)
 #      the same.
 #
 # One does not need to add parameters for :math:`\nu \in \{(-1,0,0), (0,-1,0), (0,0,-1)\}`.
-# Since multiple counting is ``True``, magnopy will automatically add those.
+# Since ``populate_equivalent=True``, magnopy will automatically add those.
 
 
 for index, (nus, alphas, parameter) in enumerate(spinham.p22):
@@ -313,6 +317,7 @@ dmi_term.add(
     nus=((0, 1, 0),),
     alphas=(0, 0),
     parameter=magnopy.converter22.from_dmi(dmi=(0.5, 0, 0)),
+    populate_equivalent=True,
 )
 
 full_spinham = iso_term + aniso_term + dmi_term
