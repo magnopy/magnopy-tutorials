@@ -6,19 +6,20 @@ Introducing magnopy
 
 .. note::
 
-    We recommend to install magnopy with its visual capabilities whenever possible
-    (magnopy[visual]). Magnopy will output graphics by default if |plotly|_ and
-    |matplotlib|_ are installed. Nevertheless, graphical libraries are not included as
-    default dependencies in order to offer computational capabilities of magnopy even if
-    those libraries are not available.
+    We recommend to install magnopy with its visual capabilities whenever
+    possible (magnopy[visual]). Magnopy will output graphics by default if
+    |plotly|_ and |matplotlib|_ are installed. Nevertheless, graphical
+    libraries are not included as default dependencies in order to offer
+    computational capabilities of magnopy even if those libraries are not
+    available.
 
 
 Import
 ======
 
-Magnopy has a well defined set of public functions, that shall be available with code
-completion. One can always find full list of available methods and objects on
-|magnopy-API|_.
+Magnopy has a well defined set of public functions, that shall be available
+with code completion. One can always find full list of available methods and
+objects on |magnopy-API|_.
 """
 
 import magnopy

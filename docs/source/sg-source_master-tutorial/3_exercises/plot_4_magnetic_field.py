@@ -36,12 +36,12 @@ spinham = magnopy.SpinHamiltonian(cell=cell, atoms=atoms, convention=convention)
 
 # Add nearest neighbor interactions
 for nu in [(1, 0, 0), (0, 1, 0), (0, 0, 1)]:
-    spinham.add_22(
-        alpha=0, beta=0, nu=nu, parameter=magnopy.converter22.from_iso(iso=-1)
+    spinham.add(
+        nus=(nu,), alphas=(0, 0), parameter=magnopy.converter22.from_iso(iso=-1)
     )
 
 # Add magnetic field along +y of the value 2.432 Tesla
-spinham.add_magnetic_field(B=(0, 2.432, 0))
+spinham.set_magnetic_field(B=(0, 2.432, 0))
 
 
 # %%
@@ -73,8 +73,8 @@ spinham = magnopy.SpinHamiltonian(cell=cell, atoms=atoms, convention=convention)
 
 # Add nearest neighbor interactions
 for nu in [(1, 0, 0), (0, 1, 0), (0, 0, 1)]:
-    spinham.add_22(
-        alpha=0, beta=0, nu=nu, parameter=magnopy.converter22.from_iso(iso=-1)
+    spinham.add(
+        nus=(nu,), alphas=(0, 0), parameter=magnopy.converter22.from_iso(iso=-1)
     )
 
 # %%
@@ -83,7 +83,7 @@ for nu in [(1, 0, 0), (0, 1, 0), (0, 0, 1)]:
 
 B_step = spinham.get_empty()
 
-B_step.add_magnetic_field(B=(0, 0.1, 0), alphas=[0])
+B_step.set_magnetic_field(B=(0, 0.1, 0), alphas=[0])
 
 # %%
 #

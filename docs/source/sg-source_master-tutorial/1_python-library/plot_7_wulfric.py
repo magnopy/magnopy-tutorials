@@ -5,14 +5,16 @@ r"""
 .. include:: ../../exercises/7.inc
 
 For the upcoming tutorials we need to be able to generate a set of k-points. In
-particular, a set of k-points for the k-path between high-symmetry points. There is a
-number of ways to do so and a number of packages out there that can deal with such a task.
-Magnopy use one of them, |wulfric|_, as a dependency for k-points, symmetry analysis
-(powered by |spglib|_) and visualization (powered by |plotly|_).
+particular, a set of k-points for the k-path between high-symmetry points.
+There is a number of ways to do so and a number of packages out there that can
+deal with such a task.  Magnopy use one of them, |wulfric|_, as a dependency
+for k-points, symmetry analysis (powered by |spglib|_) and visualization
+(powered by |plotly|_).
 
-That is why in the tutorials we will use |wulfric|_ for automatic generation of k-points.
-In this tutorial we briefly introduce it. It is not necessary to use |wulfric|_, please
-feel free to skip this tutorial if you have other ways to generate k-points.
+That is why in the tutorials we will use |wulfric|_ for automatic generation of
+k-points.  In this tutorial we briefly introduce it. It is not necessary to use
+|wulfric|_, please feel free to skip this tutorial if you have other ways to
+generate k-points.
 """
 
 import numpy as np

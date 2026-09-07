@@ -12,9 +12,9 @@ This is a design choice that we made. It allows us to take care of the magnetic 
 one place (in the Hamiltonian) and treat it on the same grounds as other terms of the
 Hamiltonian.
 
-Said that, we defined a convenience method, that convert a vector of the magnetic flux
-density into the one spin & one site parameter of the Hamiltonian:
-:py:meth:`magnopy.SpinHamiltonian.add_magnetic_field`.
+Said that, we defined a convenience method, that convert a vector of the
+magnetic flux density into the one spin & one site parameter of the
+Hamiltonian: :py:meth:`magnopy.SpinHamiltonian.set_magnetic_field`.
 
 """
 
@@ -23,8 +23,8 @@ import magnopy
 
 # %%
 #
-# For example, to add an external magnetic field directed along the y axis with the value of
-# 1.42 Tesla use
+# For example, to add an external magnetic field directed along the y axis with
+# the value of 1.42 Tesla use
 
 # Cubic ferromagnet
 cell = np.eye(3)
@@ -45,30 +45,31 @@ convention = magnopy.Convention(
 spinham = magnopy.SpinHamiltonian(cell=cell, atoms=atoms, convention=convention)
 
 # Try to add magnetic field
-spinham.add_magnetic_field(B=(0.0, 1.42, 0.0))
+spinham.set_magnetic_field(B=(0.0, 1.42, 0.0))
 
 print(len(spinham.p1))
 
 # %%
 #
-# Surprisingly no magnetic field has been added. This is a subtle detail in magnopy
-# that originates from the |magnopy-mag-vs-nomag|_ problem. In short: magnetic atoms are
-# those that already have a parameter (of any group) associated with it. In this example the
-# Hamiltonian is empty, thus magnopy considers all atoms to be non-magnetic.
+# Surprisingly no magnetic field has been added. This is a subtle detail in
+# magnopy that originates from the |magnopy-mag-vs-nomag|_ problem. In short:
+# magnetic atoms are those that already have a parameter (of any group)
+# associated with it. In this example the Hamiltonian is empty, thus magnopy
+# considers all atoms to be non-magnetic.
 #
-# We are left with two choices: either add some other parameters to the model, that will
-# make atoms magnetic or explicitly tell magnopy to which atoms we want to add coupling
-# with the magnetic field
+# We are left with two choices: either add some other parameters to the model,
+# that will make atoms magnetic or explicitly tell magnopy to which atoms we
+# want to add coupling with the magnetic field
 
 # Add magnetic field
-spinham.add_magnetic_field(B=(0.0, 1.42, 0.0), alphas=[0])
+spinham.set_magnetic_field(B=(0.0, 1.42, 0.0), alphas=[0])
 
 # Now there is one parameter associated with magnetic field
 print(len(spinham.p1))
 
-for alpha, parameter in spinham.p1:
+for nus, alphas, parameter in spinham.p1:
     print(
-        f'Atom "{spinham.atoms.names[alpha]}" -> {parameter[0]:.5f} {parameter[1]:.5f} {parameter[2]:.5f}'
+        f'Atom "{spinham.atoms.names[alphas[0]]}" -> {parameter[0]:.5f} {parameter[1]:.5f} {parameter[2]:.5f}'
     )
 
 # %%

@@ -4,10 +4,10 @@ Convention of spin Hamiltonian
 
 .. include:: ../../exercises/2.inc
 
-Before we move on to the Hamiltonian itself it is very important to understand that
-there is a dozen of different conventions of essentially the same type of Hamiltonian
-present in the literature. Here are a few examples of different conventions for the
-isotropic exchange term
+Before we move on to the Hamiltonian itself it is very important to understand
+that there is a dozen of different conventions of essentially the same type of
+Hamiltonian present in the literature. Here are a few examples of different
+conventions for the isotropic exchange term
 
 .. math::
 
@@ -35,14 +35,15 @@ isotropic exchange term
     \cdot
     \boldsymbol{S}_j
 
-Please read |magnopy-convention-problem|_ for the illustration of the challenges that this
-problem introduces.
+Please read |magnopy-convention-problem|_ for the illustration of the
+challenges that this problem introduces.
 
-In |magnopy|_ we did not want to introduce a new one or to use one convention in
-particular. As a solution we decided to support **any** convention that the user wants to
-use. Naturally, that implied a responsibility on the user: to provide one! When spin
-Hamiltonian is read from the knows source (i. e. |TB2J|_ or |GROGU|_), magnopy knows
-the convention and user can just read the Hamiltonian from the file like so
+In |magnopy|_ we did not want to introduce a new one or to use one convention
+in particular. As a solution we decided to support **any** convention that the
+user wants to use. Naturally, that implied a responsibility on the user: to
+provide one! When spin Hamiltonian is read from the knows source (i. e. |TB2J|_
+or |GROGU|_), magnopy knows the convention and user can just read the
+Hamiltonian from the file like so
 
 .. code-block:: python
 
@@ -52,9 +53,9 @@ the convention and user can just read the Hamiltonian from the file like so
     # Reading from GROGU
     spinham = magnopy.io.load_grogu("spinham-from-GROGU.txt")
 
-However, :py:class:`magnopy.Convention` object has to be created and supplied when the
-spin Hamiltonian is created by user. For example, to introduce the convention for the
-Hamiltonian that is written as
+However, :py:class:`magnopy.Convention` object has to be created and supplied
+when the spin Hamiltonian is created by user. For example, to introduce the
+convention for the Hamiltonian that is written as
 
 .. math::
 

@@ -35,10 +35,10 @@ spinham = magnopy.SpinHamiltonian(cell=cell, atoms=atoms, convention=convention)
 # Add nearest neighbor parameter
 # Choose 1D chain along the first lattice vector
 parameter = magnopy.converter22.from_iso(iso=1)
-spinham.add_22(alpha=0, beta=0, nu=(1, 0, 0), parameter=parameter)
+spinham.add(nus=((1, 0, 0),), alphas=(0, 0), parameter=parameter)
 
 # Add next-nearest neighbor parameter of opposite sign and slightly smaller absolute value
-spinham.add_22(alpha=0, beta=0, nu=(2, 0, 0), parameter=-0.95 * parameter)
+spinham.add(nus=((2, 0, 0),), alphas=(0, 0), parameter=-0.95 * parameter)
 
 _, pe2 = magnopy.experimental.plot_spinham(spinham=spinham, _sphinx_gallery_fix=True)
 
@@ -59,9 +59,10 @@ mod_conv_2 = convention.get_modified(c22=-1)
 # First, display the parameters in the original convention: they have the same values as
 # the one we passed to :py:meth:`magnopy.SpinHamiltonian.add_22` function
 
-for alpha, beta, nu, parameter in spinham.p22:
+for nus, alphas, parameter in spinham.p22:
+    alpha1, alpha2 = alphas
     print(
-        f"{spinham.atoms.names[alpha]} -> {spinham.atoms.names[beta]} at {nu}\n{parameter}"
+        f"{spinham.atoms.names[alpha1]} -> {spinham.atoms.names[alpha2]} at {nus[0]}\n{parameter}"
     )
 
 # %%
@@ -72,9 +73,10 @@ for alpha, beta, nu, parameter in spinham.p22:
 
 spinham.convention = mod_conv_1
 
-for alpha, beta, nu, parameter in spinham.p22:
+for nus, alphas, parameter in spinham.p22:
+    alpha1, alpha2 = alphas
     print(
-        f"{spinham.atoms.names[alpha]} -> {spinham.atoms.names[beta]} at {nu}\n{parameter}"
+        f"{spinham.atoms.names[alpha1]} -> {spinham.atoms.names[alpha2]} at {nus[0]}\n{parameter}"
     )
 
 # %%
@@ -84,9 +86,10 @@ for alpha, beta, nu, parameter in spinham.p22:
 
 spinham.convention = mod_conv_2
 
-for alpha, beta, nu, parameter in spinham.p22:
+for nus, alphas, parameter in spinham.p22:
+    alpha1, alpha2 = alphas
     print(
-        f"{spinham.atoms.names[alpha]} -> {spinham.atoms.names[beta]} at {nu}\n{parameter}"
+        f"{spinham.atoms.names[alpha1]} -> {spinham.atoms.names[alpha2]} at {nus[0]}\n{parameter}"
     )
 
 # sphinx_gallery_thumbnail_path = 'img/cat-numbers/3.png'

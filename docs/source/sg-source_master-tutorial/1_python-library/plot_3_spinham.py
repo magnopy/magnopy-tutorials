@@ -21,8 +21,8 @@ Spin Hamiltonian is created from three objects
 * atoms
 * convention
 
-Here we create a Hamiltonian for the ferromagnetic nearest-neighbor Heisenberg model with
-triaxial on-site anisotropy on a simple orthorhombic lattice.
+Here we create a Hamiltonian for the ferromagnetic nearest-neighbor Heisenberg
+model with triaxial on-site anisotropy on a simple orthorhombic lattice.
 
 .. math::
     \mathcal{H}
@@ -43,8 +43,8 @@ triaxial on-site anisotropy on a simple orthorhombic lattice.
     \cdot
     \mathbf{S}_j
 
-In the notation (not convention, but notation) that resembles magnopy's code the same
-Hamiltonian can be written as
+In the notation (not convention, but notation) that resembles magnopy's code
+the same Hamiltonian can be written as
 
 .. math::
     \mathcal{H}
@@ -57,14 +57,14 @@ Hamiltonian can be written as
     \mathbf{S}_{\mu, \alpha}
     +
     \dfrac{1}{2}
-    \sum_{\mu,\nu,\alpha,\beta}
-    \mathbf{S}_{\mu, \alpha}
+    \sum_{\mu,\nu,\alpha_1,\alpha_2}
+    \mathbf{S}_{\mu, \alpha_1}
     \cdot
-    \mathbf{J}_{\alpha\beta,\nu}
+    \mathbf{J}_{\alpha_1\alpha_2,\nu}
     \cdot
-    \mathbf{S}_{\mu+\nu, \beta}
+    \mathbf{S}_{\mu+\nu, \alpha_2}
 
-where 
+where
 
 .. math::
 
@@ -76,28 +76,29 @@ where
         0 & 0 & K_z
     \end{pmatrix}
 
-and 
+and
 
 .. math::
 
-    \mathbf{J}_{\alpha\beta,\nu}
+    \mathbf{J}_{\alpha_1\alpha_2,\nu}
     =
     \begin{pmatrix}
         J & 0 & 0 \\
-        0 & J & 0 \\    
+        0 & J & 0 \\
         0 & 0 & J
     \end{pmatrix}
 
-if :math:`\alpha = \beta` and :math:`\nu \in \{(1,0,0), (-1,0,0), (0,1,0), (0,-1,0), (0,0,1), (0,0,-1)\}` and 
+if :math:`\alpha_1 = \alpha_2` and :math:`\nu \in \{(1,0,0), (-1,0,0), (0,1,0),
+(0,-1,0), (0,0,1), (0,0,-1)\}` and
 
-.. math:: 
+.. math::
 
-    \mathbf{J}_{\alpha\beta,\nu}
+    \mathbf{J}_{\alpha_1\alpha_2,\nu}
     =
     \begin{pmatrix}
         0 & 0 & 0 \\
-        0 & 0 & 0 \\    
-        0 & 0 & 0   
+        0 & 0 & 0 \\
+        0 & 0 & 0
     \end{pmatrix}
 
 otherwise.
@@ -135,48 +136,52 @@ spinham = magnopy.SpinHamiltonian(cell=cell, atoms=atoms, convention=convention)
 # Adding parameter to the Hamiltonian
 # ===================================
 #
-# Now everything is ready to add some parameters. Magnopy stores the parameters in the
-# form that closely resembles mathematical form of the spin Hamiltonian, which can be
-# found in |magnopy-theory-spin-hamiltonian|_ page (see "Expanded form").
+# Now everything is ready to add some parameters. Magnopy stores the parameters
+# in the form that closely resembles mathematical form of the spin Hamiltonian,
+# which can be found in |magnopy-theory-spin-hamiltonian|_ page (see "Expanded
+# form").
 #
-# Magnopy supports terms with up to four spins with full tensors of the interaction
-# parameters
+# Magnopy supports terms with up to four spins with full tensors of the
+# interaction parameters
 #
 # * :math:`1\times3` for one-spin parameters
 # * :math:`3\times3` for two-spin parameters
 # * :math:`3\times3\times3` for three-spin parameters
 # * :math:`3\times3\times3\times3` for four-spin parameters.
 #
-# For the purpose of this tutorial we will focus on the first three terms of the expanded
-# form (i.e. one-spin and two-spin terms).
+# For the purpose of this tutorial we will focus on the first three terms of
+# the expanded form (i.e. one-spin and two-spin terms).
 #
-# Two functions are defined for each group of parameter, that add or
-# remove a parameter from the Hamiltonian. For example, to add or remove a
-# two-spin/two-sites parameter one can use :py:meth:`magnopy.SpinHamiltonian.add_22` or
-# :py:meth:`magnopy.SpinHamiltonian.remove_22`.
+# Two functions are defined for each group of parameter, that add or remove a
+# parameter from the Hamiltonian. For example, to add or remove a
+# parameter one can use
+# :py:meth:`magnopy.SpinHamiltonian.add` or
+# :py:meth:`magnopy.SpinHamiltonian.remove`.
 #
-# First, lets add isotropic exchange interaction between nearest neighbors with the value
-# :math:`J = -1` meV.
+# First, lets add isotropic exchange interaction between nearest neighbors with
+# the value :math:`J = -1` meV.
 
 # J < 0 for ferromagnetic coupling (according to the chosen convention: c22 = 1/2)
 parameter = magnopy.converter22.from_iso(iso=-1)
 print(f"parameter is \n{parameter}")
 
-spinham.add_22(alpha=0, beta=0, nu=(1, 0, 0), parameter=parameter)
-spinham.add_22(alpha=0, beta=0, nu=(0, 1, 0), parameter=parameter)
-spinham.add_22(alpha=0, beta=0, nu=(0, 0, 1), parameter=parameter)
+spinham.add(nus=((1, 0, 0),), alphas=(0, 0), parameter=parameter)
+spinham.add(nus=((0, 1, 0),), alphas=(0, 0), parameter=parameter)
+spinham.add(nus=((0, 0, 1),), alphas=(0, 0), parameter=parameter)
 
 # %%
 # .. note::
 #
-#   *  ``alpha`` and ``beta`` are indices of the lists in ``atoms``. In that example they
-#      both point to the first atom.
+#   *  ``alphas = (alpha1, alpha2)``, where ``alpha1`` and ``alpha2`` are indices of
+#      the lists in ``atoms``. In that example they both point to the first atom.
 #   *  Due to the translation symmetry of the Hamiltonian it is enough to specify all
 #      parameters for some chosen unit cell. This unit cell is commonly labeled as
-#      ``(0, 0, 0)``. Index ``alpha`` specifies the first atom, that is always in the
-#      ``(0, 0, 0)`` unit cell. Index ``beta`` specify the second atom, that is understood
-#      to be located in the unit cell specified by ``nu``. In the example above second
-#      atom is from ``(1, 0, 0)``, ``(0, 1, 0)`` or ``(0, 0, 1)`` unit cell.
+#      ``(0, 0, 0)``. Index ``alpha1`` specifies the first atom, that is always in the
+#      ``(0, 0, 0)`` unit cell. Index ``alpha2`` specify the second atom, that is
+#      understood to be located in the unit cell specified by ``nus[0]``. In the
+#      example above second atom is from ``(1, 0, 0)``, ``(0, 1, 0)`` or
+#      ``(0, 0, 1)`` unit cell. One can also provide ``nus=((0,0,0), (1,0,0))``
+#      explicitly.
 #   *  Any parameter for the term that involves two spins is a 3x3 matrix. An isotropic
 #      parameter in the matrix form is a diagonal matrix with all diagonal elements being
 #      the same.
@@ -185,9 +190,11 @@ spinham.add_22(alpha=0, beta=0, nu=(0, 0, 1), parameter=parameter)
 # Since multiple counting is ``True``, magnopy will automatically add those.
 
 
-for index, (alpha, beta, nu, parameter) in enumerate(spinham.p22):
-    atom_000 = spinham.atoms["names"][alpha]
-    atom_nu = spinham.atoms["names"][beta]
+for index, (nus, alphas, parameter) in enumerate(spinham.p22):
+    alpha1, alpha2 = alphas
+    nu = nus[0]
+    atom_000 = spinham.atoms["names"][alpha1]
+    atom_nu = spinham.atoms["names"][alpha2]
     print(f"Bond #{index + 1}")
     print(f"{atom_000} in (0, 0, 0) unit cell -> {atom_nu} in {nu} unit cell")
     print(parameter)
@@ -200,11 +207,11 @@ for index, (alpha, beta, nu, parameter) in enumerate(spinham.p22):
 parameter = np.diag([-0.1, -0.2, -0.3])
 print(f"parameter is \n{parameter}")
 
-spinham.add_21(alpha=0, parameter=parameter)
+spinham.add(nus=((0, 0, 0),), alphas=(0, 0), parameter=parameter)
 
-for alpha, parameter in spinham.p21:
+for nus, alphas, parameter in spinham.p21:
     print(
-        f"On-site anisotropy for atom {spinham.atoms['names'][alpha]} is\n{parameter}"
+        f"On-site anisotropy for atom {spinham.atoms['names'][alphas[0]]} is\n{parameter}"
     )
 
 # %%
@@ -212,16 +219,16 @@ for alpha, parameter in spinham.p21:
 # Changing convention
 # ===================
 #
-# All parameters that are added to the Hamiltonian are expected to be compliant with the
-# Hamiltonian's convention. The latter can always be checked with
+# All parameters that are added to the Hamiltonian are expected to be compliant
+# with the Hamiltonian's convention. The latter can always be checked with
 
 print(spinham.convention)
 
 # %%
-# You can change the convention of the Hamiltonian at any moment. Magnopy will recompute
-# all existing parameters in such a way, that physical properties of the Hamiltonian do
-# not change. All parameters that will be added later shall be compliant with the new
-# convention.
+# You can change the convention of the Hamiltonian at any moment. Magnopy
+# will recompute all existing parameters in such a way, that physical
+# properties of the Hamiltonian do not change. All parameters that will be
+# added later shall be compliant with the new convention.
 
 new_convention = magnopy.Convention.get_predefined(name="GROGU")
 
@@ -259,35 +266,35 @@ print(spinham.convention)
 aniso_term = spinham.get_empty()
 iso_term = spinham.get_empty()
 
-# %%
-# Then we add isotropic exchange to the first one and anisotropy to the second one
+# %% Then we add isotropic exchange to the first one and anisotropy to the
+# second one
 #
 # .. note::
-#     Parameters for (0, 0, 0) -> (1, 0, 0) bond and (0, 0, 0)-> (-1, 0, 0) bond are
-#     connected via multiple counting. Therefore, when one of them is added, addition of
-#     the second one will raise an error. Same problem will appear if we try to add
-#     (0, 0, 0) -> (1, 0, 0) bond twice.
 #
-#     This happens because magnopy always stores only one of the equivalent bonds
-#     internally, thus by adding the second parameter we essentially are trying to add
-#     the parameter to the same bond again. In other words, the same problem appears if we
-#     try to add (0, 0, 0) -> (1, 0, 0) bond twice.
+#     Parameters for (0, 0, 0) -> (1, 0, 0) bond and (0, 0, 0)-> (-1, 0, 0)
+#     bond are connected via multiple counting. Therefore, when one of them is
+#     added, addition of the second one will raise an error. Same problem will
+#     appear if we try to add (0, 0, 0) -> (1, 0, 0) bond twice.
 #
-#     When the parameter is added to the same bond again, magnopy raises an error by
-#     default. There are a number of strategies on how magnopy can handle such situations
-#     without raising an error. They are controlled with ``when_present`` argument, that
-#     is present in all ``spinham.add_*`` methods. Here we use ``when_present="skip"``,
-#     which means that repeated parameters are safely skipped without raising an error.
-#     See :py:meth:`magnopy.SpinHamiltonian.add_22` for more options for ``when_present``
-#     argument.
+#     This happens because magnopy always stores only one of the equivalent
+#     bonds internally, thus by adding the second parameter we essentially are
+#     trying to add the parameter to the same bond again. In other words, the
+#     same problem appears if we try to add (0, 0, 0) -> (1, 0, 0) bond twice.
+#
+#     When the parameter is added to the same bond again, magnopy raises an
+#     error by default. There are a number of strategies on how magnopy can
+#     handle such situations without raising an error. They are controlled with
+#     ``when_present`` argument, that is present in all ``spinham.add_*``
+#     methods. Here we use ``when_present="skip"``, which means that repeated
+#     parameters are safely skipped without raising an error.  See
+#     :py:meth:`magnopy.SpinHamiltonian.add_22` for more options for
+#     ``when_present`` argument.
 
-for alpha, parameter in spinham.p21:
-    aniso_term.add_21(alpha=alpha, parameter=parameter)
+for nus, alphas, parameter in spinham.p21:
+    aniso_term.add(nus=nus, alphas=alphas, parameter=parameter)
 
-for alpha, beta, nu, parameter in spinham.p22:
-    iso_term.add_22(
-        alpha=alpha, beta=beta, nu=nu, parameter=parameter, when_present="skip"
-    )
+for nus, alphas, parameter in spinham.p22:
+    iso_term.add(nus=nus, alphas=alphas, parameter=parameter, when_present="skip")
 
 # %%
 #
@@ -302,10 +309,9 @@ full_spinham = aniso_term + iso_term
 
 dmi_term = iso_term.get_empty()
 
-dmi_term.add_22(
-    alpha=0,
-    beta=0,
-    nu=(0, 1, 0),
+dmi_term.add(
+    nus=((0, 1, 0),),
+    alphas=(0, 0),
     parameter=magnopy.converter22.from_dmi(dmi=(0.5, 0, 0)),
 )
 

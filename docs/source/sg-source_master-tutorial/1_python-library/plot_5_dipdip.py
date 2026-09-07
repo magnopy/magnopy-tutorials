@@ -49,9 +49,11 @@ spinham.add_dipole_dipole(R_cut=2, alphas=[0])
 
 print(len(spinham.p22))
 
-for alpha, beta, nu, parameter in spinham.p22:
+for nus, alphas, parameter in spinham.p22:
+    nu = nus[0]
+    alpha1, alpha2 = alphas
     print(
-        f'Bond from "{spinham.atoms.names[alpha]}" to "{spinham.atoms.names[beta]}" in {nu}\n {parameter}'
+        f'Bond from "{spinham.atoms.names[alpha1]}" to "{spinham.atoms.names[alpha2]}" in {nu}\n {parameter}'
     )
 
 
@@ -77,9 +79,11 @@ spinham.add_dipole_dipole(E_cut=0.1, alphas=[0])
 
 print(len(spinham.p22))
 
-for alpha, beta, nu, parameter in spinham.p22:
+for nus, alphas, parameter in spinham.p22:
+    nu = nus[0]
+    alpha1, alpha2 = alphas
     print(
-        f'Bond from "{spinham.atoms.names[alpha]}" to "{spinham.atoms.names[beta]}" in {nu}\n {parameter}'
+        f'Bond from "{spinham.atoms.names[alpha1]}" to "{spinham.atoms.names[alpha2]}" in {nu}\n {parameter}'
     )
 
 

@@ -4,12 +4,13 @@ Crystal structure
 
 .. include:: ../../exercises/1.inc
 
-Every spin Hamiltonian in |magnopy|_ is defined on a lattice and a set of magnetic centers
-in its unit cell. In other words, one needs to define a crystal structure in order to
-define the spin Hamiltonian. This tutorial explains how to do that.
+Every spin Hamiltonian in |magnopy|_ is defined on a lattice and a set of
+magnetic centers in its unit cell. In other words, one needs to define a
+crystal structure in order to define the spin Hamiltonian. This tutorial
+explains how to do that.
 
-Crystal structure in |magnopy|_ is defined in the same way as in |wulfric|_: a unit cell
-with the set of atoms (or "magnetic centers").
+Crystal structure in |magnopy|_ is defined in the same way as in |wulfric|_: a
+unit cell with the set of atoms (or "magnetic centers").
 """
 
 import magnopy

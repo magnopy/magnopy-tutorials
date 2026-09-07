@@ -61,18 +61,17 @@ dmi_term = iso_term.get_empty()
 
 # Add nearest neighbor isotropic exchange
 for nu in [(1, 0, 0), (0, 1, 0), (0, 0, 1)]:
-    iso_term.add_22(
-        alpha=0, beta=0, nu=nu, parameter=magnopy.converter22.from_iso(iso=-1)
+    iso_term.add(
+        nus=(nu,), alphas=(0, 0), parameter=magnopy.converter22.from_iso(iso=-1)
     )
 
 # Add triaxial anisotropy
-aniso_term.add_21(alpha=0, parameter=np.diag([-0.1, -0.3, -0.2]))
+aniso_term.add(nus=((0, 0, 0),), alphas=(0, 0), parameter=np.diag([-0.1, -0.3, -0.2]))
 
 # Add DMI to one of the nearest neighbors
-dmi_term.add_22(
-    alpha=0,
-    beta=0,
-    nu=(0, 1, 0),
+dmi_term.add(
+    nus=((0, 1, 0),),
+    alphas=(0, 0),
     parameter=magnopy.converter22.from_dmi(dmi=(0.5, 0, 0)),
 )
 
@@ -107,7 +106,7 @@ spinham = magnopy.examples.cubic_ferro_nn(S=3 / 2, J_iso=1, J_21=np.diag([0, 0, 
 zeeman_step = spinham.get_empty()
 print(f"Number of atoms: {len(zeeman_step.atoms.names)} -> {zeeman_step.atoms.names}")
 B_step = -0.02
-zeeman_step.add_magnetic_field(B=(B_step, 0, 0), alphas=[0])
+zeeman_step.set_magnetic_field(B=(B_step, 0, 0), alphas=[0])
 
 energy = magnopy.Energy(spinham)
 

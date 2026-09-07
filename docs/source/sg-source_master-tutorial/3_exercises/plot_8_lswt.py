@@ -38,10 +38,10 @@ spinham = magnopy.SpinHamiltonian(cell=cell, atoms=atoms, convention=convention)
 parameter = magnopy.converter22.from_iso(iso=-1.0)  # Ferromagnetic exchange
 
 for nu in [(1, 0, 0), (0, 1, 0), (0, 0, 1)]:
-    spinham.add_22(alpha=0, beta=0, nu=nu, parameter=parameter)
+    spinham.add(nus=(nu,), alphas=(0, 0), parameter=parameter)
 
 # Add an on-site anisotropy term
-spinham.add_21(alpha=0, parameter=np.diag([0.0, 0.0, -0.5]))
+spinham.add(nus=((0, 0, 0),), alphas=(0, 0), parameter=np.diag([0.0, 0.0, -0.5]))
 
 # Visualize the spin Hamiltonian
 pe1, pe2 = magnopy.experimental.plot_spinham(spinham=spinham, _sphinx_gallery_fix=True)
@@ -130,12 +130,12 @@ spinham = magnopy.SpinHamiltonian(cell=cell, atoms=atoms, convention=convention)
 parameter = magnopy.converter22.from_iso(iso=1.0)  # Antiferromagnetic exchange
 
 # No need to add all four bonds, the rest are generated automatically
-spinham.add_22(alpha=0, beta=1, nu=(0, 0, 0), parameter=parameter)
-spinham.add_22(alpha=0, beta=1, nu=(-1, 0, 0), parameter=parameter)
+spinham.add(nus=((0, 0, 0),), alphas=(0, 1), parameter=parameter)
+spinham.add(nus=((-1, 0, 0),), alphas=(0, 1), parameter=parameter)
 
 # Add an on-site anisotropy term, to both atoms
-spinham.add_21(alpha=0, parameter=np.diag([0.0, 0.0, -0.1]))
-spinham.add_21(alpha=1, parameter=np.diag([0.0, 0.0, -0.1]))
+spinham.add(nus=((0, 0, 0),), alphas=(0, 0), parameter=np.diag([0.0, 0.0, -0.1]))
+spinham.add(nus=((0, 0, 0),), alphas=(1, 1), parameter=np.diag([0.0, 0.0, -0.1]))
 
 # Add some magnetic field to lift the degeneracy of the modes
 spinham.add_magnetic_field(B=(0, 0, 1))
